@@ -1,0 +1,851 @@
+body {
+	font-family: Arial, Helvetica, Lucida Grande, Calibri;
+	font-size: 9pt;
+	font-weight: normal;
+	padding: 1em 0.1em;
+	text-align: left;
+	margin-left: 16px;
+	margin-top: 0px;
+	margin-right: 16px;
+	line-height: 1.5em;
+	background-color: #444444;
+}
+
+/*Contain everything within a fixed width column*/
+#container {
+	position: relative;
+	margin: 0px auto;
+	padding: 0px;
+	font-size: 100%;
+	text-align: left;
+	width: 985px;
+	background: #fff;
+	}
+
+/* To adjust the height of the banner, adjust the height and padding values below */
+#banner {
+	height: 40px;
+	background-color: #598ece;
+	color: #FFFFFF;
+	font-weight: bold;
+	padding: 5px 0px 0px 24px;
+	margin: auto;
+}
+
+
+
+/* Primary Interpage Navigation */
+#navlevel1 {
+      float:left;
+      width:100%;
+      font-size:120%;
+      line-height:normal;
+	background-color: white;
+	background-color: rgba(90,  142,  207, 0.25);
+      }
+#navlevel1 ul {
+      margin:0;
+      padding:5px 10px 0;
+      list-style:none;
+      }
+#navlevel1 li {
+      float:left;
+      margin:0;
+      padding:0 0 0 9px;
+      }
+#navlevel1 a {
+      display:block;
+      padding:5px 15px 5px 6px;
+      text-decoration:none;
+      color:#ccc;
+      color: rgba(0, 0, 0, 0.7);
+      }
+#navlevel1 a:hover {
+      color:#999;      
+    color: rgba(0, 67, 139, 1);
+      }
+#navlevel1 #current {
+      color:#000;
+      color: rgba(0, 0, 0, 1.0);
+      font-weight:bold;
+      }
+#navlevel1 #current a {
+      color:#000;
+      color: rgba(0, 0, 0, 1.0);
+      padding-bottom:5px;
+      }
+    
+    
+    
+/* Secondary Interpage Navigation */
+#navlevel2 {
+	clear: left;
+	background-color: #598ece;
+	padding: 0;
+	margin: auto;
+	font-size: 8pt;
+	height: 29px;
+}
+
+/* Tertiary Interpage Navigation */
+#navlevel3 {
+	clear: left;
+	background-color: #598ece;
+	padding: 0;
+	margin: auto;
+	font-size: 7.5pt;
+	height: 29px;
+}
+
+/* Quaternary Interpage Navigation */
+#navlevel4 {
+	clear: left;
+	background-color: #598ece;
+	padding: 0;
+	margin: auto;
+	font-size: 7.5pt;
+	height: 29px;
+}
+
+
+
+/* Interpage Navigation 2 3 4 */
+#subnav{
+	margin:0;
+	padding: 0 0 20px 14px;
+}
+
+#subnav li{
+	margin:0;
+	padding: 0;
+	display: inline;
+	list-style-type:none;
+}
+
+#subnav li a{
+	float:left;
+	line-height:15px;
+	padding: 10px 12px 6px 12px;
+	text-decoration: none;
+	color: white;
+}
+
+#subnav li a.active {
+	background-color: #FFF;
+	padding-top: 6px;
+	border-top: 4px solid #598ece;
+    color:#FFF;
+    color: rgba(0, 0, 0, 1.0);
+}
+
+#subnav li a:hover {
+	padding-top: 6px;
+	border-top: 4px solid #598ece;
+    color:#0041ff;
+    color: rgba(0, 67, 139, 1);
+}
+
+
+
+
+
+
+
+
+#content {
+  	width: 940px;
+	padding: 20px;
+  	background: #fff;
+	}
+
+html>body #content {
+	width: 940px;
+} 
+
+#footer {
+	color:#FFF;
+	height: 30px;
+	width: 985px;
+	text-align: center;	
+	padding: 2px 0px 0px 0px;
+	background-color: #598ece;
+}
+
+
+
+
+a {text-decoration: none;
+}
+a:link  {color : #882222;
+}
+a:visited  {color : #882222;
+}
+a:hover  {color : #FF2222;
+}
+a:active {color: #990000;
+}
+
+
+
+h1  {	font-size : 16pt;  
+	font-weight : bold;
+	margin-top : 8pt;
+	margin-bottom : 9pt;}
+
+h2  {	font-size : 14pt;  
+	font-weight : normal;  
+	font-style : normal;
+	margin-top : 24pt;
+	margin-bottom : 9pt;}
+
+h3  {	font-size : 13pt; 
+	font-weight : normal; 
+	font-style : normal;
+	margin-top : 18pt;
+	margin-bottom : 9pt;}
+
+h4  {	font-size : 8pt; 
+	font-weight : bold;
+	font-style : normal;
+	margin-top : 12pt;
+	margin-bottom : 0pt;}
+
+p  {	font-size : 9pt;
+	font-style : normal;
+	margin-top : 6pt;
+	margin-bottom : 0pt;}
+
+td {	font-size : 9pt; 
+	font-weight : normal;
+	font-style : normal;
+	margin-top : 0pt;
+	margin-bottom : 0pt;}
+
+ul  {	font-weight : normal; 
+	font-style : normal;
+	margin-top : 0pt;
+	margin-bottom : 0pt;
+	text-indent : 0pt; 
+	text-align : left;}
+
+ol  {	margin-top : 0pt;
+	margin-bottom : 0pt;
+	text-indent : 0pt; 
+	text-align : left;}
+
+hr  {
+	border-top: 1px solid #7a7a7a;
+	margin-top: 4em;
+}
+
+#pagetitle {
+	padding-top: 5px;
+}
+
+img {
+	border: 0
+	}
+
+
+
+
+
+
+/* bulleted lists used for intra-page navigation */
+
+#jump_down {
+	list-style: none;
+	}
+	
+#jump_down li {
+	background:  url("../images/navigation/jump_down.gif") no-repeat 0 50%;
+	padding-left: 24px;
+	margin-left: -24px;
+	margin-top: 2px;
+	}
+
+
+
+
+/* back to top arrow */
+
+.jump_up {
+	list-style: none;
+	}
+	
+.jump_up li {
+	background:  url("../images/navigation/jump_up.gif") no-repeat 0 50%;
+	padding-left: 24px;
+	margin-left: -24px;
+	margin-top: 2px;
+	}
+
+
+/* bulleted lists used for intra-page navigation */
+
+.jump_down {
+	list-style: none;
+	}
+	
+.jump_down li {
+	background:  url("../images/navigation/jump_down.gif") no-repeat 0 50%;
+	padding-left: 24px;
+	margin-left: -24px;
+	margin-top: 2px;
+	}
+
+
+
+
+/* bulleted lists used for inter-page navigation */
+
+.jump_away {
+	list-style: none;
+	}
+	
+.jump_away li {
+	background:  url("../images/navigation/jump_away.gif") no-repeat 0 50%;
+	padding-left: 24px;
+	margin-left: -24px;
+	margin-top: 2px;
+	}
+
+
+/* bulleted lists used for inter-site navigation */
+
+.jump_www {
+	list-style: none;
+	}
+	
+.jump_www li {
+	background:  url("../images/navigation/jump_www.gif") no-repeat 0 50%;
+	padding-left: 24px;
+	margin-left: -24px;
+	margin-top: 2px;
+	}
+
+
+
+
+/* bulleted lists used for linking to PDF files */
+
+#pdfbullet {
+	list-style: none;
+}
+#pdfbullet li {
+	background: url("../images/pdf.png") no-repeat 0 0;
+	padding-left: 70px;
+	margin-left: -36px;
+	margin-top: 30px;
+	height: 57px;
+/*	display: inline; */
+}
+
+#pdfbullet a:link, #pdfbullet a:visited, #pdfbullet a:active  { 
+    text-decoration: none;
+}
+
+#pdfbullet a:hover { 
+    text-decoration: none;
+}
+
+
+
+/* bulleted lists used for listing release notes */
+
+.release li.release-new {
+	list-style: none;
+	background: url("../images/release-new.png") no-repeat 0 0;
+	padding-left: 30px;
+	margin-left: -30px;
+	margin-top: 5px;
+	height: 22px;
+/*	display: inline; */
+}
+
+.release li.release-update {
+	list-style: none;
+	background: url("../images/release-update.png") no-repeat 0 0;
+	padding-left: 30px;
+	margin-left: -30px;
+	margin-top: 5px;
+	height: 22px;
+/*	display: inline; */
+}
+
+.release li.release-fix {
+	list-style: none;
+	background: url("../images/release-fix.png") no-repeat 0 0;
+	padding-left: 30px;
+	margin-left: -30px;
+	margin-top: 5px;
+	height: 22px;
+/*	display: inline; */
+}
+
+
+
+/*images*/
+p.imageright {
+	float: right;
+	font-size: 0.8em;
+	text-align: center;
+	padding: 1.25em 0em 0.25em 0.25em;
+	font-weight: normal;
+	font-style: italic;
+}
+
+p.imageright img {
+	display: block;
+	/*border: 1px solid #ADAAAD; */
+}
+
+span.imageright {
+	float: right;
+	font-size: 0.8em;
+	text-align: center;
+	padding: 1.25em 0em 0.25em 0.25em;
+	font-weight: normal;
+	font-style: italic;
+}
+
+/*span.imageright img {
+	display: block;
+	border: 1px solid #ADAAAD; 
+}*/
+
+
+
+p.imageleft {
+	float: left;
+	font-size: 0.8em;
+	text-align: center;
+	padding: 1.25em 0em 0.25em 0.25em;
+	font-weight: normal;
+	font-style: italic;
+}
+
+p.imageleft img {
+	display: block;
+	/*border: 1px solid #ADAAAD; */
+}
+
+
+p.imagecentre {
+    font-size: 0.8em;
+	text-align: center;
+	padding: 1.25em 0em 0.25em 0.25em;
+	font-weight: normal;
+	font-style: italic;
+}
+
+p.imagecentre img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	/*border: 1px solid #ADAAAD; */
+}
+
+
+/*text box float right*/
+
+.textboxright {
+	float: right;
+	margin-top: 10pt;
+	margin-bottom: 10pt;
+	margin-left: 15pt;
+	font-size: 0.9em;
+	text-align: left;
+	color:#333333;
+	padding: 0 1.25em 1.25em 1.25em;
+	font-weight: normal;
+	width: 280px;
+	background: #eee;
+	border: 1px solid #ADAAAD;
+}
+
+.textboxright .note {
+	color:#8D8D8D;
+}
+
+.textboxright .step ol {
+	list-style-type: decimal;
+	}
+	
+	
+.textboxright ol ul li  {	
+	list-style: none;
+	margin-top : 0pt;
+	margin-bottom : 0pt;
+	text-indent : 0pt; 
+	text-align : left;
+}
+
+.textboxright ul  {	
+	margin-top : 0pt;
+	margin-bottom : 0pt;
+	text-indent : 0pt; 
+	text-align : left;
+}
+
+.textboxright ul li  {	
+	list-style: disc;
+	margin-top : 0pt;
+	margin-bottom : 0pt;
+	text-indent : 0pt; 
+	text-align : left;
+}
+
+.textboxright dt {
+	font-weight: bold;
+	margin-left: 0pt;
+	margin-bottom: 4pt;
+	border-bottom: solid #CCCCCC 1px;
+	background-color: #EEEEEE;
+	padding-left: 7px;
+}
+.textboxright dd {
+	margin-left: 20pt;
+	margin-bottom: 10pt;
+}
+
+.textboxright .jump_www {
+	list-style: none;
+	}
+	
+.textboxright .jump_www li {
+	list-style: none;
+	background:  url("../images/navigation/jump_www.gif") no-repeat 0 50%;
+	padding-left: 24px;
+	margin-left: -24px;
+	margin-top: 2px;
+	}
+
+
+
+
+/* Tables */
+
+.table_data {
+	border-top: 1px solid #999;
+	border-left: 1px solid #999;
+	border-collapse: collapse;
+}
+
+.table_data caption {
+	font-size: 120%;
+	color: #fff;
+	padding-bottom: 6px;
+	background:  #598ece;
+	padding-top: 6px;
+	text-align: left;
+	padding-left: 10px;
+	font-weight: bold;
+}
+
+.table_data th, td {
+	padding: 10px;
+	border-right: 1px solid #999;
+	border-bottom: 1px solid #999;
+}
+
+.table_data th {
+	font-size: 120%;
+	color: #fff;
+	background: #598ece;
+	background-image:  url("../images/table_th.gif");
+	background-repeat: repeat;
+	vertical-align: text-top;
+	text-align: left;
+}
+.table_data td {
+	font-size : 95%;
+	font-weight : normal;
+	font-style : normal;
+	margin-top : 0pt;
+	margin-bottom : 0pt;
+	vertical-align: text-top;
+}
+
+.table_data ul  {
+	margin-top : 3px;
+	margin-bottom : 0pt;
+	text-indent : 0pt;
+	text-align : left;
+	margin-left: 20px;
+	list-style-position: outside;
+	padding-left: 5px;
+	padding-bottom: 10px;
+}
+
+
+
+/* bulleted lists used for inter-page navigation in a table cell */
+
+.table_data ul .jump_away {
+	list-style-type: none;
+	list-style-position: none;
+	}
+	
+.table_data ul .jump_away li {
+	background:  url("../images/navigation/jump_away.gif") no-repeat 0 50%;
+	padding-left: 24px;
+	margin-left: -24px;
+	margin-top: 2px;
+	}
+
+
+.table_data ol  {
+	margin-top : 0pt;
+	margin-bottom : 0pt;
+	text-indent : 0pt;
+	text-align : left;
+	margin-left: 20px;
+	padding-left: 5px;
+	list-style-position: outside;
+	list-style-type: decimal;
+}
+
+
+
+
+
+
+/* PROCEDURE SECTION */
+
+/* Make procedure steps bold*/
+
+.step {
+	margin-top : 3pt;
+	font-weight: bold;
+	}
+
+/* Make procedure steps decimal */
+.step ol {
+	list-style-type: decimal;
+	}
+
+.step li {
+	margin-top: 4pt;	
+	}
+
+.step ul{
+	list-style: disc;
+	margin-top : 0pt;
+	margin-bottom : 0pt;
+	margin-left : 0px;
+	text-indent : 0pt;
+	}
+	
+
+
+/* Grey out and italicise results and notes */
+
+.step li ul{
+	color: #717171;
+	font-weight : normal;	
+	list-style: none;
+	}
+
+.step li ul li{
+	font-style : italic;
+	margin-top : 0pt;
+	margin-bottom : 0pt;
+	margin-left : -40px;
+	}
+
+/* Procedure bullets 1st level */
+.step li ul li ul li{
+	list-style: disc;
+	margin-top : 0pt;
+	margin-bottom : 0pt;
+	margin-left : -24px;
+	text-indent : 0pt;
+	}
+
+/* Procedure bullets 2nd level */
+.step li ul li ul li ul li{
+	list-style-type: disc;
+	margin-top : 0pt;
+	margin-bottom : 0pt;
+	margin-left : 0pt;
+	text-indent : 0pt;
+	background-color: #00FFFF;
+	}
+
+
+
+
+/* END OF PROCEDURE SECTION */
+
+
+
+
+
+/* Note Style */
+
+.note  {
+	list-style: none;
+	font-weight : normal;
+	font-style : italic;
+	color: #717171;
+}
+
+.note li {
+	font-style : italic;
+	margin-top: 2px;
+	margin-bottom: 3px;
+	list-style: disc;
+	margin-left : 20px;
+}
+
+.note ul li{
+	font-style : italic;
+	margin-top : 0pt;
+	margin-bottom : 0pt;
+	margin-left : -40px;
+	list-style: disc;
+	}
+
+
+
+/* Alert Style */
+.alert  {
+	font-weight : normal;
+	font-style : italic;
+	color: #000000;
+	margin: 10pt 0 0 0;
+	padding: 1.25em 1.25em 1.25em 1.25em;
+	background: #fff;
+	border: 1px solid #5095b5;
+}
+
+.alert li {
+	margin-top: 2px;
+	margin-bottom: 3px;
+}
+
+
+
+
+/* Definitions */
+
+dt {
+	font-weight: bold;
+	margin-left: 0pt;
+	margin-bottom: 4pt;
+	border-bottom: solid #CCCCCC 1px;
+	background-color: #EEEEEE;
+	padding-left: 7px;
+}
+dd {
+	margin-left: 30pt;
+	margin-bottom: 10pt;
+}
+
+
+
+/* Abbreviations and Acronyms */
+
+abbr {
+	speak:spell-out;
+}
+
+acronym {
+	speak:normal;
+}
+
+abbr, acronym {
+	border-bottom: 1px dotted #888888;
+	cursor: help;
+	}
+
+
+
+
+
+
+/* KEYBOARD - Used in procedures/instructions */
+
+kbd {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	border:1px solid #999
+}
+
+
+/* KEYBOARD - Used to describe how keyboard shortcuts work */
+
+.jump_down scr kbd, {
+	border: none;
+	border-bottom-color: #444444;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;}
+
+
+/* KEYBOARD - Mobility enhancements */
+
+#jump_down kbd, .jump_up kbd, .jump_away kbd, .pdfbullet kbd, .screenonly kbd, #cttable kbd {
+	border: none;
+	border-bottom-color: #444444;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;}
+
+
+
+
+
+
+/* Highlighting - Used when editing help pages only */
+
+.highlight {
+	background-color: #66FF66;
+}
+
+
+
+/* SWIFTYPE */
+
+#st-search-input {
+	margin:5px;
+	float: right;
+	
+}
+
+.st-search-input {
+	margin:10px;
+	float: right;
+}
+
+
+/* Change color of search result text */
+.swiftype-widget .autocomplete ul li p.title {
+  color: FireBrick;
+}
+
+/* Change background color of selected search result */
+.swiftype-widget .autocomplete ul li.active {
+  background: none;
+  background-color: firebrick;
+  border-top: 1px solid darkred;
+  border-bottom: 1px solid darkred;
+  -webkit-box-shadow: 0 1px 0 #C0242D inset;
+}
+
+/* change the color of the section text (displayed below the title) */
+.swiftype-widget .autocomplete ul li.active .sections em {
+  color: white;
+}
+
+
+.st-result-listing a {
+  color: #C0242D;
+}
+
+.st-result-listing a:visited {
+  color: #0B2644;
+}
+
+.st-result-listing a:hover {
+  color: red;
+}
