@@ -47,6 +47,7 @@ module.exports = function (grunt) {
         files: [
           '<%= config.app %>/{,*/}*.html',
           '.tmp/styles/{,*/}*.css',
+          '.tmp/css_and_scripts/{,*/}*.css',
           '<%= config.app %>/images/{,*/}*'
         ]
       }
@@ -56,7 +57,7 @@ module.exports = function (grunt) {
     connect: {
       options: {
         port: 9000,
-        open: true,
+        open: 'http://localhost:9000/diva/index.htm',
         livereload: 35729,
         // Change this to '0.0.0.0' to access the server from outside
         hostname: 'localhost'
@@ -128,7 +129,7 @@ module.exports = function (grunt) {
           expand: true,
           cwd: '<%= config.app %>/styles',
           src: ['*.{scss,sass}'],
-          dest: '.tmp/styles',
+          dest: '.tmp/css_and_scripts',
           ext: '.css'
         }]
       }
