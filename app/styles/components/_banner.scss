@@ -3,7 +3,7 @@
 // =============================================================================
 
 #banner {
-	padding: $padding-small;
+	padding: $padding-small $padding-base;
 
 	color: $white;
 
@@ -14,11 +14,8 @@
 	}
 
 	h1 {
-		margin: 0;
+		@include make-container();
 
-		@media only screen and (min-width: $screen-md-min) {
-			width: $container-md;
-			margin: 0 auto;
-		}
+		margin: 0;
 	}
 }

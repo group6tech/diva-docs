@@ -1,0 +1,14 @@
+//
+// Mixins - Container
+// =============================================================================
+
+@mixin make-container() {
+	@media only screen and (min-width: $screen-md-min) {
+		width: $container-md;
+		margin: 0 auto;
+	}
+
+	@media only screen and (min-width: $screen-lg-min) {
+		width: $container-lg;
+	}
+}

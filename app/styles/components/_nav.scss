@@ -4,42 +4,68 @@
 
 #navlevel1,
 #navlevel2 {
-	padding: $padding-small;
+	padding: $padding-small $padding-base;
 
-	> ul {
+	@media only screen and (min-width: $screen-md-min) {
+		padding: $padding-base;
+	}
+
+	ul {
+		@include make-container();
+
 		margin: 0;
 		padding-left: 0;
 
 		list-style: none;
 	}
 
-	a {
-		color: $grey-400;
+	li {
+		padding: ($padding-small / 2) 0;
 
-		&:hover {
-			color: darken($grey-400, 10%);
+		@media only screen and (min-width: $screen-md-min) {
+			display: inline-block;
+			padding: 0;
+
+			+ li {
+				margin-left: $padding-base;
+			}
 		}
 	}
 
-	#current {
-		a {
-			color: $brand-primary;
+	#current a,
+	.active {
+		color: $brand-primary;
 
-			&:hover {
-				color: darken($brand-primary, 10%);
-			}
+		&:hover {
+			color: darken($brand-primary, 10%);
 		}
 	}
 }
 
 #navlevel1 {
+	font-size: 1.4rem;
+
 	background-color: $grey-800;
+
+	a {
+		color: $grey-400;
+
+		&:hover {
+			color: darken($brand-primary, 10%);
+		}
+	}
 }
 
 #navlevel2 {
-		background-color: $grey-100;
+	font-size: 1.3rem;
 
-		a {
-			color: $grey-400;
+	background-color: $grey-100;
+
+	a {
+		color: $grey-500;
+
+		&:hover {
+			color: darken($brand-primary, 10%);
 		}
+	}
 }
