@@ -1,0 +1,18 @@
+//
+// Components - Footer
+// =============================================================================
+
+#footer {
+	margin-top: ($padding-base * 2);
+	padding: $padding-base;
+
+	color: $grey-400;
+	font-size: 1.2rem;
+	text-align: center;
+
+	background-color: $grey-800;
+
+	@media only screen and (min-width: $screen-md-min) {
+		margin-top: ($padding-base * 4);
+	}
+}

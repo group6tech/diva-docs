@@ -22,6 +22,11 @@ body {
 	background-color: $bg-color;
 }
 
+#content {
+	padding: 0 $padding-base;
+	@include make-container();
+}
+
 
 // Links
 // -----------------------------------------------------------------------------
