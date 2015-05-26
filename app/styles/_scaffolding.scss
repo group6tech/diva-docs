@@ -22,9 +22,18 @@ body {
 	background-color: $bg-color;
 }
 
+img {
+	max-width: 100%;
+}
+
+kbd {
+	font-family: $font-family-base;
+}
+
 #content {
-	padding: 0 $padding-base;
 	@include make-container();
+
+	padding: 0 $padding-base;
 }
 
 

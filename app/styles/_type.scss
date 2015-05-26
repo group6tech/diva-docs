@@ -1,0 +1,14 @@
+//
+// Typography
+// =============================================================================
+
+hr {
+	border: 0 none;
+	border-top: 1px solid $grey-200;
+}
+
+.highlight {
+	color: $white;
+
+	background-color: $brand-primary;
+}

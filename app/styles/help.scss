@@ -8,7 +8,9 @@
 
 // Libraries
 //
-@import 'normalize-css/normalize.css';
+$fa-font-path: "https://netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts";
+@import 'font-awesome/scss/font-awesome';
+@import 'normalize-scss/normalize';
 
 // Variables and mixins
 //
@@ -18,9 +20,11 @@
 // Base styles
 //
 @import 'scaffolding';
+@import 'type';
 
 // Components
 //
 @import 'components/banner';
 @import 'components/footer';
+@import 'components/lists';
 @import 'components/nav';

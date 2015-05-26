@@ -2,6 +2,7 @@
   "name": "diva-docs",
   "private": true,
   "dependencies": {
-    "normalize-css": "^3.0.3"
+    "normalize-scss": "~3.0.1",
+    "font-awesome": "~4.3.0"
   }
 }
