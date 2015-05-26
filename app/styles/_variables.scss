@@ -1,0 +1,56 @@
+//
+// Variables
+// =============================================================================
+
+
+// Colours
+// -----------------------------------------------------------------------------
+
+$white:											#fff;
+
+$grey-100:									#f9f9f9;
+$grey-400:									#888;
+$grey-500:									#555;
+$grey-700:									#333;
+$grey-800:									#222;
+
+$brand-primary:							#0088cc;
+
+
+
+// Scaffolding
+//
+$bg-color:									$white;
+$link-color:								$brand-primary;
+$text-color:								$grey-700;
+
+
+
+// Fonts
+// -----------------------------------------------------------------------------
+
+$font-family-sans-serif:		'Open Sans', sans-serif;
+$font-family-base:					$font-family-sans-serif;
+
+$font-size-base:						1.6rem;
+
+$font-weight-base:					400;
+
+$line-height-base:					1.2;
+
+
+
+// Box Model
+// -----------------------------------------------------------------------------
+
+$padding-base:							1.6rem;
+$padding-small:							($padding-base / 2);
+
+
+
+// Breakpoints
+// -----------------------------------------------------------------------------
+
+$screen-md-min:							680px;
+
+$container-md:							640px;

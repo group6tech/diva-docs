@@ -1,0 +1,45 @@
+//
+// Components - Nav
+// =============================================================================
+
+#navlevel1,
+#navlevel2 {
+	padding: $padding-small;
+
+	> ul {
+		margin: 0;
+		padding-left: 0;
+
+		list-style: none;
+	}
+
+	a {
+		color: $grey-400;
+
+		&:hover {
+			color: darken($grey-400, 10%);
+		}
+	}
+
+	#current {
+		a {
+			color: $brand-primary;
+
+			&:hover {
+				color: darken($brand-primary, 10%);
+			}
+		}
+	}
+}
+
+#navlevel1 {
+	background-color: $grey-800;
+}
+
+#navlevel2 {
+		background-color: $grey-100;
+
+		a {
+			color: $grey-400;
+		}
+}

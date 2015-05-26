@@ -2,10 +2,24 @@
 // DIVA Documentation - help.css
 // =============================================================================
 
+// Fonts
+//
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700);
+
+// Libraries
+//
 @import 'normalize-css/normalize.css';
 
-body {
-  background: #fafafa;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333;
-}
+// Variables and mixins
+//
+@import 'variables';
+@import 'mixins';
+
+// Base styles
+//
+@import 'scaffolding';
+
+// Components
+//
+@import 'components/banner';
+@import 'components/nav';

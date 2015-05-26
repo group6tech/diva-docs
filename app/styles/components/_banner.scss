@@ -1,0 +1,24 @@
+//
+// Components - Banner
+// =============================================================================
+
+#banner {
+	padding: $padding-small;
+
+	color: $white;
+
+	background-color: $brand-primary;
+
+	@media only screen and (min-width: $screen-md-min) {
+		padding: $padding-base;
+	}
+
+	h1 {
+		margin: 0;
+
+		@media only screen and (min-width: $screen-md-min) {
+			width: $container-md;
+			margin: 0 auto;
+		}
+	}
+}
