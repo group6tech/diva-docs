@@ -23,7 +23,7 @@ module.exports = function (grunt) {
     // Watches files for changes and runs tasks based on the changed files
     watch: {
       assemble: {
-        files: ['<%= config.app %>/{,*/}*.hbs'],
+        files: ['<%= config.app %>/**/*.hbs'],
         tasks: ['newer:assemble'],
         options: {
           livereload: true
@@ -122,15 +122,33 @@ module.exports = function (grunt) {
     // Compiles the assemble.io files
     assemble: {
       options: {
-        layout: 'default.hbs',
+        layout: 'docs.hbs',
         layoutdir: '<%= config.app %>/layouts',
         partials: '<%= config.app %>/partials/**/*.hbs'
       },
-      pages: {
+      base: {
         expand: true,
         cwd: '<%= config.app %>',
         src: '*.hbs',
         dest: '.tmp/'
+      },
+      v2: {
+        options: {
+          version: '2.0'
+        },
+        expand: true,
+        cwd: '<%= config.app %>/docs/2.0',
+        src: '**/*.hbs',
+        dest: '.tmp/docs/2.0/'
+      },
+      v3: {
+        options: {
+          version: '3.0'
+        },
+        expand: true,
+        cwd: '<%= config.app %>/docs/3.0',
+        src: '**/*.hbs',
+        dest: '.tmp/docs/3.0/'
       }
     },
 

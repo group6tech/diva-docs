@@ -1,0 +1,8 @@
+{{#each categories }}
+	<h3>{{ category }}</h3>
+	<ul>
+		{{#each pages}}
+			<li><a href="/docs/{{../../version}}/{{data.categories}}/{{filename}}">{{ data.title }}</a></li>
+		{{/ each}}
+	</ul>
+{{/each }}
