@@ -15,28 +15,43 @@
     <link rel="stylesheet" href="/styles/main.css">
     <!-- endbuild -->
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#toc">
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
+    <header class="navbar navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="/" class="navbar-brand">DIVA</a>
+        </div>
+        <nav>
+          {{> versionpicker this }}
+
+          <div class="pull-right visible-xs">
+            <button type="button" class="btn btn-inverse" data-toggle="offcanvas">
+              Nav
+            </button>
+          </div>
+
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="/">Home</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
 
     <div class="container">
-      <div class="header">
-        {{> versionpicker this }}
-
-        <ul class="nav navbar-nav pull-right">
-          <li class="active"><a href="/">Home</a></li>
-        </ul>
-        <h3 class="text-muted">DIVA</h3>
-      </div>
-
 			{{> body }}
+    </div>
 
-      <div class="footer">
+    <footer class="footer">
+      <div class="container">
         <p><span class="glyphicon glyphicon-heart"></span> from the Group 6 team</p>
       </div>
-
     </div>
 
 
@@ -60,6 +75,7 @@
 
     <!-- build:js({app,.tmp}) scripts/main.js -->
     <script src="/scripts/main.js"></script>
+    <script src="/scripts/offcanvas.js"></script>
     <!-- endbuild -->
 </body>
 </html>

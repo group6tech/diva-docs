@@ -1,0 +1,32 @@
+//
+// Components - Off Canvas
+// =============================================================================
+
+@mixin off-canvas-transition() {
+	transition: all .25s ease-out;
+}
+
+@media only screen and (max-width: $screen-sm-max) {
+	html, body {
+			overflow-x: hidden;
+	}
+
+	.row-offcanvas {
+		@include off-canvas-transition();
+
+		position: relative;
+		left: 0;
+
+		&.active {
+			left: 50%;
+		}
+	}
+
+	.sidenav-offcanvas {
+		position: absolute;
+		top: 0;
+		left: -50%;
+
+		width: 50%;
+	}
+}

@@ -1,0 +1,15 @@
+//
+// Components - Footer
+// =============================================================================
+
+.footer {
+	padding: 5rem 0;
+
+	text-align: center;
+
+	background-color: $gray-lighter;
+
+	@media only screen and (min-width: $screen-md-min) {
+		margin-top: 5rem;
+	}
+}
