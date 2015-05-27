@@ -22,6 +22,13 @@ module.exports = function (grunt) {
 
     // Watches files for changes and runs tasks based on the changed files
     watch: {
+      assemble: {
+        files: ['<%= config.app %>/{,*/}*.hbs'],
+        tasks: ['newer:assemble'],
+        options: {
+          livereload: true
+        }
+      },
       bower: {
         files: ['bower.json'],
         tasks: ['wiredep']
@@ -110,6 +117,21 @@ module.exports = function (grunt) {
         '<%= config.app %>/scripts/{,*/}*.js',
         '!<%= config.app %>/scripts/vendor/*'
       ]
+    },
+
+    // Compiles the assemble.io files
+    assemble: {
+      options: {
+        layout: 'default.hbs',
+        layoutdir: '<%= config.app %>/layouts',
+        partials: '<%= config.app %>/partials/**/*.hbs'
+      },
+      pages: {
+        expand: true,
+        cwd: '<%= config.app %>',
+        src: '*.hbs',
+        dest: '.tmp/'
+      }
     },
 
     // Compiles Sass to CSS and generates necessary files if requested
@@ -270,6 +292,7 @@ module.exports = function (grunt) {
     // Run some tasks in parallel to speed up build process
     concurrent: {
       server: [
+        'assemble',
         'sass:server',
         'copy:styles'
       ],
@@ -279,6 +302,8 @@ module.exports = function (grunt) {
       ]
     }
   });
+
+  grunt.loadNpmTasks('assemble');
 
 
   grunt.registerTask('serve', 'start the server and preview your app, --allow-remote for remote access', function (target) {
