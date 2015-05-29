@@ -3,4 +3,65 @@
 // =============================================================================
 
 .footer {
+	margin-top: 2rem;
+	padding: 4rem 0;
+
+	color: $gray;
+
+	background-color: $gray-darkest;
+
+	a {
+		color: $gray-light;
+	}
+
+	h4 {
+		margin-top: 0;
+		margin-bottom: $padding-small;
+	}
+
+	.copyright {
+		margin-top: ($padding-base * 2);
+
+		font-size: $font-size-smaller;
+	}
+
+	.form-inline {
+		margin-bottom: ($padding-base * 2);
+	}
+
+	.social {
+		a {
+			display: block;
+			height: 3.2rem;
+			width: 3.2rem;
+
+			font-size: 2.4rem;
+			text-align: center;
+
+			background-color: $gray;
+			border-radius: 50%;
+
+			.fa {
+				color: $gray-darkest;
+			}
+
+			&:hover {
+				background-color: lighten($gray, 10%);
+			}
+		}
+	}
+}
+
+.footer-releases {
+	@include list-unstyled();
+
+	a {
+		display: block;
+
+		color: $brand-primary;
+	}
+
+	li + li {
+		margin-top: $padding-small;
+	}
 }

@@ -287,15 +287,14 @@ module.exports = function (grunt) {
             '{,*/}*.html',
             'styles/fonts/{,*/}*.*'
           ]
-        }, {
-          src: 'node_modules/apache-server-configs/dist/.htaccess',
-          dest: '<%= config.dist %>/.htaccess'
-        }, {
+        }]
+      },
+      server: {
+        files: [{
           expand: true,
-          dot: true,
-          cwd: '.',
-          src: 'bower_components/bootstrap-sass-official/assets/fonts/bootstrap/*',
-          dest: '<%= config.dist %>'
+          cwd: 'bower_components/font-awesome/fonts',
+          src: '*',
+          dest: '.tmp/fonts'
         }]
       },
       styles: {
@@ -312,6 +311,7 @@ module.exports = function (grunt) {
       server: [
         'assemble',
         'sass:server',
+        'copy:server',
         'copy:styles'
       ],
       dist: [

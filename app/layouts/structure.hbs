@@ -28,7 +28,39 @@
 
     <footer class="footer">
       <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Group 6 team</p>
+        <div class="row">
+          <div class="col-md-6 col-md-push-6">
+            <h4>Latest releases</h4>
+            <ul class="footer-releases"></ul>
+          </div>
+
+          <div class="col-md-6 col-md-pull-6">
+            <h4>Subscribe</h4>
+            <p>Recieve email updates about the latest DIVA features and fixes (unsubscribe anytime).</p>
+
+            <form class="form-inline">
+              <div class="form-group">
+                <label for="signupEmail" class="sr-only">Email address</label>
+                <input type="email" class="form-control" name="signupEmail" placeholder="Email"/>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+
+            <h4>Follow Group 6 Technologies</h4>
+            <ul class="social list-inline">
+              <li><a href=""><i class="fa fa-twitter"></i></a></li>
+              <li><a href=""><i class="fa fa-facebook"></i></a></li>
+              <li><a href=""><i class="fa fa-flickr"></i></a></li>
+              <li><a href=""><i class="fa fa-github"></i></a></li>
+            </ul>
+
+            <div class="copyright">
+              <p>Copyright &copy; 2015 Group 6 Technologies Ltd.</p>
+              <p><i class="fa fa-pencil"></i> with <i class="fa fa-heart"></i> by the Group 6 team</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -41,6 +73,7 @@
 
     <!-- build:js({app,.tmp}) scripts/main.js -->
     <script src="/scripts/main.js"></script>
+    <script src="/scripts/releases.js"></script>
     <script src="/scripts/offcanvas.js"></script>
     <!-- endbuild -->
 </body>

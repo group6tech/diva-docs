@@ -1,0 +1,32 @@
+//
+// Forms
+// =============================================================================
+
+
+
+// Controls
+// -----------------------------------------------------------------------------
+
+.form-control {
+	padding: $padding-base-vertical $padding-base-horizontal;
+	height: 3.6rem;
+
+	line-height: $line-height-base;
+
+	border: 1px solid $input-border;
+	border-radius: $border-radius;
+}
+
+
+
+// Inline
+// -----------------------------------------------------------------------------
+
+.form-inline {
+	.form-control,
+	.form-group {
+		display: inline-block;
+
+		vertical-align: middle;
+	}
+}

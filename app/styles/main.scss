@@ -2,11 +2,9 @@
 // DIVA Help Documentation - main stylesheet
 // =============================================================================
 
-$fa-font-path: 'https://netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
-
-// bower:scss
-@import 'normalize-scss/_normalize.scss';
 @import 'font-awesome/scss/font-awesome';
+// bower:scss
+@import "normalize-scss/_normalize.scss";
 // endbower
 
 // Variables and mixins
@@ -15,8 +13,10 @@ $fa-font-path: 'https://netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 
 // Core CSS
 @import 'scaffolding';
-@import 'grid';
 @import 'buttons';
+@import 'forms';
+@import 'grid';
+@import 'type';
 
 // Components
 @import 'components/button-groups';

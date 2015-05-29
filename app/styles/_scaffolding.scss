@@ -31,6 +31,9 @@ body {
   font-family: $font-family-base;
   font-size: $font-size-base;
   font-weight: $font-weight-normal;
+  line-height: $line-height-base;
+
+  background-color: $bg-color;
 }
 
 
@@ -42,4 +45,19 @@ a {
   @include transition-default();
 
   text-decoration: none;
+}
+
+
+// Screen readers
+// -----------------------------------------------------------------------------
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
 }
