@@ -44,6 +44,7 @@ body {
 a {
   @include transition-default();
 
+  color: $brand-primary;
   text-decoration: none;
 }
 

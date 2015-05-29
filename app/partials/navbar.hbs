@@ -7,13 +7,16 @@
 		<nav class="navbar-nav">
 			<ul class="nav">
 				<li><a href="/">Home</a></li>
+				<li><a href="/support.html">Support</a></li>
 			</ul>
 
 			{{> versionpicker this }}
 
-			<button type="button" class="sidenav-toggle btn btn-inverse" data-toggle="offcanvas">
-				<i class="fa fa-bars"></i>
-			</button>
+			{{#if version }}
+				<button type="button" class="sidenav-toggle btn btn-inverse" data-toggle="offcanvas">
+					<i class="fa fa-bars"></i>
+				</button>
+			{{/if}}
 		</nav>
 	</div>
 </header>
