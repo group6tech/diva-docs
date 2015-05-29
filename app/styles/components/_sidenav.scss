@@ -2,16 +2,18 @@
 // Components - Sidenav
 // =============================================================================
 
-.sidenav {
-	@media only screen and (max-width: $screen-sm-max) {
-		height: 100%;
+// Default, all breakpoints
+// -----------------------------------------------------------------------------
 
-		color: #fff;
 
+
+// Extra small, and small
+// -----------------------------------------------------------------------------
+
+@media only screen and (max-width: $screen-sm-max) {
+	.sidenav {
+		color: $white;
+		
 		background-color: $brand-primary;
-
-		a {
-			color: #fff;
-		}
 	}
 }

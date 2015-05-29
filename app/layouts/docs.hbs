@@ -2,22 +2,32 @@
 layout: structure.hbs
 ---
 
-<div class="row row-offcanvas">
-	<div class="col-md-3 col-lg-2 sidenav sidenav-offcanvas">
-		{{> sidenav this }}
-	</div>
-	<div class="col-md-9 col-lg-10">
-		<h1>{{ title }}</h1>
+<div class="offcanvas-wrap">
+	<div class="offcanvas-inner">
 
-		<div class="row">
-			<div class="col-lg-push-8 col-lg-4">
-				{{#if topics}}
-					{{> toc }}
-				{{/if}}
-			</div>
-			<div class="col-lg-pull-4 col-lg-8">
-				{{> body }}
-			</div>
+		<div class="offcanvas-sidenav-left sidenav">
+			{{> sidenav this }}
 		</div>
+
+		<div class="offcanvas-content">
+			<a href="/docs/{{ version }}/index.html"><span class="glyphicon glyphicon-arrow-left"></span>  Back to documentation</a>
+
+			<h1>{{ title }}</h1>
+
+			<div class="row">
+				<div class="col-lg-push-8 col-lg-4">
+					{{#if topics}}
+						{{> toc }}
+					{{/if}}
+				</div>
+				<div class="col-lg-pull-4 col-lg-8">
+					{{> body }}
+				</div>
+			</div>
+
+			<a href="/docs/{{ version }}/index.html"><span class="glyphicon glyphicon-arrow-left"></span>  Back to documentation</a>
+			<a href="#top"><span class="glyphicon glyphicon-arrow-up"></span>  Back to top</a>
+		</div>
+
 	</div>
 </div>

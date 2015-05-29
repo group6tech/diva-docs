@@ -3,19 +3,4 @@
 // =============================================================================
 
 .toc {
-	&.affix {
-		position: static;
-	}
-
-	@media only screen and (min-width: $screen-lg-min) {
-		&.affix {
-			position: fixed;
-			top: 10px;
-			right: auto;
-		}
-	}
-
-	h3 {
-		margin-top: 0;
-	}
 }

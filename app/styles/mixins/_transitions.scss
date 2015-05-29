@@ -1,0 +1,7 @@
+//
+// Mixins - Transitions
+// =============================================================================
+
+@mixin transition-offcanvas() {
+	transition: all .25s ease-out;
+}

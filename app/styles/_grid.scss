@@ -1,0 +1,69 @@
+//
+// Grid System
+// =============================================================================
+
+
+// Containers
+// -----------------------------------------------------------------------------
+
+.container {
+	@include container-fixed;
+
+	@media only screen and (min-width: $screen-sm-min) {
+		width: $container-sm;
+	}
+
+	@media only screen and (min-width: $screen-md-min) {
+		width: $container-md;
+	}
+
+	@media only screen and (min-width: $screen-lg-min) {
+		width: $container-lg;
+	}
+}
+
+.container-fluid {
+	@include container-fixed;
+}
+
+
+
+
+// Rows
+// -----------------------------------------------------------------------------
+
+.row {
+	@include make-row();
+}
+
+
+
+
+// Columns
+// -----------------------------------------------------------------------------
+
+// Common styles
+//
+@include make-grid-columns;
+
+// Extra small grid
+//
+@include make-grid(xs);
+
+// Small grid
+//
+@media only screen and (min-width: $screen-sm-min) {
+	@include make-grid(sm);
+}
+
+// Medium grid
+//
+@media only screen and (min-width: $screen-md-min) {
+	@include make-grid(md);
+}
+
+// Large grid
+//
+@media only screen and (min-width: $screen-lg-min) {
+	@include make-grid(lg);
+}

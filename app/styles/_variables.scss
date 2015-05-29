@@ -1,0 +1,63 @@
+//
+// Variables
+// =============================================================================
+
+
+
+// Colours
+// -----------------------------------------------------------------------------
+
+$black:														#000;
+$white:														#fff;
+
+$brand-primary:										#0088cc;
+
+
+
+// Components
+// -----------------------------------------------------------------------------
+
+// Paddings
+//
+
+$padding-base:										16px;
+$padding-base-horizontal:					$padding-base;
+$padding-base-vertical:						($padding-base / 2);
+
+
+
+// Responsive System
+// -----------------------------------------------------------------------------
+
+// Breakpoints
+//
+
+// Extra small
+$screen-xs-min:										480px;
+
+// Small
+$screen-sm-min:										768px;
+
+// Medium
+$screen-md-min:										992px;
+
+// Large
+$screen-lg-min:										1200px;
+
+// Max values
+$screen-xs-max:										($screen-sm-min - 1);
+$screen-sm-max:										($screen-md-min - 1);
+$screen-md-max:										($screen-lg-min - 1);
+
+
+// Grid
+//
+$grid-columns:										12;
+$grid-gutter-width:								($padding-base * 2);
+$grid-float-breakpoint:						$screen-sm-min;
+
+// Containers
+//
+$container-sm:										(720px + $grid-gutter-width);
+$container-md:										(940px + $grid-gutter-width);
+$container-lg:										(1140px + $grid-gutter-width);

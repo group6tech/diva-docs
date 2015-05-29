@@ -1,0 +1,33 @@
+//
+// Mixins - Grid
+// =============================================================================
+
+// Centered container
+@mixin container-fixed($gutter: $grid-gutter-width) {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: ($gutter / 2);
+	padding-right: ($gutter / 2);
+
+	@include clearfix();
+}
+
+// Wrapper for a series of columnes
+@mixin make-row($gutter: $grid-gutter-width) {
+  margin-left:  ($gutter / -2);
+  margin-right: ($gutter / -2);
+
+  @include clearfix;
+}
+
+// Make a column
+
+@mixin make-column($columns, $gutter: $grid-gutter-width) {
+  position: relative;
+  min-height: 1px;
+  padding-left:  ($gutter / 2);
+  padding-right: ($gutter / 2);
+
+  float: left;
+  width: percentage(($columns / $grid-columns));
+}
