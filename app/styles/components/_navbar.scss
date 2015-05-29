@@ -6,7 +6,6 @@
 .navbar {
 	color: $white;
 
-	//background: linear-gradient(45deg, $brand-light, $brand-dark);
 	background: linear-gradient(45deg, $brand-dark, $brand-light);
 
 	a {
@@ -37,10 +36,12 @@
 			display: inline-block;
 
 			> a {
-				display: block;
+				display: inline-block;
 				padding: $padding-base-vertical $padding-base-horizontal;
 
 				color: transparentize($white, .15);
+
+				vertical-align: middle;
 
 				&:hover {
 					color: $white;
@@ -54,15 +55,11 @@
 	}
 
 	.btn {
-		margin-top: .5rem;
+		margin-top: .1rem;
 
 		+ .btn,
 		+ .btn-group {
 			margin-left: $padding-base;
-		}
-
-		@media only screen and (min-width: $screen-md-min) {
-			margin-top: 2rem;
 		}
 	}
 
@@ -75,4 +72,6 @@
 
 .navbar-nav {
 	float: right;
+
+	margin-top: .5rem;
 }
