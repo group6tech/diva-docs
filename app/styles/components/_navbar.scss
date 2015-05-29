@@ -1,0 +1,78 @@
+//
+// Components
+// Navbar
+// =============================================================================
+
+.navbar {
+	color: $white;
+
+	//background: linear-gradient(45deg, $brand-light, $brand-dark);
+	background: linear-gradient(45deg, $brand-dark, $brand-light);
+
+	a {
+		color: $white;
+	}
+
+	.brand {
+		float: left;
+
+		font-size: 3rem;
+		font-weight: $font-weight-light;
+		line-height: 5rem;
+
+		@media only screen and (min-width: $screen-md-min) {
+			line-height: 8rem;
+		}
+
+		img {
+			position: relative;
+			top: .5rem;
+		}
+	}
+
+	.nav {
+		display: none;
+
+		> li {
+			display: inline-block;
+
+			> a {
+				display: block;
+				padding: $padding-base-vertical $padding-base-horizontal;
+
+				color: transparentize($white, .15);
+
+				&:hover {
+					color: $white;
+				}
+			}
+		}
+
+		@media only screen and (min-width: $screen-md-min) {
+			display: inline-block;
+		}
+	}
+
+	.btn {
+		margin-top: .5rem;
+
+		+ .btn,
+		+ .btn-group {
+			margin-left: $padding-base;
+		}
+
+		@media only screen and (min-width: $screen-md-min) {
+			margin-top: 2rem;
+		}
+	}
+
+	.sidenav-toggle {
+		@media only screen and (min-width: $screen-md-min) {
+			display: none;
+		}
+	}
+}
+
+.navbar-nav {
+	float: right;
+}

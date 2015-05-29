@@ -19,6 +19,27 @@
 
 // Body reset
 // -----------------------------------------------------------------------------
+
+html {
+  font-size: 10px;
+}
+
 body {
 	position: relative;
+
+  color: $text-color;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  font-weight: $font-weight-normal;
+}
+
+
+
+// Links
+// -----------------------------------------------------------------------------
+
+a {
+  @include transition-default();
+
+  text-decoration: none;
 }

@@ -8,14 +8,46 @@
 // -----------------------------------------------------------------------------
 
 $black:														#000;
+$gray-darkest:										#222;
+$gray-darker:											#333;
+$gray-dark:												#555;
+$gray:														#666;
 $white:														#fff;
 
 $brand-primary:										#0088cc;
+$brand-light:											#97e4fe;
+$brand-dark:											#0073b2;
+
+
+
+// Scaffolding
+// -----------------------------------------------------------------------------
+
+$text-color:											$gray;
+
+
+// Typography
+// -----------------------------------------------------------------------------
+
+$font-family-sans-serif:				  'Open Sans', sans-serif;
+$font-family-base:								$font-family-sans-serif;
+
+$font-size-base:									1.6rem;
+
+$font-weight-light:								300;
+$font-weight-normal:							400;
+$font-weight-medium:							600;
+$font-weight-bold:								700;
+
 
 
 
 // Components
 // -----------------------------------------------------------------------------
+
+// Borders
+
+$border-radius:										3px;
 
 // Paddings
 //

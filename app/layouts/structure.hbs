@@ -14,34 +14,15 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="/styles/main.css">
     <!-- endbuild -->
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
   </head>
   <body data-spy="scroll" data-target="#toc">
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <header id="top" class="navbar navbar-static-top">
-      <div class="container">
-        <div class="navbar-header">
-          <a href="/" class="navbar-brand">DIVA</a>
-        </div>
-        <nav>
-          {{> versionpicker this }}
-
-          <div class="pull-right visible-xs visible-sm">
-            <button type="button" class="btn btn-inverse" data-toggle="offcanvas">
-              Nav
-            </button>
-          </div>
-
-          <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-              <li><a href="/">Home</a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </header>
+    {{> navbar }}
 
     {{> body }}
 

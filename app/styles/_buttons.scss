@@ -1,0 +1,24 @@
+//
+// Buttons
+// =============================================================================
+
+.btn {
+	@include transition-default();
+
+	display: inline-block;
+	padding: $padding-base-vertical $padding-base-horizontal;
+
+	border: 1px solid;
+	border-radius: $border-radius;
+}
+
+.btn-default {
+}
+
+.btn-primary {
+	@include style-button($white, $brand-primary);
+}
+
+.btn-inverse {
+	@include style-button($white, $gray-darkest);
+}
