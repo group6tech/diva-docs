@@ -1,0 +1,22 @@
+//
+// Layouts - Category Index
+// =============================================================================
+
+.category-list {
+	.category {
+		h2 {
+			font-size: 3.2rem;
+
+			border-bottom: solid 1px $gray-lighter;
+		}
+
+		h4 {
+			font-size: 2rem;
+			margin-bottom: $padding-small;
+		}
+
+		+ .category {
+			margin-top: ($padding-base * 2);
+		}
+	}
+}
