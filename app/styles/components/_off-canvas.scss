@@ -21,6 +21,11 @@ $sidenav-width-sm:	50%;
 	padding-right: ($grid-gutter-width / 2);
 }
 
+.offcanvas-content {
+	padding-top: $padding-base;
+	padding-bottom: $padding-base;
+}
+
 
 // Extra small, and small
 // -----------------------------------------------------------------------------
@@ -91,11 +96,11 @@ $sidenav-width-sm:	50%;
 	}
 
 	.offcanvas-sidenav-left {
-		@include make-column(3);
+		@include make-column(2);
 	}
 
 	.offcanvas-content {
-		@include make-column(9);
+		@include make-column(10);
 	}
 }
 

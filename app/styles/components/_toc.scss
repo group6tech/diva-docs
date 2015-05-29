@@ -3,4 +3,33 @@
 // =============================================================================
 
 .toc {
+	margin-bottom: ($padding-base * 2);
+
+	font-size: $font-size-small;
+	font-weight: $font-weight-medium;
+
+	border-bottom: 1px solid $gray-lightest;
+
+	a {
+		position: relative;
+
+		display: block;
+		padding: ($padding-small / 2) 0;
+
+		&:before {
+			margin-right: .2rem;
+			content: "#";
+			color: $brand-light;
+
+			@media only screen and (min-width: $screen-md-min) {
+				position: absolute;
+				left: -1.2rem;
+			}
+		}
+	}
+
+	@media only screen and (min-width: $screen-lg-min) {
+		position: relative;
+		top: -($padding-base);
+	}
 }
