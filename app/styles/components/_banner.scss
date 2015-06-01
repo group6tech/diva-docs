@@ -17,5 +17,16 @@
 		@include make-container();
 
 		margin: 0;
+		padding-left: 4rem;
+
+		background-image: url(/images/diva-32.png);
+		background-repeat: no-repeat;
+		background-position: left center;
+
+		@media only screen and (min-width: $screen-md-min) {
+			padding-left: 6rem;
+
+			background-image: url(/images/diva-48.png);
+		}
 	}
 }
