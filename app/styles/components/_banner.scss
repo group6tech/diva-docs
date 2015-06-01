@@ -3,6 +3,8 @@
 // =============================================================================
 
 #banner {
+	position: relative;
+
 	padding: $padding-small $padding-base;
 
 	color: $white;
@@ -27,6 +29,16 @@
 			padding-left: 6rem;
 
 			background-image: url(/images/diva-48.png);
+		}
+	}
+
+	.nav-toggle {
+		position: absolute;
+		right: $padding-base;
+		top: 1.4rem;
+
+		@media only screen and (min-width: $screen-md-min) {
+			display: none;
 		}
 	}
 }

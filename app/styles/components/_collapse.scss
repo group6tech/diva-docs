@@ -1,0 +1,17 @@
+//
+// Components - Collapse
+// =============================================================================
+
+.collapse {
+	display: none;
+
+	&.in {
+		display: block;
+	}
+}
+
+.navbar-collapse {
+	@media only screen and (min-width: $screen-md-min) {
+		display: block;
+	}
+}

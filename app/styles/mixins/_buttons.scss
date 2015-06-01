@@ -1,0 +1,17 @@
+//
+// Mixins - Buttons
+// =============================================================================
+
+@mixin button-style($color, $bg, $border: $bg) {
+	color: $color;
+
+	background-color: $bg;
+	border-color: $border;
+
+	transition: all .25s;
+
+	&:hover {
+		background-color: darken($bg, 10%);
+		border-color: darken($border, 10%);
+	}
+}
