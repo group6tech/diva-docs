@@ -2,11 +2,19 @@
 // Components - Lists
 // =============================================================================
 
+
+
+// Jump Lists
+// -----------------------------------------------------------------------------
+
 #jump_down,
 .jump_away,
 .jump_down,
 .jump_up {
+	margin-top: $padding-small;
+	margin-bottom: $padding-small;
 	padding-left: $padding-base;
+
 	list-style: none;
 
 	li:before {
@@ -34,16 +42,38 @@
 }
 
 
+
+// Instruction Steps
+// -----------------------------------------------------------------------------
+
 .step {
 	> li {
+		margin-bottom: $padding-small;
+		
 		> ul {
-			padding-left: 0;
+			@extend .note;
 
-			color: $grey-300;
-			font-size: $font-size-small;
-			font-style: italic;
+			padding-left: 0;
 
 			list-style: none;
 		}
 	}
+}
+
+
+
+
+// Definition Lists
+// -----------------------------------------------------------------------------
+
+dt {
+	margin-bottom: $padding-small;
+
+	font-size: $font-size-large;
+	font-weight: $font-weight-bold;
+	border-bottom: 1px solid $border-color;
+}
+
+dd {
+	margin-left: 0;
 }
