@@ -32,3 +32,18 @@
 .jump_up li:before {
 	content: "\f077";
 }
+
+
+.step {
+	> li {
+		> ul {
+			padding-left: 0;
+
+			color: $grey-300;
+			font-size: $font-size-small;
+			font-style: italic;
+
+			list-style: none;
+		}
+	}
+}
