@@ -53,7 +53,7 @@ module.exports = function (grunt) {
     connect: {
       options: {
         port: 9000,
-        open: 'http://localhost:9000/diva/index.htm',
+        open: 'http://localhost:9000/',
         livereload: 35729,
         // Change this to '0.0.0.0' to access the server from outside
         hostname: 'localhost'
