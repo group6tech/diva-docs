@@ -27,7 +27,7 @@ $sidenav-width-sm:	50%;
 
 @media only screen and (max-width: $screen-sm-max) {
 	.offcanvas-wrap {
-		overflow-x: hidden;
+		overflow: hidden;
 	}
 
 	.offcanvas-inner {

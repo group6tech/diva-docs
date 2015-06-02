@@ -6,9 +6,13 @@
 	margin-bottom: ($padding-base * 2);
 
 	font-size: $font-size-small;
-	font-weight: $font-weight-medium;
+	font-weight: $font-weight-normal;
 
 	border-bottom: 1px solid $gray-lightest;
+
+	h4 {
+		font-weight: $font-weight-medium;
+	}
 
 	a {
 		position: relative;
@@ -19,11 +23,10 @@
 		&:before {
 			margin-right: .2rem;
 			content: "#";
-			color: $brand-light;
+			color: $brand-primary;
 
-			@media only screen and (min-width: $screen-md-min) {
-				position: absolute;
-				left: -1.2rem;
+			@media only screen and (min-width: $screen-lg-min) {
+				display: none;
 			}
 		}
 	}
@@ -32,11 +35,38 @@
 		position: relative;
 		top: -($padding-base);
 
+		border-bottom: 0px solid;
+
 		&.affix {
 			position: fixed;
-			top: $padding-base;
+			top: -2.2rem;
 
 			width: 204px;
+		}
+
+		.active {
+			a:before {
+				position: absolute;
+				left: -1.2rem;
+
+				display: block;
+
+				color: $brand-primary;
+			}
+		}
+	}
+
+	.top {
+		display: none;
+
+		a {
+			&:before {
+				display: none;
+			}
+		}
+
+		@media only screen and (min-width: $screen-lg-min) {
+			display: block;
 		}
 	}
 }

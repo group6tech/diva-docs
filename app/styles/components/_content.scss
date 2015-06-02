@@ -10,20 +10,13 @@
 	background-color: $white;
 
 	h2 {
-	}
+		position: relative;
 
-	@media only screen and (min-width: $screen-md-min) {
+		&:before {
+			margin-right: ($padding-small / 2);
 
-		h2 {
-			position: relative;
-
-			&:before {
-				position: absolute;
-				left: -($padding-base);
-
-				content: "#";
-				color: $brand-light;
-			}
+			content: "#";
+			color: $brand-primary;
 		}
 	}
 }
