@@ -1,0 +1,14 @@
+//
+// Tables
+// =============================================================================
+
+.table_data {
+	th,
+	td {
+		padding: $padding-small;
+
+		border: 1px solid $border-color;
+
+		vertical-align: top;
+	}
+}
