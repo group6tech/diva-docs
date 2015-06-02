@@ -33,7 +33,17 @@ body {
   font-weight: $font-weight-normal;
   line-height: $line-height-base;
 
+  background-color: $footer-bg;
+}
+
+.body-wrap {
+  padding: ($padding-base * 2) 0;
+
   background-color: $bg-color;
+
+  @media only screen and (min-width: $screen-md-min) {
+    padding: ($padding-base * 3) 0;
+  }
 }
 
 

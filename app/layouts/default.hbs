@@ -2,6 +2,10 @@
 layout: structure.hbs
 ---
 
-<div class="container">
-	{{> body }}
+<div class="body-wrap">
+	<div class="container">
+		<h1 class="page-header">{{ title }}</h1>
+
+		{{> body }}
+	</div>
 </div>

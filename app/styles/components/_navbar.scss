@@ -35,6 +35,8 @@
 	.nav {
 		display: none;
 
+		margin: 0;
+
 		> li {
 			display: inline-block;
 
@@ -77,4 +79,12 @@
 	float: right;
 
 	margin-top: .5rem;
+
+	@media only screen and (min-width: $screen-md-min) {
+		margin-top: 2rem;
+	}
+}
+
+.index .navbar {
+	background: none;
 }

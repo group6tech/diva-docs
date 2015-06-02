@@ -2,22 +2,24 @@
 layout: structure.hbs
 ---
 
-<div class="container">
-	<h1 class="page-header">v{{ version }} Documentation</h1>
+<div class="body-wrap">
+	<div class="container">
+		<h1 class="page-header">v{{ version }} Documentation</h1>
 
-	<div class="category-list">
-		{{#each categories }}
-			<div class="category">
-				<h2>{{ category }}</h2>
-				<div class="row">
-					{{#each pages}}
-						<div class="col-md-6 col-lg-4">
-							<h4><a href="/docs/{{../../version}}/{{data.categories}}/{{filename}}">{{ data.title }}</a></h4>
-							<p>{{ data.desc }}</p>
-						</div>
-					{{/ each}}
+		<div class="category-list">
+			{{#each categories }}
+				<div class="category">
+					<h2>{{ category }}</h2>
+					<div class="row">
+						{{#each pages}}
+							<div class="col-md-6 col-lg-4">
+								<h4><a href="/docs/{{../../version}}/{{data.categories}}/{{filename}}">{{ data.title }}</a></h4>
+								<p>{{ data.desc }}</p>
+							</div>
+						{{/ each}}
+					</div>
 				</div>
-			</div>
-		{{/each }}
+			{{/each }}
+		</div>
 	</div>
 </div>
