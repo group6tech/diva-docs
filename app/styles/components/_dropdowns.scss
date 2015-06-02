@@ -3,5 +3,38 @@
 // =============================================================================
 
 .dropdown-menu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: $zindex-dropdown;
+
 	display: none;
+	margin-top: ($padding-small / 2);
+	padding: ($padding-small / 2) 0;
+	min-width: ($padding-base * 10);
+
+	background-color: $dropdown-bg;
+	border-radius: $border-radius;
+
+	list-style: none;
+
+	> li {
+		> a {
+			display: block;
+			padding: $padding-base-vertical $padding-base-horizontal;
+
+			&:hover {
+				background-color: rgba(0,0,0,.2);
+			}
+		}
+	}
+}
+
+.dropdown-menu-right {
+	left: auto;
+	right: 0;
+}
+
+.open .dropdown-menu {
+	display: block;
 }

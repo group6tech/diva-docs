@@ -58,21 +58,27 @@ $input-border:										$gray-lightest;
 
 
 
-// Components
+// Box Model
 // -----------------------------------------------------------------------------
 
 // Borders
-
+//
 $border-radius:										3px;
 
 // Paddings
 //
-
 $padding-base:										16px;
 $padding-base-horizontal:					$padding-base;
 $padding-base-vertical:						($padding-base / 2);
 
 $padding-small:										($padding-base / 2);
+
+// Z-Index
+//
+$zindex-dropdown:									1000;
+$zindex-navbar:										1000;
+
+
 
 
 
@@ -111,3 +117,12 @@ $grid-float-breakpoint:						$screen-sm-min;
 $container-sm:										(720px + $grid-gutter-width);
 $container-md:										(940px + $grid-gutter-width);
 $container-lg:										(1140px + $grid-gutter-width);
+
+
+
+// Components
+// -----------------------------------------------------------------------------
+
+// Dropdowns
+//
+$dropdown-bg:											$brand-primary;
