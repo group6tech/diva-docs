@@ -1,0 +1,23 @@
+//
+// Layouts - Latest Releases
+// =============================================================================
+
+#latestReleaseContainer {
+	header {
+		margin-bottom: $padding-base;
+
+		h2 {
+			margin-bottom: 0;
+		}
+
+		time {
+			@extend .note;
+		}
+	}
+
+	article + article {
+		margin-top: ($padding-base * 2);
+
+		border-top: 1px solid $border-color;
+	}
+}

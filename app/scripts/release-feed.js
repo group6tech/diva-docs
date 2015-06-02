@@ -15,7 +15,7 @@ $(function() {
 							pubDate = new Date(e.publishedDate),
 							formattedDate = pubDate.getDate() + ' ' + months[pubDate.getMonth()] + ' ' + pubDate.getFullYear();
 
-					$header.append('<h2><a href="' + e.link + '" target="_blank">' + e.title  + '</a><h2>');
+					$header.append('<h2><a href="' + e.link + '" target="_blank">' + e.title  + '</a></h2>');
 					$header.append('<time pubdate datetime="' + pubDate.toISOString() + '">' + formattedDate  + '</time>');
 					$header.appendTo($article);
 					$article.append(e.content);

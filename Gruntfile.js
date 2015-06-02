@@ -23,7 +23,7 @@ module.exports = function (grunt) {
     // Watches files for changes and runs tasks based on the changed files
     watch: {
       js: {
-        files: ['<%= config.app %>/css_and_scripts/**/*.js'],
+        files: ['<%= config.app %>/scripts/**/*.js'],
         tasks: ['jshint', 'concat'],
         options: {
           livereload: true
