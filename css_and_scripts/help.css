@@ -32,6 +32,15 @@ body {
 	margin: auto;
 }
 
+#banner a {
+	font-size : 16pt;  
+	font-weight : bold;
+    text-decoration:none;
+    color:#ffffff;
+    color: rgba(255, 255, 255, 1);
+      }
+
+
 
 
 /* Primary Interpage Navigation */
@@ -191,7 +200,7 @@ h1  {	font-size : 16pt;
 	font-weight : bold;
 	margin-top : 8pt;
 	margin-bottom : 9pt;}
-
+	
 h2  {	font-size : 14pt;  
 	font-weight : normal;  
 	font-style : normal;
@@ -849,3 +858,9 @@ kbd {
 .st-result-listing a:hover {
   color: red;
 }
+
+
+
+/* Hide Matt's button */
+
+.nav-toggle { display: none; }
