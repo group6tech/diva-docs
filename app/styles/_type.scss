@@ -39,6 +39,13 @@ hr {
 // Styles
 // -----------------------------------------------------------------------------
 
+.alert {
+	padding: $padding-base;
+	
+	border: 1px solid $brand-primary;
+	border-radius: $border-radius;
+}
+
 .highlight {
 	color: $white;
 
