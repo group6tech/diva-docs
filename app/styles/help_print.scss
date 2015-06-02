@@ -2,4 +2,114 @@
 // DIVA Documentation - help-print.css
 // =============================================================================
 
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700);
+
 @import 'normalize-scss/normalize';
+@import 'variables';
+@import 'mixins';
+
+@media only print {
+	html {
+		font-size: 10px;
+	}
+
+	body {
+		padding: 0 $padding-base;
+
+		font-family: $font-family-base;
+		font-size: $font-size-base;
+
+		//max-width: 800px;
+	}
+
+	a {
+		color: $brand-primary;
+		text-decoration: none;
+	}
+
+	dt {
+		margin-bottom: $padding-small;
+
+		font-size: $font-size-large;
+		font-weight: $font-weight-semi-bold;
+
+		border-bottom: 1px solid $border-color;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		margin-top: 0;
+		margin-bottom: $padding-small;
+	}
+
+	hr {
+		clear: both;
+		border: 0 none;
+		border-top: 1px solid $grey-200;
+	}
+
+	img {
+		max-width: 100%;
+	}
+
+	p {
+		margin-top: 0;
+		margin-bottom: $padding-small;
+	}
+
+	#banner {
+		h1 {
+			padding-left: 4rem;
+
+			background-image: url(/images/diva-32.png);
+			background-repeat: no-repeat;
+			background-position: left center;
+		}
+	}
+
+	.highlight {
+		color: $white;
+
+		background-color: $brand-primary;
+	}
+
+	.imagecentre,
+	.imageright {
+		font-size: $font-size-small;
+		font-style: italic;
+		text-align: center;
+
+		img {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	.imageright {
+		float: right;
+	}
+
+	.note {
+		color: $grey-400;
+		font-size: $font-size-small;
+		font-style: italic;
+
+		list-style: none;
+	}
+
+	.step {
+		> li {
+			> ul {
+				@extend .note;
+
+				padding-left: 0;
+			}
+		}
+	}
+
+	#mainNav,
+	.jump_up,
+	.nav-toggle {
+		display: none;
+	}
+}
