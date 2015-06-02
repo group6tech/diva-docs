@@ -7,16 +7,16 @@ layout: structure.hbs
 		<h1 class="page-header">v{{ version }} Documentation</h1>
 
 		<div class="category-list">
-			{{#each categories }}
+			{{#each docs.categories }}
 				<div class="category">
-					<h2>{{ category }}</h2>
+					<h2>{{ name }}</h2>
 					<div class="row">
-						{{#each pages}}
+						{{#each pages }}
 							<div class="col-md-6 col-lg-4">
-								<h4><a href="/docs/{{../../version}}/{{data.categories}}/{{filename}}">{{ data.title }}</a></h4>
-								<p>{{ data.desc }}</p>
+								<h4><a href="/docs/{{../../version}}/{{../slug}}/{{slug}}.html">{{ title }}</a></h4>
+								<p>{{ desc }}</p>
 							</div>
-						{{/ each}}
+						{{/each }}
 					</div>
 				</div>
 			{{/each }}

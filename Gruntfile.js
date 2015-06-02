@@ -23,7 +23,7 @@ module.exports = function (grunt) {
     // Watches files for changes and runs tasks based on the changed files
     watch: {
       assemble: {
-        files: ['<%= config.app %>/**/*.hbs'],
+        files: ['<%= config.app %>/**/*.{hbs,json}'],
         tasks: ['newer:assemble'],
         options: {
           livereload: true
@@ -130,7 +130,8 @@ module.exports = function (grunt) {
       },
       v2: {
         options: {
-          version: '2.0'
+          version: '2.0',
+          data: ['<%= config.app %>/docs/2.0/docs.json']
         },
         expand: true,
         cwd: '<%= config.app %>/docs/2.0',
@@ -139,7 +140,8 @@ module.exports = function (grunt) {
       },
       v3: {
         options: {
-          version: '3.0'
+          version: '3.0',
+          data: ['<%= config.app %>/docs/3.0/docs.json']
         },
         expand: true,
         cwd: '<%= config.app %>/docs/3.0',

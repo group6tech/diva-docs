@@ -58,7 +58,7 @@ a {
   text-decoration: none;
 
   &:hover {
-    color: $brand-dark;
+    color: darken($brand-primary, 20%);
   }
 }
 
