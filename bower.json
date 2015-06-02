@@ -4,5 +4,8 @@
   "dependencies": {
     "normalize-scss": "~3.0.1",
     "font-awesome": "~4.3.0"
+  },
+  "devDependencies": {
+    "bootstrap": "~3.3.4"
   }
 }

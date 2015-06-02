@@ -22,13 +22,9 @@ module.exports = function (grunt) {
 
     // Watches files for changes and runs tasks based on the changed files
     watch: {
-      bower: {
-        files: ['bower.json'],
-        tasks: ['wiredep']
-      },
       js: {
-        files: ['<%= config.app %>/scripts/{,*/}*.js'],
-        tasks: ['jshint'],
+        files: ['<%= config.app %>/css_and_scripts/**/*.js'],
+        tasks: ['jshint', 'concat'],
         options: {
           livereload: true
         }
@@ -150,15 +146,15 @@ module.exports = function (grunt) {
       }
     },
 
-    // Automatically inject Bower components into the HTML file
-    wiredep: {
-      app: {
-        ignorePath: /^\/|\.\.\//,
-        src: ['<%= config.app %>/index.html']
-      },
-      sass: {
-        src: ['<%= config.app %>/styles/{,*/}*.{scss,sass}'],
-        ignorePath: /(\.\.\/){1,2}bower_components\//
+    // Join files together
+    concat: {
+      js: {
+        src: [
+          'bower_components/jquery/dist/jquery.js',
+          'bower_components/bootstrap/js/collapse.js',
+          '<%= config.app %>/scripts/release-feed.js'
+        ],
+        dest: '.tmp/css_and_scripts/main.js'
       }
     },
 
@@ -166,12 +162,13 @@ module.exports = function (grunt) {
     uglify: {
       dist: {
         expand: true,
-        cwd: '<%= config.app %>/scripts',
+        cwd: '.tmp/css_and_scripts',
         src: '*.js',
-        dest: '<%= config.dist %>/scripts'
+        dest: '<%= config.dist %>/css_and_scripts'
       }
     },
 
+    // Minify css files
     cssmin: {
       dist: {
         expand: true,
@@ -193,7 +190,8 @@ module.exports = function (grunt) {
             '*.{ico,png,txt}',
             'images/{,*/}*.webp',
             '**/*.{html,htm}',
-            'styles/fonts/{,*/}*.*'
+            'styles/fonts/{,*/}*.*',
+            'CNAME'
           ]
         }, {
           expand: true,
@@ -212,16 +210,29 @@ module.exports = function (grunt) {
       }
     },
 
+    // Deploy to Github Pages
+    'gh-pages': {
+      options: {
+        base: 'dist',
+        clone: '.gh-pages',
+        repo: 'git@github.com:group6tech/diva-help.git',
+        branch: 'gh-pages'
+      },
+      src: ['**']
+    },
+
+
     // Run some tasks in parallel to speed up build process
     concurrent: {
       server: [
         'sass:server',
-        'copy:styles'
+        'copy:styles',
+        'concat'
       ],
       dist: [
         'sass',
         'copy:styles',
-        'uglify'
+        'concat'
       ]
     }
   });
@@ -237,7 +248,6 @@ module.exports = function (grunt) {
 
     grunt.task.run([
       'clean:server',
-      'wiredep',
       'concurrent:server',
       'autoprefixer',
       'connect:livereload',
@@ -252,11 +262,16 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'clean:dist',
-    'wiredep',
     'concurrent:dist',
     'autoprefixer',
     'cssmin',
+    'uglify',
     'copy:dist',
+  ]);
+
+  grunt.registerTask('deploy', [
+    'default',
+    'gh-pages'
   ]);
 
   grunt.registerTask('default', [
