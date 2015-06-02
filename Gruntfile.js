@@ -162,6 +162,25 @@ module.exports = function (grunt) {
       }
     },
 
+    // Uglify javscript files
+    uglify: {
+      dist: {
+        expand: true,
+        cwd: '<%= config.app %>/scripts',
+        src: '*.js',
+        dest: '<%= config.dist %>/scripts'
+      }
+    },
+
+    cssmin: {
+      dist: {
+        expand: true,
+        cwd: '.tmp/styles',
+        src: '*.css',
+        dest: '<%= config.dist %>/css_and_scripts'
+      }
+    },
+
     // Copies remaining files to places other tasks can use
     copy: {
       dist: {
@@ -173,12 +192,15 @@ module.exports = function (grunt) {
           src: [
             '*.{ico,png,txt}',
             'images/{,*/}*.webp',
-            '{,*/}*.html',
+            '**/*.{html,htm}',
             'styles/fonts/{,*/}*.*'
           ]
         }, {
-          src: 'node_modules/apache-server-configs/dist/.htaccess',
-          dest: '<%= config.dist %>/.htaccess'
+          expand: true,
+          dot: true,
+          cwd: '<%= config.app %>/images',
+          src: '**/*',
+          dest: '<%= config.dist %>/images'
         }]
       },
       styles: {
@@ -196,14 +218,10 @@ module.exports = function (grunt) {
         'sass:server',
         'copy:styles'
       ],
-      test: [
-        'copy:styles'
-      ],
       dist: [
         'sass',
         'copy:styles',
-        'imagemin',
-        'svgmin'
+        'uglify'
       ]
     }
   });
@@ -238,7 +256,6 @@ module.exports = function (grunt) {
     'concurrent:dist',
     'autoprefixer',
     'cssmin',
-    'uglify',
     'copy:dist',
   ]);
 
