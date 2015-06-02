@@ -31,5 +31,12 @@
 	@media only screen and (min-width: $screen-lg-min) {
 		position: relative;
 		top: -($padding-base);
+
+		&.affix {
+			position: fixed;
+			top: $padding-base;
+
+			width: 204px;
+		}
 	}
 }
