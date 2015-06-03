@@ -7,9 +7,19 @@
 	position: relative;
 	z-index: $zindex-navbar;
 
+	height: 10rem;
+
 	color: $white;
 
 	background: linear-gradient(45deg, $brand-dark, $brand-light);
+
+	@media only screen and (min-width: $screen-sm-min) {
+		height: 5rem;
+	}
+
+	@media only screen and (min-width: $screen-md-min) {
+		height: 8rem;
+	}
 
 	a {
 		color: $white;
@@ -87,4 +97,50 @@
 
 .index .navbar {
 	background: none;
+}
+
+
+
+// Search
+// -----------------------------------------------------------------------------
+
+.navbar-search {
+	position: absolute;
+	top: 5rem;
+	left: $padding-base;
+	right: $padding-base;
+
+	.form-control {
+		display: inline-block;
+		width: 100%;
+
+		background-color: rgba(255,255,255,.5);
+		vertical-align: middle;
+	}
+
+	.fa {
+		position: absolute;
+		right: $padding-small;
+		top: 1rem;
+	}
+
+	@media only screen and (min-width: $screen-sm-min) {
+		position: relative;
+		top: auto;
+		left: auto;
+		right: auto;
+
+		display: inline-block;
+		padding-top: .2rem;
+
+		.form-control {
+			width: 10rem;
+
+			color: $text-color;
+
+			&:focus {
+				width: 30rem;
+			}
+		}
+	}
 }
