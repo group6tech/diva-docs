@@ -27,6 +27,7 @@ $brand-dark:											#0073b2;
 // -----------------------------------------------------------------------------
 
 $bg-color:												$gray-lightest;
+$border-color:										transparentize($gray-lighter, .5);
 $text-color:											$gray;
 
 
@@ -72,6 +73,7 @@ $padding-base-horizontal:					$padding-base;
 $padding-base-vertical:						($padding-base / 2);
 
 $padding-small:										($padding-base / 2);
+$padding-large:										($padding-base * 2);
 
 // Z-Index
 //
