@@ -120,33 +120,34 @@ module.exports = function (grunt) {
       options: {
         layout: 'docs.hbs',
         layoutdir: '<%= config.app %>/layouts',
-        partials: '<%= config.app %>/partials/**/*.hbs'
+        partials: '<%= config.app %>/partials/**/*.hbs',
+        middleware: ['assemble-middleware-sitemap'],
+        collections: [{
+          title: 'pages',
+          sortby: 'sortOrder',
+          sortorder: 'ascending'
+        }]
       },
-      base: {
-        expand: true,
-        cwd: '<%= config.app %>',
-        src: '*.hbs',
-        dest: '.tmp/'
-      },
-      v2: {
+      site: {
         options: {
-          version: '2.0',
-          data: ['<%= config.app %>/docs/2.0/docs.json']
+          plugins: ['assemble-middleware-sitemap'],
+          sitemap: {
+            homepage: 'http://help.group6.co.nz',
+            changefreq: 'monthly',
+            robot: false
+          }
         },
-        expand: true,
-        cwd: '<%= config.app %>/docs/2.0',
-        src: '**/*.hbs',
-        dest: '.tmp/docs/2.0/'
-      },
-      v3: {
-        options: {
-          version: '3.0',
-          data: ['<%= config.app %>/docs/3.0/docs.json']
-        },
-        expand: true,
-        cwd: '<%= config.app %>/docs/3.0',
-        src: '**/*.hbs',
-        dest: '.tmp/docs/3.0/'
+        files: [{
+          expand: true,
+          cwd: '<%= config.app %>',
+          src: '*.hbs',
+          dest: '.tmp/'
+        }, {
+          expand: true,
+          cwd: '<%= config.app %>/docs',
+          src: '**/*.hbs',
+          dest: '.tmp/docs'
+        }]
       }
     },
 

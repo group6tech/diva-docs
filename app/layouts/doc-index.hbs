@@ -4,11 +4,27 @@ layout: structure.hbs
 
 <div class="body-wrap">
 	<div class="container">
-		<h1 class="page-header">v{{ version }} Documentation</h1>
+		<h1 class="page-header">v{{ page.version }} Documentation</h1>
 
 		{{> body }}
 
 		<div class="category-list">
+			<div class="category">
+				<h2>About DIVA</h2>
+				<div class="row">
+					{{#withSort pages 'data.sortOrder'}}
+						{{#is data.section "about"}}
+						{{#is data.version ../../page.version}}
+						<div class="col-md-6 col-lg-4">
+							<h4><a href="#">{{ this.data.title }}</a></h4>
+							{{ this.data.desc }}
+						</div>
+						{{/is}}
+						{{/is}}
+					{{/withSort}}
+				</div>
+			</div>
+
 			{{#each docs.categories }}
 				<div class="category">
 					<h2>{{ name }}</h2>
