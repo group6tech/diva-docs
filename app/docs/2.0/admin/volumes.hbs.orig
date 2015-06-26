@@ -1,0 +1,24 @@
+---
+<<<<<<< HEAD
+title: Volumes
+topics:
+ - about: About Volumes
+ - dongle: License Key
+ - assign: Assigning a Volume to a DIVA License Pool
+ - remove: Removing a Volume from a DIVA License Pool
+---
+
+<h2 id="about">About Volumes</h2>
+
+<h2 id="dongle">License Key</h2>
+
+<h2 id="assign">Assigning a Volume to a DIVA License Pool</h2>
+
+<h2 id="remove">Removing a Volume from a DIVA License Pool</h2>
+=======
+title:
+topics:
+ -
+ -
+---
+>>>>>>> origin/assemble

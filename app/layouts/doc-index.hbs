@@ -6,6 +6,8 @@ layout: structure.hbs
 	<div class="container">
 		<h1 class="page-header">v{{ version }} Documentation</h1>
 
+		{{> body }}
+
 		<div class="category-list">
 			{{#each docs.categories }}
 				<div class="category">
@@ -13,7 +15,7 @@ layout: structure.hbs
 					<div class="row">
 						{{#each pages }}
 							<div class="col-md-6 col-lg-4">
-								<h4><a href="/docs/{{../../version}}/{{../slug}}/{{slug}}.html">{{ title }}</a></h4>
+								<h4><a href="/docs/{{../../version}}/{{#if ../slug}}{{../../slug}}/{{/if}}{{slug}}.html">{{ title }}</a></h4>
 								<p>{{ desc }}</p>
 							</div>
 						{{/each }}

@@ -5,9 +5,13 @@
 .category-list {
 	.category {
 		h2 {
-			font-size: 3.2rem;
+			padding-bottom: $padding-small;
 
-			border-bottom: solid 1px $gray-lighter;
+			font-size: 1.8rem;
+			font-weight: $font-weight-light;
+			text-transform: uppercase;
+
+			border-bottom: 1px solid $border-color;
 		}
 
 		h4 {
@@ -17,6 +21,18 @@
 
 		+ .category {
 			margin-top: ($padding-base * 2);
+		}
+
+		@media only screen and (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+			.col-md-6:nth-child(2n+1) {
+				clear: left;
+			}
+		}
+
+		@media only screen and (min-width: $screen-lg-min) {
+			.col-lg-4:nth-child(3n+1) {
+				clear: left;
+			}
 		}
 	}
 }

@@ -5,6 +5,22 @@
 // Default, all breakpoints
 // -----------------------------------------------------------------------------
 
+.sidenav {
+	h3 {
+		padding-bottom: $padding-small;
+
+		font-size: $font-size-small;
+		font-weight: $font-weight-light;
+		text-transform: uppercase;
+
+		border-bottom: 1px solid $border-color;
+	}
+
+	.nav {
+		margin-bottom: $padding-large;
+	}
+}
+
 
 
 // Extra small, and small
@@ -13,7 +29,7 @@
 @media only screen and (max-width: $screen-sm-max) {
 	.sidenav {
 		color: $white;
-		
+
 		background-color: $brand-primary;
 	}
 }

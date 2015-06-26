@@ -1,0 +1,45 @@
+---
+<<<<<<< HEAD
+title: Users
+topics:
+ - add: Adding a DIVA User Account
+ - permissions: Modifying a User's Access to One or More Drives
+ - enable: Enabling a User Account
+ - disable: Disabling a User Account
+ - signout: Forcing a User to Sign Off DIVA Client
+ - delete: Deleting a User Account
+ - password: Resetting a User's Password
+ - sysgroups: System User Groups
+ - usergroup: Setting Up a User Group
+ - roleadd: Adding a User Account to a User Group
+ - roleremove: Removing a User Account from a User Group
+---
+
+<h2 id="add">Adding a DIVA User Account</h2>
+
+<h2 id="permissions">Modifying a User's Access to One or More Drives</h2>
+
+<h2 id="enable">Enabling a User Account</h2>
+
+<h2 id="disable">Disabling a User Account</h2>
+
+<h2 id="signout">Forcing a User to Sign Off DIVA Client</h2>
+
+<h2 id="delete">Deleting a User Account</h2>
+
+<h2 id="password">Resetting a User's Password</h2>
+
+<h2 id="sysgroups">System User Groups</h2>
+
+<h2 id="usergroup">Setting Up a User Group</h2>
+
+<h2 id="roleadd">Adding a User Account to a User Group</h2>
+
+<h2 id="roleremove">Removing a User Account from a User Group</h2>
+=======
+title:
+topics:
+ -
+ -
+---
+>>>>>>> origin/assemble
