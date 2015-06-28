@@ -22,15 +22,19 @@
 		+ .category {
 			margin-top: ($padding-base * 2);
 		}
+	}
+
+	.topic {
+		margin-bottom: $padding-small;
 
 		@media only screen and (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-			.col-md-6:nth-child(2n+1) {
+			&:nth-child(2n+1) {
 				clear: left;
 			}
 		}
 
 		@media only screen and (min-width: $screen-lg-min) {
-			.col-lg-4:nth-child(3n+1) {
+			&:nth-child(3n+1) {
 				clear: left;
 			}
 		}

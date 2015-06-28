@@ -152,9 +152,24 @@ module.exports = function (grunt) {
           dest: '.tmp/'
         }, {
           expand: true,
-          cwd: '<%= config.app %>/docs',
-          src: '**/*.hbs',
-          dest: '.tmp/docs'
+          cwd: '<%= config.app %>/docs/2.0',
+          src: '*.hbs',
+          dest: '.tmp/docs/2.0'
+        }, {
+          expand: true,
+          cwd: '<%= config.app %>/docs/2.0/about',
+          src: '*.hbs',
+          dest: '.tmp/docs/2.0/about'
+        }, {
+          expand: true,
+          cwd: '<%= config.app %>/docs/2.0/admin',
+          src: '*.hbs',
+          dest: '.tmp/docs/2.0/admin'
+        }, {
+          expand: true,
+          cwd: '<%= config.app %>/docs/2.0/user',
+          src: '*.hbs',
+          dest: '.tmp/docs/2.0/user'
         }]
       }
     },

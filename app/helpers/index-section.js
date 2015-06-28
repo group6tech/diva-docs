@@ -22,7 +22,7 @@
 			pages.forEach(function(page) {
 				if (page.data.section === section && page.data.version === version) {
 					var url = '/docs/' + version + '/' + section + '/' + page.filename;
-					content += '<div class="col-md-6 col-lg-4">';
+					content += '<div class="topic col-md-6 col-lg-4">';
 					content += '<h4><a href="' + url + '">' + page.data.title + '</a></h4>';
 					content += page.data.desc;
 					content += '</div>'; // col
