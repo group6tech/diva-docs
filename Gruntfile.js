@@ -23,8 +23,15 @@ module.exports = function (grunt) {
     // Watches files for changes and runs tasks based on the changed files
     watch: {
       assemble: {
-        files: ['<%= config.app %>/**/*.{hbs,json}'],
+        files: ['<%= config.app %>/**/*.{hbs,json}', '<%= config.app %>/helpers/**/*.json'],
         tasks: ['newer:assemble'],
+        options: {
+          livereload: true
+        }
+      },
+      helpers: {
+        files: ['<%= config.app %>/helpers/**/*.json'],
+        tasks: ['assemble'],
         options: {
           livereload: true
         }
@@ -121,6 +128,7 @@ module.exports = function (grunt) {
         layout: 'docs.hbs',
         layoutdir: '<%= config.app %>/layouts',
         partials: '<%= config.app %>/partials/**/*.hbs',
+        helpers: ['<%= config.app %>/helpers/**/*.js'],
         middleware: ['assemble-middleware-sitemap'],
         collections: [{
           title: 'pages',

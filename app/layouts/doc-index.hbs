@@ -9,35 +9,9 @@ layout: structure.hbs
 		{{> body }}
 
 		<div class="category-list">
-			<div class="category">
-				<h2>About DIVA</h2>
-				<div class="row">
-					{{#withSort pages 'data.sortOrder'}}
-						{{#is data.section "about"}}
-						{{#is data.version ../../page.version}}
-						<div class="col-md-6 col-lg-4">
-							<h4><a href="#">{{ this.data.title }}</a></h4>
-							{{ this.data.desc }}
-						</div>
-						{{/is}}
-						{{/is}}
-					{{/withSort}}
-				</div>
-			</div>
-
-			{{#each docs.categories }}
-				<div class="category">
-					<h2>{{ name }}</h2>
-					<div class="row">
-						{{#each pages }}
-							<div class="col-md-6 col-lg-4">
-								<h4><a href="/docs/{{../../version}}/{{#if ../slug}}{{../../slug}}/{{/if}}{{slug}}.html">{{ title }}</a></h4>
-								<p>{{ desc }}</p>
-							</div>
-						{{/each }}
-					</div>
-				</div>
-			{{/each }}
+			{{ indexsection pages page.version "about" "About DIVA" }}
+			{{ indexsection pages page.version "user" "Users Guide" }}
+			{{ indexsection pages page.version "admin" "Administrators Guide" }}
 		</div>
 	</div>
 </div>
