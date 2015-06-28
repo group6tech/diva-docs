@@ -30,7 +30,7 @@ module.exports = function (grunt) {
         }
       },
       helpers: {
-        files: ['<%= config.app %>/helpers/**/*.json'],
+        files: ['<%= config.app %>/helpers/**/*.js'],
         tasks: ['assemble'],
         options: {
           livereload: true

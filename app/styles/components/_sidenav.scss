@@ -19,6 +19,20 @@
 	.nav {
 		margin-bottom: $padding-large;
 	}
+
+	.active {
+		position: relative;
+
+		font-weight: $font-weight-bold;
+
+		&:before {
+			position: absolute;
+			left: -1.2rem;
+
+			content: "#";
+			color: $brand-primary;
+		}
+	}
 }
 
 
