@@ -1,0 +1,33 @@
+{
+  "name": "help.group6.co.nz",
+  "version": "2.0.0",
+  "description": "Help documentation for DIVA",
+  "private": true,
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/group6tech/diva-help.git"
+  },
+  "author": "Group 6 Technologies <support@group6.co.nz> (http://www.group6.co.nz)",
+  "contributors": [
+    {
+      "name": "Matt Dwen",
+      "email": "matt@dwen.co.nz"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/group6tech/diva-help/issues"
+  },
+  "homepage": "http://help.group6.co.nz",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-connect": "^0.10.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-jekyll": "^0.4.2",
+    "grunt-newer": "^1.1.1",
+    "load-grunt-tasks": "^3.2.0",
+    "time-grunt": "^1.2.1"
+  }
+}
