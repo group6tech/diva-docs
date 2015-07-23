@@ -16,6 +16,8 @@
   ],
   "devDependencies": {
     "normalize-scss": "~3.0.3",
-    "font-awesome": "~4.3.0"
+    "font-awesome": "~4.3.0",
+    "jquery": "~2.1.4",
+    "velocity": "~1.2.2"
   }
 }

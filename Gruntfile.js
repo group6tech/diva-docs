@@ -46,11 +46,14 @@ module.exports = function(grunt) {
       },
       livereload: {
         options: {
-          base: [
-            '<%= config.jekyll %>',
-            '<%= config.temp %>',
-            '<%= config.app %>'
-          ]
+          middleware: function(connect) {
+            return [
+              connect.static(config.jekyll),
+              connect.static(config.temp),
+              connect().use('/bower_components', connect.static('./bower_components')),
+              connect.static(config.src)
+            ];
+          }
         }
       }
     },
@@ -62,6 +65,12 @@ module.exports = function(grunt) {
         files: ['<%= config.src %>/**/*.{html,md}', '<%= config.src %>/*.yml'],
         tasks: ['jekyll:server']
       },
+      js: {
+        files: ['<%= config.src %>/scripts/{,*/}*.js'],
+        options: {
+          livereload: true
+        }
+      },
       sass: {
         files: ['<%= config.src %>/styles/{,*/}*.scss'],
         tasks: ['sass:server']
@@ -72,7 +81,7 @@ module.exports = function(grunt) {
         },
         files: [
           '<%= config.jekyll %>/{,*/}*.html',
-          '<%= config.temp %>/styles/{,*/}*.css'
+          '<%= config.temp %>/styles/{,*/}*.css',
         ]
       },
     },

@@ -8,9 +8,24 @@
 // -----------------------------------------------------------------------------
 
 .subnav {
-  padding-bottom: $padding-base;
+  position: relative;
 
   border-bottom: 1px solid $border-color;
+}
+
+
+
+// Subnav toggle
+// -----------------------------------------------------------------------------
+
+.subnav__toggle {
+  position: absolute;
+  top: 0;
+  right: $padding-base;
+
+  display: block;
+  padding-left: $padding-small;
+  padding-right: $padding-small;
 }
 
 
@@ -18,7 +33,13 @@
 // Subnav nav
 // -----------------------------------------------------------------------------
 
-.subnav .nav {
+.subnav__nav {
+  display: none;
+  padding-bottom: $padding-base;
+
+  &.in {
+    //display: block;
+  }
 
   li {
     display: block;
