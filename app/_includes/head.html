@@ -2,7 +2,11 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>{{ page.title }} | {{ site.name }}</title>
+  <title>
+    {{ page.title }}
+    {% if page.categoryTitle %} &dash; {{ page.categoryTitle }}{% endif %}
+    &dash; {{ site.name }}
+  </title>
 
   <meta name="description" content="{{ site.description }}">
 

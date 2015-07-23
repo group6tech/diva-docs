@@ -22,23 +22,26 @@ defaults:
     values:
       layout: "default"
       sortOrder: 0
-  -
+  - # v2
     scope:
       path: "v2"
     values:
       version: "v2"
-  -
+  - # v2 Admin
     scope:
       path: "v2/admin"
     values:
       category: "admin"
-  -
+      categoryTitle: "Admin Guide"
+  - # v2 - Admin - Drives
     scope:
       path: "v2/admin/drives"
     values:
       topic: "drives"
-  -
+      topicTitle: "Drives"
+  - # v2 - Admin - Nodes
     scope:
       path: "v2/admin/nodes"
     values:
       topic: "nodes"
+      topicTitle: "Nodes"
