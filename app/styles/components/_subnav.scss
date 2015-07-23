@@ -11,7 +11,13 @@
 //
 
 body.admin.drives .subnav__admin-drives,
-body.admin.nodes .subnav__admin-nodes {
+body.admin.favourites .subnav__admin-favourites,
+body.admin.media .subnav__admin-media,
+body.admin.nodes .subnav__admin-nodes,
+body.admin.projects .subnav__admin-projects,
+body.admin.setup .subnav__admin-setup,
+body.admin.system .subnav__admin-system,
+body.admin.users .subnav__admin-users {
   font-weight: bold;
 }
 

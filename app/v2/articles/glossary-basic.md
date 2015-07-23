@@ -3,6 +3,18 @@ title: Glossary of Basic Terms
 category: user
 ---
 
+DIVA Client
+-----------
+
+DIVA Fusion
+-----------
+
+DIVA Node
+---------
+
+DIVA Server
+-----------
+
 Drives
 ------
 
@@ -14,3 +26,6 @@ See [What are the different Drive types?](/v2/articles/what-are-the-different-dr
 
 Favourites
 ----------
+
+Node
+----
