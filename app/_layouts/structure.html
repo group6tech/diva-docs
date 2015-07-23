@@ -7,7 +7,9 @@
     {% if page.category == 'admin'%}{% include subnav-admin.html %}{% endif %}
     {% if page.category == 'user'%}{% include subnav-user.html %}{% endif %}
 
-    {{ content }}
+    <div class="container">
+      {{ content }}
+    </div>
 
     {% include footer.html %}
 

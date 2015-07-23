@@ -48,7 +48,8 @@ module.exports = function(grunt) {
         options: {
           base: [
             '<%= config.jekyll %>',
-            '<%= config.temp %>'
+            '<%= config.temp %>',
+            '<%= config.app %>'
           ]
         }
       }
@@ -74,6 +75,16 @@ module.exports = function(grunt) {
           '<%= config.temp %>/styles/{,*/}*.css'
         ]
       },
+    },
+
+
+    // Copy assets around that aren't normally moved
+    copy: {
+      build: {
+        files: [
+          { expand: true, flatten: true, src: 'bower_components/font-awesome/fonts/*', dest: '<%= config.temp %>/fonts' }
+        ]
+      }
     },
 
     // Compile the Jekyll resources
@@ -106,6 +117,16 @@ module.exports = function(grunt) {
           ext: '.css'
         }]
       }
+    },
+
+    // Tasks which can run at the same time
+    //
+    concurrent: {
+      build: [
+        'jekyll:server',
+        'sass:server',
+        'copy:build'
+      ]
     }
   });
 
@@ -118,8 +139,7 @@ module.exports = function(grunt) {
   //
   grunt.registerTask('build', [
     'clean:server',
-    'jekyll:server',
-    'sass:server'
+    'concurrent:build',
   ]);
 
   // Serve

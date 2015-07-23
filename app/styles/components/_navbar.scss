@@ -3,6 +3,29 @@
 // =============================================================================
 
 .navbar {
+  padding-top: $padding-base;
+  padding-bottom: $padding-base;
+  
+  text-align: center;
+}
+
+
+// Brand
+// -----------------------------------------------------------------------------
+
+.navbar__brand {
+  margin: 0;
+}
+
+
+
+// Logo
+// -----------------------------------------------------------------------------
+
+.navbar__logo {
+  width: ($padding-base * 3);
+
+  vertical-align: middle;
 }
 
 

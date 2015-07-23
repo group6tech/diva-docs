@@ -1,0 +1,46 @@
+//
+// Footer
+// =============================================================================
+
+.footer {
+  padding-top: ($padding-base * 2);
+  padding-bottom: ($padding-base * 2);
+
+  color: $grey-lighter;
+  font-size: 1.4rem;
+  text-align: center;
+
+  background-color: $grey-lightest;
+
+  a {
+    color: $grey-lighter;
+
+    &:hover {
+      color: $grey-light;
+    }
+  }
+
+  .fa-circle {
+    padding-left: $padding-small;
+    padding-right: $padding-small;
+
+    font-size: .6rem;
+  }
+}
+
+
+
+// Social Links
+// -----------------------------------------------------------------------------
+
+.nav.footer__social-links {
+  margin-top: $padding-large;
+  margin-bottom: $padding-large;
+
+  font-size: 3.6rem;
+
+  li {
+    padding-left: $padding-small;
+    padding-right: $padding-small;
+  }
+}

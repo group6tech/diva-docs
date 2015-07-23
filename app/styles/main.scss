@@ -3,17 +3,33 @@
 // =============================================================================
 
 
-// Reset
+// External Libraries
 // -----------------------------------------------------------------------------
 
+@import 'font-awesome/scss/font-awesome';
 @import 'normalize-scss/normalize';
 
+
+
+// Variables and Mixins
+// -----------------------------------------------------------------------------
+
+@import 'variables';
+
+
+
+// Core CSS
+// -----------------------------------------------------------------------------
+
+@import 'scaffolding';
+@import 'grid';
 
 
 
 // Components
 // -----------------------------------------------------------------------------
 
+@import 'components/footer';
 @import 'components/navbar';
 @import 'components/navs';
 @import 'components/subnav';
