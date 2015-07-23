@@ -9,3 +9,25 @@
 
 name: Help documentation for the DIVA Media System
 description: Help documentation and guides for DIVA Fusion, DIVA Server, DIVA Node, and DIVA Client on Mac and Windows
+
+
+
+# Page Defaults
+# ------------------------------------------------------------------------------
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: "v2"
+    values:
+      version: "2"
+  -
+    scope:
+      path: "v2/admin"
+    values:
+      category: "admin"

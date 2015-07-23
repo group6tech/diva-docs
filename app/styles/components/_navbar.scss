@@ -1,0 +1,22 @@
+//
+// Components - Navbar
+// =============================================================================
+
+.navbar {
+  ul {
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+  }
+}
+
+
+
+// Items
+// -----------------------------------------------------------------------------
+
+body.admin .navbar__admin {
+  font-weight: bold;
+}

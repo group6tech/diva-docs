@@ -16,6 +16,7 @@ module.exports = function(grunt) {
   var config = {
     src: 'app',
     dest: 'dist',
+    jekyll: '.jekyll',
     temp: '.tmp'
   };
 
@@ -45,7 +46,10 @@ module.exports = function(grunt) {
       },
       livereload: {
         options: {
-          base: ['<%= config.temp %>']
+          base: [
+            '<%= config.jekyll %>',
+            '<%= config.temp %>'
+          ]
         }
       }
     },
@@ -53,15 +57,23 @@ module.exports = function(grunt) {
     // Watch file for changes
     //
     watch: {
-      options: {
-        livereload: true
-      },
       jekyll: {
-        files: [
-          '<%= config.src %>/**/*.{html,md}'
-        ],
+        files: ['<%= config.src %>/**/*.{html,md}', '<%= config.src %>/*.yml'],
         tasks: ['jekyll:server']
-      }
+      },
+      sass: {
+        files: ['<%= config.src %>/styles/{,*/}*.scss'],
+        tasks: ['sass:server']
+      },
+      livereload: {
+        options: {
+          livereload: true
+        },
+        files: [
+          '<%= config.jekyll %>/{,*/}*.html',
+          '<%= config.temp %>/styles/{,*/}*.css'
+        ]
+      },
     },
 
     // Compile the Jekyll resources
@@ -74,8 +86,25 @@ module.exports = function(grunt) {
       },
       server: {
         options: {
-          dest: '<%= config.temp %>'
+          dest: '<%= config.jekyll %>'
         }
+      }
+    },
+
+    // Compile the Sass stylesheets
+    //
+    sass: {
+      options: {
+        loadPath: ['bower_components']
+      },
+      server: {
+        files: [{
+          expand: true,
+          cwd: '<%= config.src %>/styles',
+          src: '*.scss',
+          dest: '<%= config.temp %>/styles',
+          ext: '.css'
+        }]
       }
     }
   });
@@ -89,7 +118,8 @@ module.exports = function(grunt) {
   //
   grunt.registerTask('build', [
     'clean:server',
-    'jekyll:server'
+    'jekyll:server',
+    'sass:server'
   ]);
 
   // Serve
