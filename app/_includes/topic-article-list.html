@@ -1,6 +1,6 @@
 {% assign sortedPages = site.pages | sort: 'sortOrder' %}
 
-<h2><a href="/{{ page.version }}/{{ page.category }}/{{ include.topic }}.html">{{ include.topic | capitalize }}</a></h2>
+<h3><a href="/{{ page.version }}/{{ page.category }}/{{ include.topic }}.html">{{ include.topic | capitalize }}</a></h3>
 
 <ul>
   {% for p in sortedPages %}

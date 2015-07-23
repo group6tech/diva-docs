@@ -18,6 +18,9 @@ body.admin.nodes .subnav__admin-nodes {
 // Users
 //
 
+body.user.drives .subnav__user-drives,
+body.user.favourites .subnav__user-favourites,
+body.user.misc .subnav__user-misc
 body.user.projects .subnav__user-projects,
 body.user.setup .subnav__user-setup {
   font-weight: bold;

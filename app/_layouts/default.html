@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html>
-  {% include head.html %}
-  <body class="{{ page.category }} {{ page.topic }}">
-    {% include navbar.html %}
+---
+layout: structure
+---
 
-    {% if page.category == 'admin'%}{% include subnav-admin.html %}{% endif %}
+<h1>{{ page.title }}</h1>
 
-    {{ content }}
-
-  </body>
-</html>
+{{ content }}
