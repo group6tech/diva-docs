@@ -5,7 +5,7 @@
 .navbar {
   padding-top: $padding-base;
   padding-bottom: $padding-base;
-  
+
   text-align: center;
 }
 
@@ -37,4 +37,22 @@ body.admin .navbar__admin,
 body.support .navbar__support,
 body.user .navbar__user {
   font-weight: bold;
+}
+
+
+
+
+// Form
+// -----------------------------------------------------------------------------
+
+.navbar__form {
+  .form__group {
+    display: inline-block;
+  }
+
+  .form__control {
+    display: inline-block;
+    
+    vertical-align: middle;
+  }
 }

@@ -7,10 +7,17 @@
       </a>
     </h1>
 
-    <ul class="nav">
-      <li><a class="navbar__user" href="/v2/user">User</a></li>
-      <li><a class="navbar__admin" href="/v2/admin">Admin</a></li>
+    <ul class="nav navbar__nav">
+      <li><a class="navbar__user" href="/v2/user">Users</a></li>
+      <li><a class="navbar__admin" href="/v2/admin">Admins</a></li>
       <li><a class="navbar__support" href="/support.html">Support</a></li>
     </ul>
+
+    <form class="navbar__form" role="search">
+      <div class="form__group">
+        <input type="text" class="form__control" placeholder="Search"/>
+      </div>
+      <button type="submit" class="btn btn--primary">Submit</button>
+    </form>
   </div>
 </nav>

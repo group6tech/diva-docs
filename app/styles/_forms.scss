@@ -1,0 +1,27 @@
+//
+// Forms
+// =============================================================================
+
+
+
+// Form control
+// -----------------------------------------------------------------------------
+
+.form__control {
+  display: block;
+
+  padding: $padding-smaller $padding-small;
+
+  color: $grey;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  transition: border-color ease-in-out .15s;
+
+  &:focus {
+    border-color: $brand-primary;
+    outline: 0;
+  }
+}

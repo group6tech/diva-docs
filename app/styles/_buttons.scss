@@ -1,0 +1,56 @@
+//
+// Buttons
+// =============================================================================
+
+
+
+// Base button
+// -----------------------------------------------------------------------------
+
+.btn {
+  display: inline-block;
+  padding: $padding-smaller $padding-base;
+
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  text-align: center;
+  white-space: nowrap;
+
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+
+  cursor: pointer;
+  vertical-align: middle;
+
+  transition: background-color ease-in-out .15s,
+              border-color ease-in-out .15s;
+}
+
+
+
+// Colours
+// -----------------------------------------------------------------------------
+
+.btn--primary {
+  color: $white;
+
+  background-color: $brand-primary;
+  border-color: $brand-primary;
+
+  &:hover {
+    color: $white;
+    background-color: darken($brand-primary, 10%);
+    border-color: darken($brand-primary, 10%);
+  }
+}
+
+
+
+// Sizes
+// -----------------------------------------------------------------------------
+
+.btn--large {
+  padding: $padding-small $padding-base;
+
+  font-size: 2rem;
+}

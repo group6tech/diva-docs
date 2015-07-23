@@ -51,9 +51,12 @@ $line-height-base:              2.4rem;
 
 
 
-// Padding
+// Box Model
 // -----------------------------------------------------------------------------
 
+$padding-smaller:               .4rem;
 $padding-small:                 .8rem;
 $padding-base:                  1.6rem;
 $padding-large:                 2.4rem;
+
+$border-radius:                 .3rem;
