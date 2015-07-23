@@ -1,0 +1,9 @@
+---
+layout: structure
+---
+
+{% for topic in page.topics %}
+  {% include topic-article-list.html topic = topic %}
+{% endfor %}
+
+{{ content }}

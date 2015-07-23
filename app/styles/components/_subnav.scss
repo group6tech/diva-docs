@@ -1,15 +1,16 @@
 //
-// Components - Navbar
+// Components - Subnav
 // =============================================================================
-
-.navbar {
-}
 
 
 
 // Items
 // -----------------------------------------------------------------------------
 
-body.admin .navbar__admin {
+// Admin
+//
+
+body.admin.drives .subnav__admin-drives,
+body.admin.nodes .subnav__admin-nodes {
   font-weight: bold;
 }

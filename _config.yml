@@ -21,13 +21,24 @@ defaults:
       path: ""
     values:
       layout: "default"
+      sortOrder: 0
   -
     scope:
       path: "v2"
     values:
-      version: "2"
+      version: "v2"
   -
     scope:
       path: "v2/admin"
     values:
       category: "admin"
+  -
+    scope:
+      path: "v2/admin/drives"
+    values:
+      topic: "drives"
+  -
+    scope:
+      path: "v2/admin/nodes"
+    values:
+      topic: "nodes"
