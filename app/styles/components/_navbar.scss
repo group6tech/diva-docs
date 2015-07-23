@@ -10,6 +10,8 @@
 // Items
 // -----------------------------------------------------------------------------
 
-body.admin .navbar__admin {
+body.admin .navbar__admin,
+body.support .navbar__support,
+body.user .navbar__user {
   font-weight: bold;
 }

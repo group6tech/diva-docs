@@ -2,13 +2,13 @@
 layout: structure
 ---
 
-<h1>{{ page.title }}</h1>
+<h3>{{ page.title }}</h3>
 
 {% assign sortedPages = site.pages | sort: 'sortOrder' %}
 
 <ul>
   {% for p in sortedPages %}
-    {% if p.category == page.category and p.topic == page.topic and p.name != 'index.html' %}
+    {% if p.category == page.category and p.topic == page.topic and p.hide != true %}
       <li><a href="{{ p.url }}">{{ p.title }}</a></li>
     {% endif %}
   {% endfor %}

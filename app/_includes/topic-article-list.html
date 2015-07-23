@@ -1,10 +1,10 @@
 {% assign sortedPages = site.pages | sort: 'sortOrder' %}
 
-<h2><a href="/{{ page.version }}/{{ page.category }}/{{ include.topic.slug }}/">{{ include.topic.title }}</a></h2>
+<h2><a href="/{{ page.version }}/{{ page.category }}/{{ include.topic }}.html">{{ include.topic | capitalize }}</a></h2>
 
 <ul>
   {% for p in sortedPages %}
-    {% if p.category == page.category and p.topic == include.topic.slug and p.name != 'index.html' %}
+    {% if p.category == page.category and p.topic == include.topic and p.hide != true %}
       <li><a href="{{ p.url }}">{{ p.title }}</a></li>
     {% endif %}
   {% endfor %}

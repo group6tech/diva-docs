@@ -16,32 +16,26 @@ description: Help documentation and guides for DIVA Fusion, DIVA Server, DIVA No
 # ------------------------------------------------------------------------------
 
 defaults:
-  -
+  - # All pages
     scope:
       path: ""
     values:
       layout: "default"
-      sortOrder: 0
+      sortOrder: 1000
   - # v2
     scope:
       path: "v2"
     values:
       version: "v2"
-  - # v2 Admin
+  - # v2 - Admin
     scope:
       path: "v2/admin"
     values:
       category: "admin"
-      categoryTitle: "Admin Guide"
-  - # v2 - Admin - Drives
+      hide: true
+  - # v2 - Users
     scope:
-      path: "v2/admin/drives"
+      path: "v2/user"
     values:
-      topic: "drives"
-      topicTitle: "Drives"
-  - # v2 - Admin - Nodes
-    scope:
-      path: "v2/admin/nodes"
-    values:
-      topic: "nodes"
-      topicTitle: "Nodes"
+      category: "user"
+      hide: true

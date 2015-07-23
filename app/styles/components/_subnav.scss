@@ -14,3 +14,11 @@ body.admin.drives .subnav__admin-drives,
 body.admin.nodes .subnav__admin-nodes {
   font-weight: bold;
 }
+
+// Users
+//
+
+body.user.projects .subnav__user-projects,
+body.user.setup .subnav__user-setup {
+  font-weight: bold;
+}

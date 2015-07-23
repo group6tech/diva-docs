@@ -5,6 +5,7 @@
     {% include navbar.html %}
 
     {% if page.category == 'admin'%}{% include subnav-admin.html %}{% endif %}
+    {% if page.category == 'user'%}{% include subnav-user.html %}{% endif %}
 
     {{ content }}
 
