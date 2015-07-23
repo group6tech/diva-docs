@@ -1,0 +1,7 @@
+//
+// Mixins - Gradients
+// =============================================================================
+
+@mixin g6-grad() {
+  background: linear-gradient(45deg, $brand-dark, $brand-light);
+}

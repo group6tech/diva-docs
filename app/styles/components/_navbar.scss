@@ -3,10 +3,19 @@
 // =============================================================================
 
 .navbar {
+  @include g6-grad();
+
   padding-top: $padding-base;
   padding-bottom: $padding-base;
 
+  color: $white;
   text-align: center;
+
+  @media only screen and (min-width: $screen-sm-min) {
+    min-height: ($padding-base * 5);
+
+    text-align: left;
+  }
 }
 
 
@@ -15,6 +24,16 @@
 
 .navbar__brand {
   margin: 0;
+
+  font-weight: $font-weight-light;
+
+  @media only screen and (min-width: $screen-sm-min) {
+    float: left;
+  }
+
+  a {
+    color: $white;
+  }
 }
 
 
@@ -30,15 +49,46 @@
 
 
 
+// Nav
+// -----------------------------------------------------------------------------
+
+.navbar__nav {
+  font-weight: $font-weight-light;
+
+  @media only screen and (min-width: $screen-sm-min) {
+    float: right;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  a {
+    padding-left: $padding-small;
+    padding-right: $padding-small;
+
+    @media only screen and (min-width: $screen-sm-min) {
+      padding-top: $padding-small + $padding-smaller;
+      padding-bottom: $padding-small + $padding-smaller;
+    }
+
+    color: transparentize($white, .2);
+
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+
+
 // Items
 // -----------------------------------------------------------------------------
 
 body.admin .navbar__admin,
 body.support .navbar__support,
 body.user .navbar__user {
-  font-weight: bold;
+  color: $white;
+  font-weight: $font-weight-normal;
 }
-
 
 
 
@@ -46,13 +96,36 @@ body.user .navbar__user {
 // -----------------------------------------------------------------------------
 
 .navbar__form {
+  margin-top: $padding-base;
+
+  @media only screen and (min-width: $screen-sm-min) {
+    float: right;
+    margin-top: $padding-small;
+  }
+
   .form__group {
     display: inline-block;
   }
 
   .form__control {
+    @include placeholder-color(transparentize($white, .5));
+
     display: inline-block;
-    
+    width: ($padding-base * 9);
+
+    color: $white;
+
+    background-color: transparent;
+    border-color: transparentize($white, .7);
+
     vertical-align: middle;
+
+    &:focus {
+      border-color: transparentize($white, .5);
+    }
+
+    @media only screen and (min-width: $screen-sm-min) {
+      width: ($padding-base * 6);
+    }
   }
 }
