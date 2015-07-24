@@ -2,16 +2,18 @@
 layout: structure
 ---
 
-<h3>{{ page.title }}</h3>
+<div class="container">
+  <h3>{{ page.title }}</h3>
 
-{% assign sortedPages = site.pages | sort: 'sortOrder' %}
+  {% assign sortedPages = site.pages | sort: 'sortOrder' %}
 
-<ul>
-  {% for p in sortedPages %}
-    {% if p.category == page.category and p.topic == page.topic and p.hide != true %}
-      <li><a href="{{ p.url }}">{{ p.title }}</a></li>
-    {% endif %}
-  {% endfor %}
-</ul>
+  <ul>
+    {% for p in sortedPages %}
+      {% if p.category == page.category and p.topic == page.topic and p.hide != true %}
+        <li><a href="{{ p.url }}">{{ p.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
 
-{{ content }}
+  {{ content }}
+</div>

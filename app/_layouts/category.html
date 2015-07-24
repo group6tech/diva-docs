@@ -2,17 +2,19 @@
 layout: structure
 ---
 
-{{ content }}
+<div class="container">
+  {{ content }}
 
-<h3>Common Issues</h3>
-<ul>
-  {% for p in site.pages %}
-    {% if p.common and p.category == page.category %}
-      <li><a href="{{ p.url }}">{{ p.title }}</a></li>
-    {% endif %}
+  <h3>Common Issues</h3>
+  <ul>
+    {% for p in site.pages %}
+      {% if p.common and p.category == page.category %}
+        <li><a href="{{ p.url }}">{{ p.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  {% for topic in page.topics %}
+    {% include topic-article-list.html topic = topic %}
   {% endfor %}
-</ul>
-
-{% for topic in page.topics %}
-  {% include topic-article-list.html topic = topic %}
-{% endfor %}
+</div>

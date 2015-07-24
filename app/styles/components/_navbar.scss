@@ -3,7 +3,7 @@
 // =============================================================================
 
 .navbar {
-  @include g6-grad();
+  z-index: $z-index-navbar;
 
   padding-top: $padding-base;
   padding-bottom: $padding-base;
@@ -20,6 +20,10 @@
   @media only screen and (min-width: $screen-md-min) {
     min-height: ($padding-base * 5);
   }
+}
+
+body:not(.with-jumbo) .navbar {
+  @include g6-grad();
 }
 
 

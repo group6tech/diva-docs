@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-  <body class="{{ page.category }} {{ page.topic }}">
+  <body class="{{ page.bodyClass}} {{ page.category }} {{ page.topic }}">
     {% include navbar.html %}
 
     {% if page.category == 'admin'%}{% include subnav-admin.html %}{% endif %}
     {% if page.category == 'user'%}{% include subnav-user.html %}{% endif %}
 
-    <div class="container">
-      {{ content }}
-    </div>
+    {{ content }}
 
     {% include footer.html %}
 
