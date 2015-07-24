@@ -27,6 +27,11 @@ defaults:
       path: "v2"
     values:
       version: "v2"
+  - # v2 - Articles
+    scope:
+      path: "v2/articles"
+    values:
+      layout: "article"
   - # v2 - Admin
     scope:
       path: "v2/admin"

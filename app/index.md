@@ -19,7 +19,7 @@ bodyClass: with-jumbo
         <p>Everything an editor needs to know to get going with DIVA.</p>
       </div>
       <div class="col-xs-12 col-md-4">
-        <h2><a href="/v2/user">Administrators Guide</a></h2>
+        <h2><a href="/v2/admin">Administrators Guide</a></h2>
         <p>How to manage your system and keep it running smoothly.</p>
       </div>
       <div class="col-xs-12 col-md-4">
