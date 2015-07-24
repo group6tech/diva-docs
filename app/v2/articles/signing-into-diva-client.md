@@ -5,8 +5,8 @@ topic: setup
 sortOrder: 2
 ---
 
-Before you starting editing, you need to sign into DIVA Client.
-This is the tool with lets you mount different drives, which contain different sets of media and projects.
+Before you start editing, you need to sign into DIVA Client.
+This is the tool with lets you mount drives, which contain different sets of media and projects.
 
 ### To sign into DIVA Client
 
