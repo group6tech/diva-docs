@@ -18,6 +18,73 @@ h1, h2, h3, h4, h5, h6,
 
 
 
+// Lists
+// -----------------------------------------------------------------------------
+
+ol {
+  position: relative;
+
+  padding-left: 0;
+
+  counter-reset: li;
+  list-style: none;
+
+  li {
+    @include clearfix();
+
+    position: relative;
+
+    padding: $padding-smaller $padding-smaller $padding-smaller ($padding-base * 2.5);
+    margin-bottom: $padding-smaller;
+
+    &:before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+
+      display: block;
+      height: 100%;
+      width: ($padding-base * 2);
+      padding-right: $padding-small;
+
+      color: $grey-lighter;
+      font-size: 2.2rem;
+      font-weight: $font-weight-semi-bold;
+      line-height: 3rem;
+      text-align: right;
+
+      border-right: 1px solid $border-color;
+
+      content: counter(li);
+      counter-increment: li;
+    }
+
+    img {
+      float: right;
+
+      max-width: 10rem;
+      padding: .1rem;
+      margin-left: $padding-small;
+
+      border: 1px solid $border-color;
+      cursor: pointer;
+    }
+  }
+
+  p {
+    &:first-child {
+      margin-top: 0;
+    }
+
+    + p {
+      color: $grey-lighter;
+    }
+  }
+}
+
+
+
 // Horizontal rule
 // -----------------------------------------------------------------------------
 
