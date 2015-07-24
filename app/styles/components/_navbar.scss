@@ -11,10 +11,14 @@
   color: $white;
   text-align: center;
 
-  @media only screen and (min-width: $screen-md-min) {
-    min-height: ($padding-base * 5);
+  @media only screen and (min-width: $screen-sm-min) {
+    min-height: ($padding-base * 6.5);
 
     text-align: left;
+  }
+
+  @media only screen and (min-width: $screen-md-min) {
+    min-height: ($padding-base * 5);
   }
 }
 
@@ -27,8 +31,13 @@
 
   font-weight: $font-weight-light;
 
-  @media only screen and (min-width: $screen-md-min) {
+  @media only screen and (min-width: $screen-sm-min) {
     float: left;
+    margin-top: $padding-base;
+  }
+
+  @media only screen and (min-width: $screen-md-min) {
+    margin-top: 0;
   }
 
   a {
@@ -49,11 +58,24 @@
 
 
 
+// Content
+// -----------------------------------------------------------------------------
+
+.navbar__content {
+  @media only screen and (min-width: $screen-sm-min) {
+    float: right;
+  }
+}
+
+
 // Nav
 // -----------------------------------------------------------------------------
 
 .navbar__nav {
   font-weight: $font-weight-light;
+
+  @media only screen and (min-width: $screen-sm-min) {
+  }
 
   @media only screen and (min-width: $screen-md-min) {
     float: right;
@@ -97,6 +119,12 @@ body.user .navbar__user {
 
 .navbar__form {
   margin-top: $padding-base;
+
+  @media only screen and (min-width: $screen-sm-min) {
+    margin-top: 0;
+
+    text-align: right;
+  }
 
   @media only screen and (min-width: $screen-md-min) {
     float: right;
