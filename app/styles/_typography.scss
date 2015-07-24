@@ -18,6 +18,18 @@ h1, h2, h3, h4, h5, h6,
 
 
 
+// Horizontal rule
+// -----------------------------------------------------------------------------
+
+hr {
+  margin-top: $padding-large;
+  margin-bottom: $padding-large;
+
+  border: 0;
+  border-top: 1px solid $border-color;
+}
+
+
 // Alignment
 // -----------------------------------------------------------------------------
 
