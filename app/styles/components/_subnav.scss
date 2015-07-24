@@ -11,6 +11,11 @@
   position: relative;
 
   border-bottom: 1px solid $border-color;
+
+  @media only screen and (min-width: $screen-sm-min) {
+    padding-top: ($padding-base * 2);
+    margin-bottom: ($padding-base * 3);
+  }
 }
 
 
@@ -26,6 +31,22 @@
   display: block;
   padding-left: $padding-small;
   padding-right: $padding-small;
+
+  @media only screen and (min-width: $screen-sm-min) {
+    display: none;
+  }
+}
+
+
+
+// Subnav title
+// -----------------------------------------------------------------------------
+
+.subnav__title {
+  @media only screen and (min-width: $screen-sm-min) {
+    margin-bottom: 0;
+    padding-bottom: $padding-small;
+  }
 }
 
 
@@ -37,12 +58,36 @@
   display: none;
   padding-bottom: $padding-base;
 
-  &.in {
-    //display: block;
+  font-size: 1.4rem;
+
+  @media only screen and (min-width: $screen-sm-min) {
+    position: absolute;
+    bottom: 0;
+    right: $padding-base;
+
+    display: block !important;
+    padding-bottom: 0;
   }
 
   li {
     display: block;
+
+    @media only screen and (min-width: $screen-sm-min) {
+      display: inline-block;
+    }
+  }
+
+  a {
+    @media only screen and (min-width: $screen-sm-min) {
+      padding: $padding-smaller;
+      color: $grey;
+
+      &:hover {
+        color: $brand-primary;
+
+        border-bottom: 2px solid transparentize($border-color, .3);
+      }
+    }
   }
 }
 
@@ -51,9 +96,6 @@
 // Items
 // -----------------------------------------------------------------------------
 
-// Admin
-//
-
 body.admin.drives .subnav__admin-drives,
 body.admin.favourites .subnav__admin-favourites,
 body.admin.media .subnav__admin-media,
@@ -61,17 +103,15 @@ body.admin.nodes .subnav__admin-nodes,
 body.admin.projects .subnav__admin-projects,
 body.admin.setup .subnav__admin-setup,
 body.admin.system .subnav__admin-system,
-body.admin.users .subnav__admin-users {
-  font-weight: bold;
-}
-
-// Users
-//
-
+body.admin.users .subnav__admin-users,
 body.user.drives .subnav__user-drives,
 body.user.favourites .subnav__user-favourites,
-body.user.misc .subnav__user-misc
+body.user.misc .subnav__user-misc,
 body.user.projects .subnav__user-projects,
 body.user.setup .subnav__user-setup {
-  font-weight: bold;
+  font-weight: $font-weight-semi-bold;
+
+  @media only screen and (min-width: $screen-sm-min) {
+    border-bottom: 2px solid $border-color;
+  }
 }
