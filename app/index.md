@@ -13,7 +13,18 @@ bodyClass: with-jumbo
 </div>
 
 <div class="container">
-	<h2><a href="/v2/user">Users Guide</a></h2>
-	<h2><a href="/v2/user">Administrators Guide</a></h2>
-	<h2><a href="/whats-new.html">What's New</a></h2>
+  <div class="row">
+      <div class="col-xs-12 col-md-4">
+        <h2><a href="/v2/user">Users Guide</a></h2>
+        <p>Everything an editor needs to know to get going with DIVA.</p>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <h2><a href="/v2/user">Administrators Guide</a></h2>
+        <p>How to manage your system and keep it running smoothly.</p>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <h2><a href="/support.html">Support</a></h2>
+        <p>Can't find the answer you're after? Contact Group 6 support.</p>
+      </div>
+    </div>
 </div>

@@ -1,0 +1,49 @@
+//
+// Mixins - Grid framework
+// =============================================================================
+
+// Declare the basic grid columns
+// -----------------------------------------------------------------------------
+
+@mixin make-grid-columns($i: 1, $list: ".col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}") {
+	@for $i from (1 + 1) through $grid-columns {
+    $list: "#{$list}, .col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}";
+  }
+
+	#{$list} {
+		position: relative;
+
+		padding-left:  ($grid-gutter-width / 2);
+		padding-right:  ($grid-gutter-width / 2);
+	}
+}
+
+
+// Set a property for a given grid size and column width
+// -----------------------------------------------------------------------------
+
+@mixin calc-grid-column($index, $class, $type) {
+  @if ($type == width) and ($index > 0) {
+    .col-#{$class}-#{$index} {
+      width: percentage(($index / $grid-columns));
+    }
+  }
+}
+
+
+// Loop through each column size and set a parameter
+// -----------------------------------------------------------------------------
+
+@mixin loop-grid-columns($columns, $class, $type) {
+  @for $i from 0 through $columns {
+    @include calc-grid-column($i, $class, $type);
+  }
+}
+
+
+// Create a grid for a given breakpoint
+// -----------------------------------------------------------------------------
+
+@mixin make-grid($class) {
+	@include loop-grid-columns($grid-columns, $class, width);
+}
