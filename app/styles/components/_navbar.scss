@@ -11,7 +11,7 @@
   color: $white;
   text-align: center;
 
-  @media only screen and (min-width: $screen-sm-min) {
+  @media only screen and (min-width: $screen-md-min) {
     min-height: ($padding-base * 5);
 
     text-align: left;
@@ -27,7 +27,7 @@
 
   font-weight: $font-weight-light;
 
-  @media only screen and (min-width: $screen-sm-min) {
+  @media only screen and (min-width: $screen-md-min) {
     float: left;
   }
 
@@ -55,7 +55,7 @@
 .navbar__nav {
   font-weight: $font-weight-light;
 
-  @media only screen and (min-width: $screen-sm-min) {
+  @media only screen and (min-width: $screen-md-min) {
     float: right;
     margin-top: 0;
     margin-bottom: 0;
@@ -65,7 +65,7 @@
     padding-left: $padding-small;
     padding-right: $padding-small;
 
-    @media only screen and (min-width: $screen-sm-min) {
+    @media only screen and (min-width: $screen-md-min) {
       padding-top: $padding-small + $padding-smaller;
       padding-bottom: $padding-small + $padding-smaller;
     }
@@ -98,7 +98,7 @@ body.user .navbar__user {
 .navbar__form {
   margin-top: $padding-base;
 
-  @media only screen and (min-width: $screen-sm-min) {
+  @media only screen and (min-width: $screen-md-min) {
     float: right;
     margin-top: $padding-small;
   }
@@ -124,7 +124,7 @@ body.user .navbar__user {
       border-color: transparentize($white, .5);
     }
 
-    @media only screen and (min-width: $screen-sm-min) {
+    @media only screen and (min-width: $screen-md-min) {
       width: ($padding-base * 6);
     }
   }

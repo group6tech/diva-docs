@@ -12,7 +12,7 @@
 
   border-bottom: 1px solid $border-color;
 
-  @media only screen and (min-width: $screen-sm-min) {
+  @media only screen and (min-width: $screen-md-min) {
     padding-top: ($padding-base * 2);
     margin-bottom: ($padding-base * 3);
   }
@@ -32,7 +32,7 @@
   padding-left: $padding-small;
   padding-right: $padding-small;
 
-  @media only screen and (min-width: $screen-sm-min) {
+  @media only screen and (min-width: $screen-md-min) {
     display: none;
   }
 }
@@ -43,7 +43,7 @@
 // -----------------------------------------------------------------------------
 
 .subnav__title {
-  @media only screen and (min-width: $screen-sm-min) {
+  @media only screen and (min-width: $screen-md-min) {
     margin-bottom: 0;
     padding-bottom: $padding-small;
   }
@@ -60,7 +60,7 @@
 
   font-size: 1.4rem;
 
-  @media only screen and (min-width: $screen-sm-min) {
+  @media only screen and (min-width: $screen-md-min) {
     position: absolute;
     bottom: 0;
     right: $padding-base;
@@ -72,13 +72,13 @@
   li {
     display: block;
 
-    @media only screen and (min-width: $screen-sm-min) {
+    @media only screen and (min-width: $screen-md-min) {
       display: inline-block;
     }
   }
 
   a {
-    @media only screen and (min-width: $screen-sm-min) {
+    @media only screen and (min-width: $screen-md-min) {
       padding: $padding-smaller;
       padding-bottom: ($padding-smaller / 2);
       color: $grey;
@@ -114,7 +114,7 @@ body.user.projects .subnav__user-projects,
 body.user.setup .subnav__user-setup {
   font-weight: $font-weight-semi-bold;
 
-  @media only screen and (min-width: $screen-sm-min) {
+  @media only screen and (min-width: $screen-md-min) {
     border-bottom: 2px solid $border-color;
   }
 }
