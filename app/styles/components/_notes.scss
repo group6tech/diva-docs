@@ -1,0 +1,41 @@
+//
+// Component - Note
+// =============================================================================
+
+@mixin make-note($class, $color, $bgcolor) {
+	.note-#{$class} {
+		background-color: $bgcolor;
+		border-color: $color;
+
+		.note-title {
+			color: $color;
+		}
+	}
+}
+
+.note {
+	padding: $padding-base;
+
+	color: $grey;
+
+	background-color: $grey-lightest;
+	border-left: ($padding-small / 2) solid $grey-lighter;
+
+	+ .note {
+		margin-top: $padding-base;
+	}
+
+	p:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.note-title {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+@include make-note('info', $light-blue-500, $light-blue-50);
+@include make-note('success', $green-500, $green-50);
+@include make-note('warning', $orange-500, $orange-50);
+@include make-note('danger', $red-500, $red-50);

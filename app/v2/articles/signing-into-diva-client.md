@@ -34,5 +34,5 @@ This is the tool with lets you mount different drives, which contain different s
 
 <div class="note note-success">
 	<h4 class="note-title"><i class="fa fa-birthday-cake"></i> Congratulations</h4>
-	<p>You should now be signed into DIVA Client, and ready to <a href="">mount some drives</a>.</p>
+	<p>You should now be signed into DIVA Client, and ready to <a href="/v2/articles/how-to-mount-a-drive.html">mount some drives</a>.</p>
 </div>
