@@ -67,8 +67,13 @@ ol {
       padding: .1rem;
       margin-left: $padding-small;
 
+      background-color: $white;
       border: 1px solid $border-color;
       cursor: pointer;
+
+      @media only screen and (min-width: $screen-md-min) {
+        max-width: 20rem;
+      }
     }
   }
 
@@ -79,6 +84,24 @@ ol {
 
     + p {
       color: $grey-lighter;
+    }
+  }
+
+  .full-image {
+    position: absolute;
+    right: -($padding-base + 1);
+    top: 0;
+    z-index: 1000;
+
+    cursor: pointer;
+
+    img {
+      float: none;
+
+      max-width: 500px;
+      margin-right: $padding-small;
+
+      vertical-align: top;
     }
   }
 }
