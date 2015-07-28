@@ -41,6 +41,8 @@ module.exports = function(grunt) {
     //
     connect: {
       options: {
+        hostname: 'localhost',
+        port: 9000,
         livereload: true,
         open: true,
       },
@@ -65,12 +67,6 @@ module.exports = function(grunt) {
         files: ['<%= config.src %>/**/*.{html,md}', '<%= config.src %>/*.yml'],
         tasks: ['jekyll:server']
       },
-      js: {
-        files: ['<%= config.src %>/scripts/{,*/}*.js'],
-        options: {
-          livereload: true
-        }
-      },
       sass: {
         files: ['<%= config.src %>/styles/{,*/}*.scss'],
         tasks: ['sass:server']
@@ -82,6 +78,7 @@ module.exports = function(grunt) {
         files: [
           '<%= config.jekyll %>/{,*/}*.html',
           '<%= config.temp %>/styles/{,*/}*.css',
+          '<%= config.src %>/scripts/{,*/}*.js'
         ]
       },
     },

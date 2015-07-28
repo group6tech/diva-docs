@@ -1,0 +1,51 @@
+//
+// Components - Platform switcher
+// =============================================================================
+
+.platform-switcher {
+  li {
+    + li {
+      border-left: 1px solid $border-color;
+    }
+  }
+
+  a {
+    padding-left: $padding-small;
+    padding-right: $padding-small;
+
+    color: $grey-lighter;
+    text-align: center;
+
+    &:hover {
+      color: $brand-primary;
+    }
+  }
+}
+
+
+
+// Switcher icons
+// -----------------------------------------------------------------------------
+
+body.platform-mac .platform-switcher a[data-platform="mac"],
+body.platform-tux .platform-switcher a[data-platform="tux"],
+body.platform-win .platform-switcher a[data-platform="win"] {
+  color: $brand-primary;
+}
+
+
+
+// Content blocks
+// -----------------------------------------------------------------------------
+
+div.platform-mac,
+div.platform-tux,
+div.platform-win {
+  display: none;
+}
+
+body.platform-mac div.platform-mac,
+body.platform-tux div.platform-tux,
+body.platform-win div.platform-win {
+  display: block;;
+}
