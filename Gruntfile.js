@@ -67,6 +67,16 @@ module.exports = function(grunt) {
         files: ['<%= config.src %>/**/*.{html,md}', '<%= config.src %>/*.yml'],
         tasks: ['jekyll:server']
       },
+      js: {
+        options: {
+          livereload: true
+        },
+        files: [
+          'Gruntfile.js',
+          '<%= config.src %>/scripts/{,*/}*.js'
+        ],
+        tasks: ['jshint']
+      },
       sass: {
         files: ['<%= config.src %>/styles/{,*/}*.scss'],
         tasks: ['sass:server']
@@ -123,6 +133,14 @@ module.exports = function(grunt) {
           ext: '.css'
         }]
       }
+    },
+
+    // Check js files for issues
+    jshint: {
+      all: [
+        'Gruntfile.js',
+        '<%= config.src %>/scripts'
+      ]
     },
 
     // Tasks which can run at the same time
