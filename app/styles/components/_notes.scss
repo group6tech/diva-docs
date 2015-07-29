@@ -18,7 +18,7 @@
 
 	color: $grey;
 
-	background-color: $grey-lightest;
+	background-color: transparentize($grey-lightest, .75);
 	border-left: ($padding-small / 2) solid $grey-lighter;
 
 	+ .note {
