@@ -2,7 +2,7 @@
 title: Installing DIVA Client
 category: editor
 topic: setup
-sortOrder: 1
+sortOrder: 2
 ---
 
 <div class="note note--collapse">
@@ -31,7 +31,7 @@ sortOrder: 1
       <p class="text-muted">The <strong>version</strong> will vary depending on what's installed at your location.</p>
     </li>
     <li>Follow any download prompts your browser may present. Once the download has completed, open the file you've just downloaded.</li>
-    <li>
+    <li id="mac-installation-intro">
       <img src="/images/v2/mac/diva-client-install-introduction.png" alt="DIVA Client Installation Introduction"/>
       Click <strong>Continue</strong> on the <strong>Introduction</strong> screen.
     </li>

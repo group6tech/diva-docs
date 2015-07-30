@@ -40,14 +40,14 @@ body.platform-win .platform-switcher a[data-platform="win"] {
 // Content blocks
 // -----------------------------------------------------------------------------
 
-div.platform-mac,
-div.platform-tux,
-div.platform-win {
+body .platform-mac,
+body .platform-tux,
+body .platform-win {
   display: none;
 }
 
-body.platform-mac div.platform-mac,
-body.platform-tux div.platform-tux,
-body.platform-win div.platform-win {
+body.platform-mac .platform-mac,
+body.platform-tux .platform-tux,
+body.platform-win .platform-win {
   display: block;
 }

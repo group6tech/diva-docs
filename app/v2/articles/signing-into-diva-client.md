@@ -2,7 +2,7 @@
 title: Signing into DIVA Client
 category: editor
 topic: setup
-sortOrder: 2
+sortOrder: 4
 ---
 
 Before you start editing, you need to sign into DIVA Client.

@@ -2,7 +2,7 @@
 title: Signing out of DIVA Client
 category: editor
 topic: setup
-sortOrder: 3
+sortOrder: 5
 ---
 
 I thought post never stopped?

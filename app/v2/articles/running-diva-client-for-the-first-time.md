@@ -2,7 +2,7 @@
 title: Running DIVA Client for the first time
 category: editor
 topic: setup
-sortOrder: 1
+sortOrder: 3
 ---
 
 The very first time you run DIVA Client you need to configure it so it knows what DIVA Server to connect to.

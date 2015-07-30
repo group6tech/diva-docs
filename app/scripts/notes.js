@@ -1,4 +1,4 @@
-$('.note__title', '.note').click(function() {
+$('.note__title', '.note--collapse').click(function() {
   var $note = $(this).parent(),
       $noteBody = $('.note__body', $note),
       isIn = $note.hasClass('in');
