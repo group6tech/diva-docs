@@ -18,11 +18,33 @@ h1, h2, h3, h4, h5, h6,
 
 
 
-// Modifiers
+// Horizontal rule
 // -----------------------------------------------------------------------------
 
-.text-muted {
+hr {
+  margin-top: $padding-large;
+  margin-bottom: $padding-large;
+
+  border: 0;
+  border-top: 1px solid $border-color;
+}
+
+
+
+// User input
+// -----------------------------------------------------------------------------
+
+kbd {
+  display: inline-block;
+  padding-left: $padding-small;
+  padding-right: $padding-small;
+
   color: $grey-lighter;
+  font-family: $font-family-monospace;
+  font-size: $font-size-small;
+
+  background-color: $grey-dark;
+  border-radius: $border-radius;
 }
 
 
@@ -127,21 +149,18 @@ ol {
 
 
 
-// Horizontal rule
-// -----------------------------------------------------------------------------
-
-hr {
-  margin-top: $padding-large;
-  margin-bottom: $padding-large;
-
-  border: 0;
-  border-top: 1px solid $border-color;
-}
-
-
 // Alignment
 // -----------------------------------------------------------------------------
 
 .text-center {
   text-align: center;
+}
+
+
+
+// Modifiers
+// -----------------------------------------------------------------------------
+
+.text-muted {
+  color: $grey-lighter;
 }
