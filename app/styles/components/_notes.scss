@@ -2,16 +2,25 @@
 // Component - Note
 // =============================================================================
 
+
+// Style mixin
+// -----------------------------------------------------------------------------
+
 @mixin make-note($class, $color, $bgcolor) {
-	.note-#{$class} {
+	.note--#{$class} {
 		background-color: $bgcolor;
 		border-color: $color;
 
-		.note-title {
+		.note__title {
 			color: $color;
 		}
 	}
 }
+
+
+
+// Basic style
+// -----------------------------------------------------------------------------
 
 .note {
 	padding: $padding-base;
@@ -30,12 +39,39 @@
 	}
 }
 
-.note-title {
+
+
+// Title
+// -----------------------------------------------------------------------------
+
+.note__title {
 	margin-top: 0;
 	margin-bottom: 0;
+
+	font-weight: $font-weight-semi-bold;
 }
+
+
+
+// Styles
+// -----------------------------------------------------------------------------
 
 @include make-note('info', $light-blue-500, $light-blue-50);
 @include make-note('success', $green-500, $green-50);
 @include make-note('warning', $orange-500, $orange-50);
 @include make-note('danger', $red-500, $red-50);
+
+
+
+// Collapsable
+// -----------------------------------------------------------------------------
+
+.note--collapse {
+	.note__title {
+		cursor: pointer;
+	}
+
+	.note__body {
+		display: none;
+	}
+}

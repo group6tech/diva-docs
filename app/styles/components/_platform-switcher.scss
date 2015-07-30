@@ -3,6 +3,8 @@
 // =============================================================================
 
 .platform-switcher {
+  margin-bottom: $padding-base;
+
   li {
     + li {
       border-left: 1px solid $border-color;
@@ -47,5 +49,5 @@ div.platform-win {
 body.platform-mac div.platform-mac,
 body.platform-tux div.platform-tux,
 body.platform-win div.platform-win {
-  display: block;;
+  display: block;
 }

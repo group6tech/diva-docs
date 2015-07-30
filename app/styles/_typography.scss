@@ -98,19 +98,29 @@ ol {
 
   .full-image {
     position: absolute;
-    right: -($padding-base + 1);
+    right: -($padding-base);
     top: 0;
     z-index: 1000;
+
+    max-width: 90%;
+
+    text-align: right;
 
     cursor: pointer;
 
     img {
       float: none;
 
-      max-width: 500px;
-      margin-right: $padding-small;
+      max-width: 100%;
+      margin-left: 0;
 
       vertical-align: top;
+    }
+
+    i {
+      position: absolute;
+      top: 0;
+      right: -($padding-base);
     }
   }
 }
