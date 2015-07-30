@@ -3,7 +3,15 @@ layout: structure
 ---
 
 <div class="container">
-  <h3>{{ page.title }}</h3>
+  <ul class="nav breadcrumbs">
+    {% if page.category == 'editor' %}<li><a href="/v2/editor">Editors Guide</a></li>{% endif %}
+    {% if page.category == 'admin' %}<li><a href="/v2/admin">Admin Guide</a></li>{% endif %}
+    <li>/</li>
+    <li>{{ page.title }}</li>
+  </ul>
+
+
+  <h1>{{ page.title }}</h1>
 
   {% assign sortedPages = site.pages | sort: 'sortOrder' %}
 

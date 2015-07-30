@@ -1,8 +1,0 @@
-<ul class="nav breadcrumbs">
-  {% if page.category == 'editor' %}<li><a href="/v2/editor">Editors Guide</a></li>{% endif %}
-  {% if page.category == 'admin' %}<li><a href="/v2/admin">Admin Guide</a></li>{% endif %}
-  <li>/</li>
-  <li><a href="/v2/{{ page.category }}/{{ page.topic }}.html">{{ page.topic | capitalize }}</a></li>
-  <li>/</li>
-  <li>{{ page.title }}</li>
-</ul>
