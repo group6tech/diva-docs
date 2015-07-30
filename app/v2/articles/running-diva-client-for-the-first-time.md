@@ -50,12 +50,5 @@ The very first time you run DIVA Client you need to configure it so it knows wha
 
 <div class="note note--success">
   <h4 class="note__title"><i class="fa fa-check-circle"></i> Well done</h4>
-  <p>The configuration options are saved.</p>
-</div>
-
-<div class="note note--info note--collapse">
-  <h4 class="note__title"><i class="fa fa-question-circle"></i> What's next?</h4>
-  <div class="note__body">
-    <p>If you've got your username and password you can now <a href="/v2/articles/signing-into-diva-client.html">sign into DIVA Client.</p>
-  </div>
+  <p>The configuration options are saved and you're good to <a href="/v2/articles/signing-into-diva-client.html">sign into DIVA Client.</p>
 </div>
