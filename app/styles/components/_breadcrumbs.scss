@@ -1,0 +1,13 @@
+//
+// Components - Breadcrumbs
+// =============================================================================
+
+.breadcrumbs {
+  color: $grey-lighter;
+  font-size: $font-size-smaller;
+
+  + h1 {
+    padding-top: $padding-base;
+    border-top: 1px solid $border-color;
+  }
+}
