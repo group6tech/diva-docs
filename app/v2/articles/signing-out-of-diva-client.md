@@ -43,7 +43,7 @@ Doing so will un-mount all drives you currently have mounted. It's safest to mak
 
 <div class="note note--success">
   <h4 class="note__title"><i class="fa fa-bicycle"></i> Adiós</h4>
-  <p>All your mounted drives should now be un-mounted, and you are returned to the sign in screen.</p>
+  <p>All your mounted drives are un-mounted, and you are returned to the sign in screen.</p>
   <p>You can close DIVA Client.</p>
 </div>
 

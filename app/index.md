@@ -8,7 +8,7 @@ bodyClass: with-jumbo
   <div class="container">
     <h1>DIVA</h1>
     <p>Help documentation for users and administrators.</p>
-    <a href="/v2" class="btn btn--primary">Browse the documentation</a>
+    <a href="/v2" class="btn btn--default">Browse the documentation</a>
   </div>
 </div>
 
