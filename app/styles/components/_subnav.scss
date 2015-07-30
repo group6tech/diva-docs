@@ -106,12 +106,12 @@ body.admin.nodes .subnav__admin-nodes,
 body.admin.projects .subnav__admin-projects,
 body.admin.setup .subnav__admin-setup,
 body.admin.system .subnav__admin-system,
-body.admin.users .subnav__admin-users,
-body.user.drives .subnav__user-drives,
-body.user.favourites .subnav__user-favourites,
-body.user.misc .subnav__user-misc,
-body.user.projects .subnav__user-projects,
-body.user.setup .subnav__user-setup {
+body.admin.editors .subnav__admin-editors,
+body.editor.drives .subnav__editor-drives,
+body.editor.favourites .subnav__editor-favourites,
+body.editor.misc .subnav__editor-misc,
+body.editor.projects .subnav__editor-projects,
+body.editor.setup .subnav__editor-setup {
   font-weight: $font-weight-semi-bold;
 
   @media only screen and (min-width: $screen-md-min) {

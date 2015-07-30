@@ -1,6 +1,6 @@
 ---
 title: Glossary of Basic Terms
-category: user
+category: editor
 ---
 
 ## <a name="diva-client"></a>DIVA Client

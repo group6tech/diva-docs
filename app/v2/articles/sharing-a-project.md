@@ -1,5 +1,5 @@
 ---
 title: Sharing a Project
-category: user
+category: editor
 topic: projects
 ---

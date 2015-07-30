@@ -15,7 +15,7 @@ bodyClass: with-jumbo
 <div class="container">
   <div class="row">
       <div class="col-xs-12 col-md-4">
-        <h2><a href="/v2/user">Users Guide</a></h2>
+        <h2><a href="/v2/editor">Editors Guide</a></h2>
         <p>Everything an editor needs to know to get going with DIVA.</p>
       </div>
       <div class="col-xs-12 col-md-4">

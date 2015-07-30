@@ -1,6 +1,6 @@
 ---
 title: Installing DIVA Client
-category: user
+category: editor
 topic: setup
 sortOrder: 1
 ---

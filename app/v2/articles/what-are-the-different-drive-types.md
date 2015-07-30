@@ -1,6 +1,6 @@
 ---
 title: What are the different Drive types?
-category: user
+category: editor
 topic: drives
 sortOrder: 1
 ---

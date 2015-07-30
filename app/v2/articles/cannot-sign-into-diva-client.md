@@ -1,6 +1,6 @@
 ---
 title: I can't sign into DIVA Client
-category: user
+category: editor
 topic: setup
 common: true
 ---

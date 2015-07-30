@@ -45,9 +45,9 @@ defaults:
     values:
       category: "admin"
       hide: true
-  - # v2 - Users
+  - # v2 - Editors
     scope:
-      path: "v2/user"
+      path: "v2/editor"
     values:
-      category: "user"
+      category: "editor"
       hide: true

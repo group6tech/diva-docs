@@ -1,5 +1,5 @@
 ---
 title: Viewing a Drive's details
-category: user
+category: editor
 topic: drives
 ---

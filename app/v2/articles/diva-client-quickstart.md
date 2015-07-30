@@ -1,6 +1,6 @@
 ---
 title: Quick-start Guide
-category: user
+category: editor
 topic: setup
 sortOrder: 1
 ---

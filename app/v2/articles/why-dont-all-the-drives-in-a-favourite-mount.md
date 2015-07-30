@@ -1,6 +1,6 @@
 ---
 title: Why don't all the Drives in a Favourite mount?
-category: user
+category: editor
 topic: favourites
 common: true
 ---

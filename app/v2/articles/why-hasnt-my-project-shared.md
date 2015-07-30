@@ -1,6 +1,6 @@
 ---
 title: Why hasn't my Project shared?
-category: user
+category: editor
 topic: projects
 common: true
 ---

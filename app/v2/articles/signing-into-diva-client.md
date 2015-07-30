@@ -1,6 +1,6 @@
 ---
 title: Signing into DIVA Client
-category: user
+category: editor
 topic: setup
 sortOrder: 2
 ---

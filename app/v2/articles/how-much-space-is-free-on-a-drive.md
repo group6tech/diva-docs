@@ -1,5 +1,5 @@
 ---
 title: How much space is free on a drive?
-category: user
+category: editor
 topic: drives
 ---

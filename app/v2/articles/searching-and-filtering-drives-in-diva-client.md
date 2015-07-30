@@ -1,6 +1,6 @@
 ---
 title: Searching for and filtering drives
-category: user
+category: editor
 topic: drives
 sortOrder: 2
 ---

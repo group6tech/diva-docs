@@ -16,20 +16,20 @@ Spend more time editing, less time setting up, and collaborate on projects with 
 You might want to check out the [Glossary of Basic Terms](/v2/articles/glossary-basic.html) before getting started.
 There's also the [Glossary of Advanced Terms](/v2/articles/glossary-advanced.html) for those looking to get their hands dirty.
 
-If you're an editor who just wants to get cutting, then the [Users Quick-start Guide](/v2/articles/diva-client-quickstart.html) is for you.
+If you're an editor who just wants to get cutting, then the [Editors Quick-start Guide](/v2/articles/diva-client-quickstart.html) is for you.
 
-Otherwise here are all the topics for both the [Users Guide](/v2/user) and [Administrators Guide](/v2/admin).
+Otherwise here are all the topics for both the [Editors Guide](/v2/editor) and [Administrators Guide](/v2/admin).
 
 <div class="row">
 	<div class="col-xs-12 col-sm-6">
-		<h2><a href="/v2/user">Users Guide</a></h2>
+		<h2><a href="/v2/editor">Editors Guide</a></h2>
 
 		<ul>
-			<li><a href="/v2/user/setup.html">Setup</a></li>
-			<li><a href="/v2/user/drives.html">Drives</a></li>
-			<li><a href="/v2/user/favourites.html">Favourites</a></li>
-			<li><a href="/v2/user/projects.html">Projects</a></li>
-			<li><a href="/v2/user/misc.html">Misc</a></li>
+			<li><a href="/v2/editor/setup.html">Setup</a></li>
+			<li><a href="/v2/editor/drives.html">Drives</a></li>
+			<li><a href="/v2/editor/favourites.html">Favourites</a></li>
+			<li><a href="/v2/editor/projects.html">Projects</a></li>
+			<li><a href="/v2/editor/misc.html">Misc</a></li>
 		</ul>
 	</div>
 

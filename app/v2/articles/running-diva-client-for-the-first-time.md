@@ -1,6 +1,6 @@
 ---
 title: Running DIVA Client for the first time
-category: user
+category: editor
 topic: setup
 sortOrder: 1
 ---

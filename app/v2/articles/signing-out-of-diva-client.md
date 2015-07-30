@@ -1,6 +1,6 @@
 ---
 title: Signing out of DIVA Client
-category: user
+category: editor
 topic: setup
 sortOrder: 3
 ---

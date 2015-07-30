@@ -1,5 +1,5 @@
 ---
 title: Messages
-category: user
+category: editor
 topic: misc
 ---
