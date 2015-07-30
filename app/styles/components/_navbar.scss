@@ -111,7 +111,7 @@ body:not(.with-jumbo) .navbar {
 
 body.admin .navbar__admin,
 body.support .navbar__support,
-body.user .navbar__user {
+body.editor .navbar__editor {
   color: $white;
   font-weight: $font-weight-normal;
 }
