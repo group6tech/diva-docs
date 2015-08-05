@@ -28,7 +28,7 @@ To use a drive, it has to be mounted on the computer you are using.
 <ol class="platform-win">
 	<li>
 		<img src="/images/v2/win/diva-client-mount-select-drive.png" alt="Select a drive"/>
-		On the Drives pane, locate and select the relevant drive.
+		On the <strong>Drives</strong> screen, locate and select the relevant drive.
 		<p class="text-muted">Note: If you have a long list of drives, you may need to search for it, or use the Drive Status and Drive Type filters to narrow down your search.</p>
 	</li>
 	<li>
@@ -49,4 +49,14 @@ To use a drive, it has to be mounted on the computer you are using.
 	<figure>
 		<img src="/images/v2/win/diva-client-mounted.png" alt="After a drive is mounted" class="platform-win"/>
 	</figure>
+</div>
+
+<div class="note note--info platform-win">
+	<h4 class="note__title"><i class="fa fa-lightbulb-o"></i> Tip</h4>
+	<div class="note-body">
+		<p>If you want to mount a drive quickly without worrying about the drive letter, just click the green <strong>+ mount</strong> button on the relevant drive from the list.</p>
+		<figure>
+			<img src="/images/v2/win/diva-client-mount-from-list.png" alt="Mount a drive from the list"/>
+		</figure>
+	</div>
 </div>
