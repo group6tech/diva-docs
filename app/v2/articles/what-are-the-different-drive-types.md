@@ -18,15 +18,11 @@ There are three types of drive:
 - Avid Media
 - Avid Projects
 
-
-
 ## Basic Drives
 
 Basic drives are designed to handle file-based media, but are great for anything which isn't a MXF or Avid Project.
 
 You cannot create Avid MXF files on a Basic drive. Media Composer projects cannot be shared on a Basic drive.
-
-
 
 ## Avid Media Drives
 
@@ -34,8 +30,13 @@ Media drives are optimised exclusively for Avid MFX files. To share Avid MXF med
 
 Users can only save and work with Avid MXF files on this drive.
 
-
-
 ## Avid Project Drives
 
 Project drives are optimised exclusively for Avid Media Composer projects and bins. To share an Avid project, it has to be created on a Project drive.
+
+<div class="note note--info note--collapse">
+	<h4 class="note__title"><i class="fa fa-question-circle"></i> What's next?</h4>
+	<div class="note__body">
+		<p>See how to <a href="/v2/articles/displaying-a-drives-information-in-diva-client.html">display a drive's information</a> and see what type it is in DIVA Client.</p>
+	</div>
+</div>

@@ -81,3 +81,10 @@ To use a drive, it has to be mounted on the computer you are using.
 		</figure>
 	</div>
 </div>
+
+<div class="note note--info note--collapse">
+	<h4 class="note__title"><i class="fa fa-question-circle"></i> What's next?</h4>
+	<div class="note__body">
+		<p>When you're done you'll want to <a href="/v2/articles/how-to-unmount-a-drive.html">unmount the drive</a>.</p>
+	</div>
+</div>
