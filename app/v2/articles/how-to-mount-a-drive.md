@@ -25,6 +25,18 @@ To use a drive, it has to be mounted on the computer you are using.
 
 ### To mount a drive
 
+<ol class="platform-mac">
+	<li>
+		<img src="/images/v2/mac/diva-client-mount-select-drive.png" alt="Select a drive"/>
+		On the <strong>Drives</strong> screen, locate and select the relevant drive.
+		<p class="text-muted">Note: If you have a long list of drives, you may need to search for it, or use the Drive Status and Drive Type filters to narrow down your search.</p>
+	</li>
+	<li>
+		<img src="/images/v2/mac/diva-client-mount-button.png" alt="Mount button"/>
+		Click the <strong>Mount</strong> button.
+	</li>
+</ol>
+
 <ol class="platform-win">
 	<li>
 		<img src="/images/v2/win/diva-client-mount-select-drive.png" alt="Select a drive"/>
@@ -44,11 +56,20 @@ To use a drive, it has to be mounted on the computer you are using.
 
 <div class="note note--success">
 	<h4 class="note__title"><i class="fa fa-check-circle"></i> Result</h4>
-	<p class="platform-win">The green <strong>+ Mount</strong> button is replaced with the red <strong>- Unmount</strong> button, the drive is mounted, assigned a drive letter, and is ready to use.</p>
 
-	<figure>
-		<img src="/images/v2/win/diva-client-mounted.png" alt="After a drive is mounted" class="platform-win"/>
-	</figure>
+	<div class="platform-mac">
+		<p>The <strong>Mount</strong> button is replaced with the <strong>Unmount</strong> button, the drive is mounted, and is ready to use.</p>
+		<figure>
+			<img src="/images/v2/mac/diva-client-mounted.png" alt="After a drive is mounted"/>
+		</figure>
+	</div>
+
+	<div class="platform-win">
+		<p>The green <strong>+Mount</strong> button is replaced with the red <strong>-Unmount</strong> button, the drive is mounted, assigned a drive letter, and is ready to use.</p>
+		<figure>
+			<img src="/images/v2/win/diva-client-mounted.png" alt="After a drive is mounted"/>
+		</figure>
+	</div>
 </div>
 
 <div class="note note--info platform-win">
