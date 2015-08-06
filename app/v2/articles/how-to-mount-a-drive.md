@@ -50,7 +50,7 @@ To use a drive, it has to be mounted on the computer you are using.
 	</li>
 	<li>
 		<img src="/images/v2/win/diva-client-mount-button.png" alt="Mount button"/>
-		Click the <strong>+ Mount</strong> button.
+		Click the <strong><i class="fa fa-plus-circle"></i> Mount</strong> button.
 	</li>
 </ol>
 
@@ -65,7 +65,7 @@ To use a drive, it has to be mounted on the computer you are using.
 	</div>
 
 	<div class="platform-win">
-		<p>The green <strong>+Mount</strong> button is replaced with the red <strong>-Unmount</strong> button, the drive is mounted, assigned a drive letter, and is ready to use.</p>
+		<p>The green <strong><i class="fa fa-plus-circle"></i> Mount</strong> button is replaced with the red <strong><i class="fa fa-minus-circle"></i> Unmount</strong> button, the drive is mounted, assigned a drive letter, and is ready to use.</p>
 		<figure>
 			<img src="/images/v2/win/diva-client-mounted.png" alt="After a drive is mounted"/>
 		</figure>
@@ -75,7 +75,7 @@ To use a drive, it has to be mounted on the computer you are using.
 <div class="note note--info platform-win">
 	<h4 class="note__title"><i class="fa fa-lightbulb-o"></i> Tip</h4>
 	<div class="note-body">
-		<p>If you want to mount a drive quickly without worrying about the drive letter, just click the green <strong>+ mount</strong> button on the relevant drive from the list.</p>
+		<p>If you want to mount a drive quickly without worrying about the drive letter, just click the green <strong><i class="fa fa-plus-circle"></i> Mount</strong> button on the relevant drive from the list.</p>
 		<figure>
 			<img src="/images/v2/win/diva-client-mount-from-list.png" alt="Mount a drive from the list"/>
 		</figure>
