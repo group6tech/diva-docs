@@ -19,7 +19,7 @@ The following drive information can be displayed:
 			If the status is <strong>Maintenance</strong>, this means that a health check is being performed on the drive, and it cannot be mounted until the health check is completed.
 		</p>
 	</li>
-	<li>
+	<li id="access">
 		<h3>Access</h3>
 		<p>
 			With <strong>Read-Only</strong> access you can copy assets from the drive and view clips.<br/>
