@@ -6,7 +6,7 @@ topic: misc
 
 {% include platform-switcher.html mac=true win=true %}
 
-Messages help you keep track of range of background activities that are performed by the system, e.g.:
+Messages help you keep track of a range of background activities that are performed by the system, e.g.:
 
 - drives that have been mounted by a user
 - favourites that have been deleted by an administrator
