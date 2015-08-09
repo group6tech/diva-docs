@@ -36,6 +36,23 @@ hr {
 
 
 
+// Code
+// -----------------------------------------------------------------------------
+
+code {
+  display: inline-block;
+  padding-left: $padding-small;
+  padding-right: $padding-small;
+
+  //color: $grey-lighter;
+  font-family: $font-family-monospace;
+  font-size: $font-size-small;
+
+  background-color: $grey-lightest;
+  border-radius: $border-radius;
+}
+
+
 // User input
 // -----------------------------------------------------------------------------
 
