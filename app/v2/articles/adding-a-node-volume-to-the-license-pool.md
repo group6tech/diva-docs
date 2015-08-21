@@ -37,7 +37,7 @@ Other volumes totaling 10 TB can be assigned to the available license.
 
 ## To assign a volume to the DIVA License Pool
 
-1. ![Click Drives, then Volumes](/images/v2/nodes/volumes-add-menu.png)
+1. ![Click Drives, then Volumes](/images/v2/nodes/volumes-menu.png)
 	On DIVA Fusion's **Drives** menu, click **Volumes**.
 2. ![Select the volume](/images/v2/nodes/volumes-add-select-volume.png)
 	From the first drop down menu, select the relevant node volume.
