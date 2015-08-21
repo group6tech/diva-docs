@@ -40,5 +40,6 @@ The first time DIVA Node runs, the **Options** screen is automatically displayed
 
 <div class="note note--info">
 	<h4 class="note__title"><i class="fa fa-question-circle"></i> What's next?</h4>
+	<p>Check in DIVA Fusion that the new node is showing as connected, and that the properties such as CPU and memory have been filled in automatically.</p>
 	<p>Now that the volumes of the new node have been reported to DIVA Server, they can be <a href="/v2/articles/adding-a-node-volume-to-the-license-pool.html">added to the license pool</a>.</p>
 </div>
