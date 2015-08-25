@@ -1,5 +1,5 @@
 ---
-title: Creating a User Group
+title: Setting up a User Group
 category: admin
 topic: users
 sortOrder: 9
