@@ -19,6 +19,16 @@ sortOrder: 10
 	Click **<i class="fa fa-plus"></i> Add Member**.
 
 <div class="note note--success">
-	<h4 class="note__title"><i class="fa fa-check-circle"></i> Result</i>
+	<h4 class="note__title"><i class="fa fa-check-circle"></i> Result</i></h4>
 	<p>The user account is added to the group. Repeat for all members you want to add to the group.</p>
+</div>
+
+<div class="note note--info note--collapse">
+	<h4 class="note__title"><i class="fa fa-lightbulb-o"></i> Tip</i></h4>
+	<div class="note__body">
+		<p>
+			If you want to add one user to multiple groups, find the user account under the <strong>Users</strong> menu, then click the <strong>Groups</strong> tab.
+			If it much faster to manage the groups for one user from here.
+		</p>
+	</div>
 </div>
