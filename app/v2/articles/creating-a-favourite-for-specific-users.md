@@ -1,21 +1,20 @@
 ---
-title: Creating a favourite for all users
+title: Creating a favourite for specific users
 category: admin
 topic: favourites
-sortOrder: 3
+sortOrder: 4
 ---
 
-Setting up a favourite for all users to use is straight forward to do.
-Once set up, all users will be able to load the favourite, and mount the drives to which they have access.
+Sometimes you will want to set up a favourite for a small group of users, for example a project team.
 
 <div class="note note--default note--collapse">
 	<h4 class="note__title"><i class="fa fa-hand-stop-o"></i> Before you begin</h4>
 	<div class="note__body">
-		<p>Before adding a favourite for all users, ensure the drive or drives that will be mounted by this favourite have been <a href="/v2/articles/creating-a-new-drive.html">set up</a>.</p>
+		<p>Before adding a favourite for all users, ensure the drive or drives that will be mounted by this favourite have been <a href="/v2/articles/creating-a-new-drive.html">set up</a>, and you've <a href="/v2/articles/setting-up-a-user-group.html">set up a user group</a> and <a href="/v2/articles/adding-a-user-to-a-group.html">assigned users to it</a>.</p>
 	</div>
 </div>
 
-## To add a favourite for all users
+## To add a favourite for specific users
 
 1. ![Navigate to Favourites](/images/v2/favourites/favourites-menu.png)
 	On DIVA Fusion's menu, click **Favourites**.
@@ -27,8 +26,8 @@ Once set up, all users will be able to load the favourite, and mount the drives 
 	<div class="text-muted">Note: If providing a description, provide enough information to distinguish this favourite from any others.</div>
 4. ![Check Enabled](/images/v2/favourites/new-enabled.png)
 	Ensure **Enabled** is checked.
-5. ![Check Shared](/images/v2/favourites/new-shared-checked.png)
-	Ensure **Shared** is checked.
+5. ![Check Shared](/images/v2/favourites/new-shared-not-checked.png)
+	Ensure **Shared** is **not** checked.
 6. ![Click Save Favourite](/images/v2/favourites/new-save-btn.png)
 	Click **Save Favourite**.
 7. ![Click the Drives tab](/images/v2/favourites/new-drives-tab.png)
@@ -39,3 +38,8 @@ Once set up, all users will be able to load the favourite, and mount the drives 
 	(Optional) Assign a preferred drive letter to the drive.
 	<div class="text-muted">This step is only relevant to Windows users. If you assign a preferred letter to the drive, then when users mount the drive, the preferred letter will be mapped to the drive. If the drive letter you selected for this drive is already mapped to a mounted drive, another letter will automatically be mapped to this drive.</div>
 10. Repeat from step 8 to add more drives to the favourite.
+11. ![Click the Permissions tab](/images/v2/favourites/new-permissions-tab.png)
+	Click the **Permissions** tab.
+12. ![Add a group](/images/v2/favourites/new-group-select.png)
+	From the drop down menu, select a user group, then click **<i class="fa fa-plus"></i> Add Group**.
+13. Repeat from step 12 to add more groups to the favourite.
