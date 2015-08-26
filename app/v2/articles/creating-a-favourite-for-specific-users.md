@@ -1,5 +1,5 @@
 ---
-title: Creating a favourite for specific users
+title: Creating a Favourite for specific users
 category: admin
 topic: favourites
 sortOrder: 4

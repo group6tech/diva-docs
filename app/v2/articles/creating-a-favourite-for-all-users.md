@@ -1,5 +1,5 @@
 ---
-title: Creating a favourite for all users
+title: Creating a Favourite for all users
 category: admin
 topic: favourites
 sortOrder: 3
