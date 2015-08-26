@@ -49,9 +49,15 @@ See [What are the different Drive types?](/v2/articles/what-are-the-different-dr
 
 ## <a name="favourites"></a>Favourites
 
-Favourites provide you with easy access to the drives you use most often. A favourite is a customised grouping of drives. With a favourite, you can mount a set of drives in one go; you don't have to locate and mount drives one at a time.
+Favourites provide you with easy access to the drives you most often.
+A favourite is a customised collection of DIVA drives that can be mounted in one go.
+This saves users time because by using favourites, you don't have to locate and mount the drives required one-by-one.
 
-Favourites can be made available to all DIVA Client users or a particular group of users.
+A favourite can be set up for:
+
+- all DIVA Client users
+- a particular group of users, e.g., a project team, or
+- multiple groups of users.
 
 ## <a name="password"></a>Password
 
