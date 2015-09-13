@@ -9,13 +9,14 @@
 <!-- /header -->
 
 <body>
-<div id="container">
-	<!-- banner -->
+<div id="container"> 
   <div id="banner"><a name="apex" id="apex"></a>
-  	<h1 id="top"><a href="/index.html">DIVA Help</a></h1>
-		<button class="btn btn-inverse nav-toggle" type="button" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-controls="mainNav" title="Show menu"><i class="fa fa-bars"></i></button>
+  <p><a href="../index.htm">DIVA Help</a></p>
   </div>
   <!-- /banner -->
+
+<button class="btn btn-inverse nav-toggle" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-controls="mainNav" title="Show menu"><i class="fa fa-bars"></i></button>
+
 
   <!-- swiftype -->
   <script type="text/javascript">
@@ -27,10 +28,10 @@
 	</script>
   <!-- /swiftype -->
 
-	<nav id="mainNav" class="collapse navbar-collapse">
-  <div id="navlevel1">
+
+  <div id="navlevel1"> 
     <ul>
-      <li><a href="../index.html">About DIVA</a></li>
+      <li><a href="../index.htm">About DIVA</a></li>
       <li><a href="../user/index.htm">DIVA Client</a></li>
       <li id="current"><a href="index.htm">DIVA Fusion</a></li>
     </ul>
@@ -45,9 +46,11 @@
 	  <li><a href="nodes.htm" >Nodes</a></li>
 	  <li><a href="volumes.htm">Volumes</a></li>
 	  <li><a href="drives.htm" >Drives</a></li>
+	  <li><a href="projects.htm">Projects</a></li>
 	  <li><a href="user_accounts.htm"class="active">User Accounts</a></li>
 	  <li><a href="favourites.htm">Favourites</a></li>
 	  <li><a href="media.htm">Media</a></li>
+	  <li><a href="events.htm">Jobs, Events &amp; Notifications</a></li>
 	</ul>
   </div>
   <!-- /navlevel2 -->
@@ -76,8 +79,9 @@
 		<li><a href="#add">Adding a DIVA User Account</a></li>
 		<li><a href="#drives">Modifying a User's Access to One or More Drives</a></li>
 		<li><a href="#enable">Enabling a User Account</li>
+		<li><a href="#health">Performing a Health Check on a User Account</li>			
 		<li><a href="#disable">Disabling a User Account</li>
-		<li><a href="#signingoff">Forcing a User to Sign Off DIVA Client</li>
+		<li><a href="#signingoff">Forcing a User to Sign Off DIVA Client</li>	
 		<li><a href="#delete">Deleting a User Account</li>
 		<li><a href="#reset">Resetting a User's Password</li>
 		<li><a href="#system">System User Groups</li>
@@ -90,7 +94,7 @@
 <!--    Start Topic    -->
     <hr />
     <ul class="jump_up">
-      <li><a name="add" id="add"></a><a href="#apex" accesskey="t" >Back
+      <li><a name="add" id="add"></a><a href="#apex" accesskey="t" >Back 
         to <kbd>t</kbd>op</a></li>
     </ul>
 
@@ -100,7 +104,7 @@
 	      <li>DIVA Client</li>
 	      <li>DIVA Fusion</li>
 	    </ul>
-
+		
     <h3>Before You Begin</h3>
     <p>Before adding a user account, ensure:</p>
     <ul>
@@ -132,7 +136,7 @@
         </ul>
       </li>
 
-      <li>Click Save User
+      <li>Click Save User 
         <ul>
           <li>Result: Assuming the user account does conflict with another user account, the user account is created.</li>
         </ul>
@@ -144,13 +148,13 @@
         </ul>
       </li>
 
-      <li>Click Save User.
+      <li>Click Save User.        
       <ul>
           <li>Result: The changes you made are saved, and the user account is enabled.</li>
         </ul>
       </li>
     </ol>
-
+    
     <h4>What Next?</h4>
     	<p>Grant the user access to one or more drives. To do this see <a href="#drives">'Modifying a User's Access to One or More Drives'</a></p>
 
@@ -163,7 +167,7 @@
 <!--    Start Topic    -->
     <hr />
     <ul class="jump_up">
-      <li><a name="drives" id="drives"></a><a href="#apex" accesskey="t" >Back
+      <li><a name="drives" id="drives"></a><a href="#apex" accesskey="t" >Back 
         to <kbd>t</kbd>op</a></li>
     </ul>
 
@@ -177,11 +181,11 @@
       <li>grant read/write access to one or more drives</li>
       <li class="note">Note: The user has full access to the drive and can save this files to it.</li>
     </ul>
-
-
-
+	
+	
+	
 	<p class="imagecentre"><img src="../images/drive-permissions.png" alt="IMAGE NAME"/>Granting a User Permission to Save Files (Write) to a Drive</p>
-
+	
 	<p class="alert"><strong>NOTICE!</strong> Moving Users' Media <br/>If you choose to restrict users' access to an Avid Media drive, you will be given the option to move the users' media to another user account. Proceed carefully. Once the media is moved, this cannot be undone.</p>
 
     <h3>Before You Begin</h3>
@@ -224,7 +228,7 @@
         </ul>
       </li>
     </ol>
-
+    
     <h4>What's Next?</h4>
     	<p>Remember to notify the user of the changes.</p>
 
@@ -244,7 +248,7 @@
 <!--    Start Topic    -->
     <hr />
     <ul class="jump_up">
-      <li><a name="enable" id="enable"></a><a href="#apex" accesskey="t" >Back
+      <li><a name="enable" id="enable"></a><a href="#apex" accesskey="t" >Back 
         to <kbd>t</kbd>op</a></li>
     </ul>
 
@@ -254,7 +258,7 @@
     <h3>Before You Begin</h3>
     <p>Before enabling a user account, ensure DIVA Fusion is running and you are signed in.</p>
 
-
+    
     <h3>To enable a user account:</h3>
     <ol class="step">
        <li>From DIVA Fusion's Users menu, click Users.
@@ -282,10 +286,79 @@
 
 
 
+
+
+
+
+
+
 <!--    Start Topic    -->
     <hr />
     <ul class="jump_up">
-      <li><a name="disable" id="disable"></a><a href="#apex" accesskey="t" >Back
+      <li><a name="health" id="health"></a><a href="#apex" accesskey="t" >Back 
+        to <kbd>t</kbd>op</a></li>
+    </ul>
+
+    <h2>Performing a Health Check on a User Account</h2>
+	<p>This process checks the selected users' details, e.g., password, for consistency across all DIVA nodes. Perform this health check whenever a user is having problems using DIVA Client.</p>
+
+    <h3>Before You Begin</h3>
+    <p>Before performing a health check on a user account, ensure:</p>
+    <ul>
+      <li>ensure DIVA Fusion is running and you are signed in, and</li>
+      <li>the users whose accounts you want to perform a health check on, are signed out.</li>
+      <li class="note">Note: Out of courtesy, please notify the user before disconnecting the user's account.</li>
+    </ul>
+
+    <h3>To perform a health check on a user account:</h3>
+    <ol class="step">
+
+       <li>From DIVA Fusion's Users menu, click Users.
+        <ul>
+          <li>Result: A list of users is displayed.</li>
+        </ul>
+      </li>
+
+      <li>Select the relevant user account.
+        <ul>
+          <li>Note: This is the user account that you want to perform a health check on.</li>
+          <li>Note: You can select more than one user account.</li>
+        </ul>
+      </li>
+
+      <li>If the user is signed in (online), disconnect the user account.
+        <ul>
+          <li>Note: To disconnect the selected user's account, click Disconnect.</li>
+          <li>Note: The user is automatically warned through DIVA Client that server is shutting down and that they will be disconnected.</li>
+        </ul>
+      </li>
+	 <li>Click Health Check. 
+	  <ul>
+	    <li>Result: You will be informed that the health check has started.</li>
+	  </ul>
+ 	</li>
+      
+      
+    </ol>
+    
+    <h4>What's Next?</h4>
+    	<p>To see if the health check is complete, on the DIVA Fusion menu, click System, then click Jobs. The job will be in the list. It will either be queued, running or completed</p>
+
+
+<p class="imagecentre"><img src="../images/project-list-run-com.png" alt="Health Check Job"/>Health Check Job Running and Completed</p>
+
+
+
+
+
+
+
+
+
+<!--    Start Topic    -->
+    <hr />
+    <ul class="jump_up">
+      <li><a name="disable" id="disable"></a><a href="#apex" accesskey="t" >Back 
         to <kbd>t</kbd>op</a></li>
     </ul>
 
@@ -294,7 +367,7 @@
     <h3>Before You Begin</h3>
     <p>Before disabling a user account, ensure DIVA Fusion is running and you are signed in.</p>
 
-
+    
     <h3>To disable a user account:</h3>
     <ol class="step">
        <li>From DIVA Fusion's Users menu, click Users.
@@ -311,7 +384,7 @@
 
       <li>Deselect (remove tick) the 'Enable User Account' option.</li>
 
-      <li>Click Save User.</span>
+      <li>Click Save User.
         <ul>
           <li>Result: The changes you made are saved, and the user account is disabled.</li>
         </ul>
@@ -327,7 +400,7 @@
 <!--    Start Topic    -->
     <hr />
     <ul class="jump_up">
-      <li><a name="signingoff" id="signingoff"></a><a href="#apex" accesskey="t" >Back
+      <li><a name="signingoff" id="signingoff"></a><a href="#apex" accesskey="t" >Back 
         to <kbd>t</kbd>op</a></li>
     </ul>
 
@@ -360,7 +433,7 @@
         </ul>
       </li>
     </ol>
-
+    
 
 
 
@@ -377,7 +450,7 @@
 <!--    Start Topic    -->
     <hr />
     <ul class="jump_up">
-      <li><a name="delete" id="delet"></a><a href="#apex" accesskey="t" >Back
+      <li><a name="delete" id="delet"></a><a href="#apex" accesskey="t" >Back 
         to <kbd>t</kbd>op</a></li>
     </ul>
 
@@ -388,7 +461,7 @@
     <h3>Before You Begin</h3>
     <p>Before deleting a user account, ensure DIVA Fusion is running and you are signed in.</p>
 
-
+    
     <h3>To delete a user account:</h3>
     <ol class="step">
        <li>From DIVA Fusion's Users menu, click Users.
@@ -420,23 +493,23 @@
         </ul>
       </li>
     </ol>
-
+    
 
 
 
 <!--    Start Topic    -->
     <hr />
     <ul class="jump_up">
-      <li><a name="reset" id="reset"></a><a href="#apex" accesskey="t" >Back
+      <li><a name="reset" id="reset"></a><a href="#apex" accesskey="t" >Back 
         to <kbd>t</kbd>op</a></li>
     </ul>
 
-    <h2>Resetting a User's Password</h2>
+    <h2>Resetting a User's Password</h2> 
 
     <h3>Before You Begin</h3>
     <p>Before resetting a user's password, ensure DIVA Fusion is running and you are signed in.</p>
 
-
+    
     <h3>To reset a user's password:</h3>
     <ol class="step">
        <li>From DIVA Fusion's Users menu, click Users.
@@ -452,8 +525,8 @@
       </li>
 
       <li>Click Membership.</li>
-
-      <li>Click Change Password
+      
+      <li>Click Change Password 
         <ul>
           <li>Result: Two password fields are displayed.</li>
         </ul>
@@ -479,14 +552,14 @@
 <!--    Start Topic    -->
     <hr />
     <ul class="jump_up">
-      <li><a name="system" id="system"></a><a href="#apex" accesskey="t" >Back
+      <li><a name="system" id="system"></a><a href="#apex" accesskey="t" >Back 
         to <kbd>t</kbd>op</a></li>
     </ul>
 
     <h2>System User Groups</h2>
 	<p>System user groups control access to the different areas of DIVA Fusion.</p>
-
-
+	
+	
 	<h4>Server Administrator</h4>
 	<p>A Server Administrator can:</p>
 	    <ul>
@@ -504,7 +577,7 @@
 	      <li>manage projects, and</li>
 	      <li>modify users' access to drives (permissions)</li>
 	    </ul>
-
+	
 
 	<h4>User Administrator</h4>
 	<p>A User Administrator can:.</p>
@@ -512,14 +585,14 @@
 	      <li>add, enable, disable, modify and delete user accounts, and</li>
 	      <li>modify users' access to drives (permissions)</li>
 	    </ul>
-
+	    
 	<h4>Group Administrator</h4>
 	<p>A Group Administrator can:</p>
 	    <ul>
 	      <li>create, edit and delete user groups, and</li>
 	      <li>assign user accounts to user groups.</li>
 	    </ul>
-
+	
 	<h4>Administrator</h4>
 	<p>An Administrator can do all of the above. That is, an administrator can do everything a:</p>
 	    <ul>
@@ -528,9 +601,9 @@
 	      <li>User Administrator can do, and</li>
 	      <li>Group Administrator can do.</li>
 	    </ul>
+	
 
-
-
+	
 
 
 
@@ -538,13 +611,13 @@
 <!--    Start Topic    -->
     <hr />
     <ul class="jump_up">
-      <li><a name="set" id="set"></a><a href="#apex" accesskey="t" >Back
+      <li><a name="set" id="set"></a><a href="#apex" accesskey="t" >Back 
         to <kbd>t</kbd>op</a></li>
     </ul>
 
     <h2>Setting Up a User Group</h2>
 	<p>If you want to create a favourite for a specific set of DIVA Client users to use, e.g., a project team, first you need to set up a user group and assign individual user accounts to it.</p>
-
+	
 
     <h3>Before You Begin</h3>
     <p>Before setting up a user group, ensure DIVA Fusion is running and you are signed in.</p>
@@ -581,7 +654,7 @@
           <li>Result: The group is created and a Members tab is added next to the Properties tab.</li>
         </ul>
       </li>
-
+      
       <li>Click Members.
         <ul>
           <li>Result: A drop down menu of user accounts is displayed.</li>
@@ -590,13 +663,13 @@
 
       <li>From the drop down menu, select the user account that you want to add to the group.</li>
 
-      <li>Click '+Add Member'
+      <li>Click '+Add Member' 
         <ul>
           <li>Result: A table lists the group's new user account.</li>
         </ul>
       </li>
-
-      <li>Do you want to add another user account to the group?
+      
+      <li>Do you want to add another user account to the group? 
         <ul>
           <li>If Yes, go to Step 7.</li>
           <li>If No, go to What's Next? (below).</li>
@@ -604,7 +677,7 @@
       </li>
 
     </ol>
-
+    
     <h4>What's Next?</h4>
     	<p>Click All Groups to see your new group listed along with the other groups.</p>
 
@@ -614,12 +687,12 @@
 <!--    Start Topic    -->
     <hr />
     <ul class="jump_up">
-      <li><a name="adduser" id="adduser"></a><a href="#apex" accesskey="t" >Back
+      <li><a name="adduser" id="adduser"></a><a href="#apex" accesskey="t" >Back 
         to <kbd>t</kbd>op</a></li>
     </ul>
 
     <h2>Adding a User Account to a User Group</h2>
-
+	
 
     <h3>Before You Begin</h3>
     <p>Before adding a user account to a user group, ensure DIVA Fusion is running and you are signed in.</p>
@@ -648,12 +721,12 @@
 
       <li>From the drop down menu, select the user account that you want to add to the group.</li>
 
-      <li>Click '+Add Member'
+      <li>Click '+Add Member' 
         <ul>
           <li>Result: A table lists the group's new member.</li>
         </ul>
       </li>
-
+      
       <li>Do you want to add another user account to the group?
         <ul>
           <li>If Yes, go to Step 5.</li>
@@ -662,7 +735,7 @@
       </li>
 
     </ol>
-
+    
     <h4>What's Next?</h4>
     	<p>Click All Groups to see your new group listed along with the other groups.</p>
 
@@ -670,12 +743,12 @@
 <!--    Start Topic    -->
     <hr />
     <ul class="jump_up">
-      <li><a name="removeuser" id="removeuser"></a><a href="#apex" accesskey="t" >Back
+      <li><a name="removeuser" id="removeuser"></a><a href="#apex" accesskey="t" >Back 
         to <kbd>t</kbd>op</a></li>
     </ul>
 
     <h2>Removing a User Account from a User Group</h2>
-
+	
 
     <h3>Before You Begin</h3>
     <p>Before removing a user account from a user group, ensure DIVA Fusion is running and you are signed in.</p>
@@ -695,19 +768,19 @@
         </ul>
       </li>
 
-      <li>Click Groups.
+      <li>Click Groups. 
         <ul>
           <li>Result: The groups to which the user belongs are listed at the bottom of the page. A small cross is displayed against the groups from which the user account can be removed.</li>
         </ul>
       </li>
-
-      <li>Click the relevant user's cross.
+      
+      <li>Click the relevant user's cross. 
         <ul>
           <li>Result: The user is removed from the group.</li>
         </ul>
       </li>
     </ol>
-
+    
 
 
 
@@ -720,8 +793,8 @@
 
 </div><!-- /container -->
 
-  <div id="footer">
-	  <p>&#169; Group 6 Technologies</p>
+  <div id="footer"> 
+	  <p>&#169; Group 6 Technologies</p>  
 	</div>
   <!-- /footer -->
 
@@ -741,3 +814,4 @@
 <script src="/css_and_scripts/main.js"></script>
 </body>
 </html>
+
