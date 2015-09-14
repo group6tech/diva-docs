@@ -1,4 +1,5 @@
 .gh-pages/
+.jekyll/
 .sass-cache/
 .tmp/
 bower_components/
