@@ -76,10 +76,11 @@
     <ul id="jump_down">
       <li><a href="#type">Drive Types</a></li>
       <li><a href="#searching">Search for a Drive</a></li>
-      <li><a href="#colour">Drive Colours</a> </li>
-      <li><a href="#information">Displaying a Drive's Information</a> </li>
+      <li><a href="#colour">Drive Colours</a></li>
+      <li><a href="#information">Displaying a Drive's Information</a></li>
       <li><a href="#mounting">Mounting a Drive</a></li>
-      <li><a href="#unmounting">Unmounting a Drive</a> </li>
+      <li><a href="#unmounting">Unmounting a Drive</a></li>
+			<li><a href="#ftp">Using FTP Drives</a></li>
       <li><a href="#browsing">Displaying a Mounted Drive's Directory in Windows Explorer</a></li>
     </ul>
 
@@ -101,6 +102,10 @@
 	<p>On an Avid Media drive, you can only save and work with Avid MXF files. </p>
 	<h4>Avid Projects</h4>
 	<p>On an Avid Projects drive, you can only save and work with Avid bins (project files).</p>
+	<h4>FTP Drive</h4>
+	<p>An FTP server hosted outside of DIVA.</p>
+	<h4>Network Drive</h4>
+	<p>A network share within your LAN which is not a DIVA drive.</p>
 
 <p class="note">Note: For some drives your user account may restrict you to read-only access. If you require full access to a drive, please contact someone in your company who has administration access.</p>
 
@@ -272,6 +277,31 @@
         </ul>
       </li>
     </ol>
+
+
+
+<!--    Start Topic    -->
+
+		<hr/>
+		<ul class="jump_up">
+			<li>
+				<a name="ftp" id="ftp"></a>
+				<a href="#apex" accesskey="t" >Back to <kbd>t</kbd>op</a>
+			</li>
+    </ul>
+
+		<h2>Using FTP Drives</h2>
+
+		<p>
+			FTP are not mounted as a local drive on your edit suite.
+			Instead, an FTP drive is <em>opened</em>.
+		</p>
+
+		<p>When you open an FTP drive, the default FTP software on your computer is used to open the connection to the remote server.</p>
+		<p>If you do not have any specific FTP software installed on your computer, then the FTP server will likely open in your default internet browser. Unfortunately this does not allow you to upload.</p>
+		<p>If you wish to open FTP drives in a "real" FTP client, we recommend <a href="https://winscp.net/eng/download.php" target="_blank">WinSCP</a> for Windows, and <a href="https://cyberduck.io/" target="_blank">Cyberduck</a> for OS X.</p>
+
+		<p class="note">Note: FileZilla is not supported on either operating system, as it does handle ftp:// addresses automatically.</p>
 
 
 

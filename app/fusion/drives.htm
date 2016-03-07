@@ -80,7 +80,8 @@
     <h4>On this page:</h4>
     <ul id="jump_down">
       <li><a href="#drives">About Drives</a></li>
-      <li><a href="#add">Adding a Drive to a Volume</a></li>
+      <li><a href="#add">Adding a DIVA Drive to a Volume</a></li>
+			<li><a href="#addexternal">Adding an External Drive</a></li>
       <li><a href="#access">Modifying Access to a Drive for One or More Users</a> </li>
       <li><a href="#set">Adding a Drive Set</a></li>
       <li><a href="#quota">Setting a Drive Capacity Quota</a></li>
@@ -105,10 +106,10 @@
 	<p class="note">Note: These drives are not physical storage devices; they are virtual drives that reside on the volume (storage device).</p>
 	<h3>Drive Types</h3>
     <p>The picture to the right shows a volume (hard disk). In this example, the volume has been assigned to an Avid Pool and three drives have been set up; one of each type.</p>
-	  <p>There are three types of drive: </p>
+	  <p>There are three types of <strong>DIVA</strong> drive: </p>
 	      <ul>
 		      <li>Basic Drive</li>
-		      <li>Avid Media Drive.</li>
+		      <li>Avid Media Drive</li>
 		      <li>Avid Projects Drive</li>
 		  </ul>
 
@@ -123,6 +124,25 @@
 	<h4>Projects Drives</h4>
 	  <p>Projects drives are optimised exclusively for Avid Media Composer projects and bins. To share an Avid project, it has to be created on a Projects drive.</p>
 	  <p class="note">Note: With Avid, you can't create Avid MXF files on a projects drive.</p>
+
+		<hr/>
+
+		<p>There are also two types of <strong>external</strong> drives:</p>
+		<ul>
+			<li>FTP Drive</li>
+			<li>Network Drive</li>
+		</ul>
+
+		<h4>FTP Drives</h4>
+		<p>
+			FTP drives allow DIVA users to connect to FTP servers through DIVA Client.
+			FTP drives do not mount as normal drives on the edit suite, and may require third-party software to work correctly.
+		</p>
+		<p class="note">Note: Passwords stored for FTP drives may be seen in clear text by users.</p>
+
+		<h4>Network Drives</h4>
+		<p>Network drives are shares which exist within your LAN, and you want DIVA users to be able to easily mount on their suites.</p>
+		<p class="note">Note: Passwords stored for Network drives may be seen in clear text by users.</p>
 
 
 
@@ -142,8 +162,8 @@
         to <kbd>t</kbd>op</a></li>
     </ul>
 
-    <h2>Adding a Drive to a Volume</h2>
-	<p>The following diagram identifies the drives that can be added to a particular volume. </p>
+    <h2>Adding a DIVA Drive to a Volume</h2>
+	<p>The following diagram identifies the DIVA drives that can be added to a particular volume. </p>
 	<p class="imagecentre"><img src="/images/license-06.png" alt="IMAGE NAME"/>Drives &amp; Volumes</p>
 	<p>If the volume is assigned to an Avid Pool, drives of any type (Basic, Media &amp; Project) can be added to it. If the volume is assigned to a Basic Pool, only Basic Drives can be added to the volume.</p>
 	<p class="note">Note: These drives are not physical storage devices; they are virtual drives that reside on the volume (storage device). When mounted by a user on a Windows PC, the drive is assigned a drive number. </p>
@@ -165,18 +185,22 @@
           <li>Result: The Properties tab is displayed.</li>
         </ul>
       </li>
-      <li>From the Volume drop down menu, select the relevant volume. </li>
-      <li>In the Drive Name field, type the name that you want to call this drive.
+			<li>
+				From the Drive Type drop down menu, select relevant drive type.
+				<ul>
+					<li>Result: The Volume drop down menu appears.</li>
+          <li>Note: Ensure the select drive type correlates with the selected volume's license.</li>
+          <li>Note: You can't add a projects drive to a Basic volume. You can only add a new projects drive to a Media or Projects volume if this has been permitted for the volume.</li>
+        </ul>
+			</li>
+
+			<li>In the Drive Name field, type the name that you want to call this drive.
         <ul>
           <li>Note: You can use uppercase and lowercase letters, numerals, dashes and underscores. Do not use slashes or any other special characters.</li>
         </ul>
       </li>
-      <li>Select the relevant drive type.
-        <ul>
-          <li>Note: Ensure the select drive type correlates with the selected volume's license.</li>
-          <li>Note: You can't add a projects drive to a Basic volume. You can only add a new projects drive to a Media or Projects volume if this has been permitted for the volume.</li>
-        </ul>
-      </li>
+
+      <li>From the Volume drop down menu, select the relevant volume. </li>
 
       <li>Ensure the Enabled checkbox is selected (ticked).
         <ul>
@@ -197,6 +221,90 @@
     </ul>
       <ul class="jump_away">
     	<li><a href="#access">Grant one user access to multiple drives, including this one.</a></li>
+      </ul>
+
+
+
+
+
+
+
+			<!--    Start Topic    -->
+	    <hr />
+	    <ul class="jump_up">
+	      <li>
+					<a name="addexternal" id="access"></a>
+					<a href="#apex" accesskey="t" >Back t<kbd>t</kbd>op</a>
+				</li>
+	    </ul>
+
+			<h2>Adding an External Drive</h2>
+			<p>You can add drives which are external to, and not managed by the DIVA system.</p>
+			<p>
+				These drives may be either FTP servers, or network shares within your LAN.<br/>
+				DIVA has no control over these drives, and only allows your users to mount them easily in their edit suites.
+			</p>
+
+			<h3>Before You Begin</h3>
+	    <p>Before adding an external drive, ensure DIVA Fusion is running and you are signed in.</p>
+			<p>You will also need the details of the external server, such as hostname, username, and password.</p>
+
+			<h3>To add an external drive:</h3>
+			<ol class="step">
+				<li>
+					From DIVA Fusion's Drives menu, click Drives.
+					<ul>
+          	<li>Result: The DIVA Drives page is displayed.</li>
+         </ul>
+			 	</li>
+			 	<li>
+					Click New Drive.
+        	<ul>
+          	<li>Result: The Properties tab is displayed.</li>
+         	</ul>
+       	</li>
+				<li>
+			 		From the Drive Type drop down menu, select either FTP or Network.
+					<ul>
+            <li>Result: Addtional fields will appear, including Hostname, Username, and Password.</li>
+          </ul>
+		 		</li>
+				<li>
+					In the Drive Name field, type the name that you want to call this drive.
+					<ul>
+						<li>Note: You can use uppercase and lowercase letters, numerals, dashes and underscores. Do not use slashes or any other special characters.</li>
+					</ul>
+				</li>
+			 	<li>
+					Complete the Hostname/IP, Path, Username, Password, and Port fields, using the remote server details.
+					<ul>
+						<li>Note: Port is only presented for FTP drives, and defaults to 21 if not specified.</li>
+						<li>Note: Use Path to specify a sub-directory on the remote server which you want to be the root of the mounted drive on the edit suite.</li>
+					</ul>
+				</li>
+				<li>
+					Ensure the Enabled checkbox is selected (ticked).
+	        <ul>
+	          <li>Note: If you deselect this option, users will not be able to access the drive.</li>
+	        </ul>
+	      </li>
+				<li>Click Save Drive.
+	        <ul>
+	          <li>Result: The external drive is recorded in the system.</li>
+	        </ul>
+	      </li>
+			</ol>
+
+			<h4>What's Next?</h4>
+	    <ul id="jump_down">
+				<li>
+					<a href="/fusion/user_accounts.htm#drives">Grant a number of users access to this drive.</a>
+				</li>
+	    </ul>
+      <ul class="jump_away">
+    		<li>
+					<a href="#access">Grant one user access to multiple drives, including this one.</a>
+				</li>
       </ul>
 
 
