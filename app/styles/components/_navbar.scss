@@ -5,16 +5,12 @@
 .navbar {
   z-index: $z-index-navbar;
 
-  padding-top: $padding-base;
-  padding-bottom: $padding-base;
+  padding-top: $spacer;
 
   color: $white;
-  text-align: center;
 
   @media only screen and (min-width: $screen-sm-min) {
     min-height: ($padding-base * 6.5);
-
-    text-align: left;
   }
 
   @media only screen and (min-width: $screen-md-min) {
@@ -31,6 +27,8 @@ body:not(.with-jumbo) .navbar {
 // -----------------------------------------------------------------------------
 
 .navbar__brand {
+  float: left;
+
   margin: 0;
 
   font-weight: $font-weight-light;
@@ -62,12 +60,79 @@ body:not(.with-jumbo) .navbar {
 
 
 
+// Menu
+// -----------------------------------------------------------------------------
+
+.navbar__menu {
+  float: right;
+}
+
+
+
+// Toggler
+// -----------------------------------------------------------------------------
+
+.navbar__toggler {
+  font-size: $font-size-base * 1.5;
+
+  background: transparent;
+  border: 0 none;
+
+  &:active,
+  &:focus {
+    outline: 0;
+  }
+}
+
+
+
+
 // Content
 // -----------------------------------------------------------------------------
 
 .navbar__content {
+  display: none;
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2000;
+
+  padding: $spacer;
+
+  background-color: $brand-primary;
+
   @media only screen and (min-width: $screen-sm-min) {
     float: right;
+  }
+}
+
+.navbar__content.is-open {
+  display: block;
+}
+
+.navbar__content.is-closed {
+  display: none;
+}
+
+
+
+// Content Close
+// -----------------------------------------------------------------------------
+
+.navbar__content__close {
+  float: right;
+
+  font-size: $font-size-base * 1.5;
+
+  background: transparent;
+  border: 0 none;
+
+  &:active,
+  &:focus {
+    outline: 0;
   }
 }
 
@@ -76,7 +141,13 @@ body:not(.with-jumbo) .navbar {
 // -----------------------------------------------------------------------------
 
 .navbar__nav {
+  clear: both;
+
+  margin-top: $spacer * 5;
+
+  font-size: $font-size-base * 2;
   font-weight: $font-weight-light;
+  line-height: 1;
 
   @media only screen and (min-width: $screen-sm-min) {
   }
@@ -96,11 +167,20 @@ body:not(.with-jumbo) .navbar {
       padding-bottom: $padding-small + $padding-smaller;
     }
 
-    color: transparentize($white, .2);
+    //color: transparentize($white, .2);
+    color: $white;
 
     &:hover {
       color: $white;
     }
+  }
+}
+
+.navbar__nav .nav__item {
+  display: block;
+
+  + .nav__item {
+    margin-top: $spacer * 1.5;
   }
 }
 
@@ -122,6 +202,8 @@ body.editor .navbar__editor {
 // -----------------------------------------------------------------------------
 
 .navbar__form {
+  display: none;
+
   margin-top: $padding-base;
 
   @media only screen and (min-width: $screen-sm-min) {

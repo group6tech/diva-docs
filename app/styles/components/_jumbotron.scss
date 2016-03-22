@@ -17,7 +17,11 @@
 	}
 
 	h1 {
+		clear: both;
+
 		margin-top: 0;
+
+		line-height: 1.2;
 
 		@media only screen and (min-width: $screen-sm-min) {
 			font-size: 4.2rem;
@@ -54,6 +58,8 @@
 
 body.with-jumbo .navbar + .jumbotron {
 	$multiplier: 11;
-	margin-top: -($padding-base * $multiplier);
-	padding-top: ($padding-base * (2 + $multiplier));
+
+	margin-top: -($spacer);
+	padding-top: $spacer * 8;
+	padding-bottom: $spacer * 6;
 }

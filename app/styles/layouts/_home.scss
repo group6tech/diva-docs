@@ -1,0 +1,17 @@
+//
+// Layouts - Home
+// ============================================================================
+
+.home__search {
+  .form__control {
+    width: 100%;
+    padding: $spacer;
+  }
+}
+
+.home__popular {
+  a {
+    color: $white;
+    text-decoration: underline;
+  }
+}

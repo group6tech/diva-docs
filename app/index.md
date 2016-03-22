@@ -6,9 +6,21 @@ bodyClass: with-jumbo
 
 <div class="jumbotron">
   <div class="container">
-    <h1>DIVA</h1>
-    <p>Help documentation for users and administrators.</p>
-    <a href="/v2" class="btn btn--default">Browse the documentation</a>
+    <h1>Hi. How can we help?</h1>
+
+    <form class="home__search" role="search">
+      <div class="form__group">
+        <input type="text" class="form__control" placeholder="Search the Help Center"/>
+      </div>
+    </form>
+
+    <p class="home__popular">
+      <strong>Popular help topics:</strong>
+      <a href="/">drives</a>,
+      <a href="/">users</a>,
+      <a href="/">projects</a>
+    </p>
+
   </div>
 </div>
 

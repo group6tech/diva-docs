@@ -3,6 +3,7 @@
 // =============================================================================
 
 
+
 // Colours
 // -----------------------------------------------------------------------------
 
@@ -66,6 +67,8 @@ $font-family-base:              $font-family-sans-serif;
 $font-size-smaller:             1.2rem;
 $font-size-small:               1.4rem;
 $font-size-base:                1.6rem;
+$font-size-large:               2rem;
+$font-size-larger:              2.6rem;
 
 $font-weight-light:             300;
 $font-weight-normal:            400;
@@ -80,6 +83,8 @@ $line-height-base:             	1.6;
 // Box Model
 // -----------------------------------------------------------------------------
 
+$spacer:                        1.6rem;
+
 $padding-smaller:               .4rem;
 $padding-small:                 .8rem;
 $padding-base:                  1.6rem;
@@ -93,6 +98,14 @@ $z-index-navbar:								1000;
 
 // Responsive breakpoints
 // -----------------------------------------------------------------------------
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 544px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
 
 $screen-sm-min:                 480px;
 $screen-md-min:                 680px;
