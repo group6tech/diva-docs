@@ -48,14 +48,12 @@ module.exports = function(grunt) {
       },
       livereload: {
         options: {
-          middleware: function(connect) {
-            return [
-              connect.static(config.jekyll),
-              connect.static(config.temp),
-              connect().use('/bower_components', connect.static('./bower_components')),
-              connect.static(config.src)
-            ];
-          }
+          base: [
+            '<%= config.jekyll %>',
+            '<%= config.temp %>',
+            '<%= config.src %>',
+            '.'
+          ]
         }
       }
     },
