@@ -6,6 +6,7 @@
   z-index: $z-index-navbar;
 
   padding-top: $spacer;
+  padding-bottom: $spacer;
 
   color: $white;
 
@@ -31,8 +32,6 @@ body:not(.with-jumbo) .navbar {
   left: 0;
   right: 0;
 
-  padding-bottom: $spacer;
-
   background-color: $brand-primary;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
 }
@@ -47,6 +46,7 @@ body:not(.with-jumbo) .navbar {
   margin: 0;
 
   font-weight: $font-weight-light;
+  line-height: 1;
 
   @media only screen and (min-width: $screen-sm-min) {
     float: left;
@@ -68,7 +68,10 @@ body:not(.with-jumbo) .navbar {
 // -----------------------------------------------------------------------------
 
 .navbar__logo {
-  width: ($padding-base * 3);
+  position: relative;
+  top: -2px;
+
+  width: ($padding-base * 2.5);
 
   vertical-align: middle;
 }
@@ -84,12 +87,10 @@ body:not(.with-jumbo) .navbar {
 
 
 
-// Toggler
+// Buttons
 // -----------------------------------------------------------------------------
 
-.navbar__toggler {
-  font-size: $font-size-base * 1.5;
-
+.navbar__button {
   background: transparent;
   border: 0 none;
 
@@ -97,6 +98,24 @@ body:not(.with-jumbo) .navbar {
   &:focus {
     outline: 0;
   }
+}
+
+.navbar__toggler,
+.navbar__button--search {
+  font-size: $font-size-base * 1.5;
+  line-height: 1.4;
+}
+
+
+// Search
+// -----------------------------------------------------------------------------
+
+.navbar__button--search {
+  display: none;
+}
+
+.affix .navbar__button--search {
+  display: inline-block;
 }
 
 
@@ -216,10 +235,16 @@ body.editor .navbar__editor {
 // Form
 // -----------------------------------------------------------------------------
 
-.navbar__form {
-  display: none;
+.navbar__search {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 
-  margin-top: $padding-base;
+  display: none;
+  padding: $spacer ($spacer * 3);
+
+  background-color: $brand-primary;
 
   @media only screen and (min-width: $screen-sm-min) {
     margin-top: 0;
@@ -232,29 +257,53 @@ body.editor .navbar__editor {
     margin-top: $padding-small;
   }
 
-  .form__group {
-    display: inline-block;
+  .fa {
+    font-size: $font-size-base * 1.5;
+    line-height: 1;
+  }
+
+  .fa-search {
+    position: absolute;
+    top: $spacer * 1.4;
+    left: $spacer;
   }
 
   .form__control {
     @include placeholder-color(transparentize($white, .5));
 
-    display: inline-block;
-    width: ($padding-base * 9);
+    width: 100%;
+    padding: 0;
 
     color: $white;
+    font-size: $font-size-base * 1.5;
 
     background-color: transparent;
-    border-color: transparentize($white, .7);
-
-    vertical-align: middle;
+    border: 0 none;
 
     &:focus {
-      border-color: transparentize($white, .5);
+      //border-color: transparentize($white, .5);
     }
 
     @media only screen and (min-width: $screen-md-min) {
       width: ($padding-base * 6);
     }
+  }
+}
+
+.affix .navbar__search.is-open {
+  display: block;
+}
+
+.navbar__search__close {
+  position: absolute;
+  right: $spacer;
+  top: $spacer * 1.4;
+
+  background: transparent;
+  border: 0 none;
+
+  &:active,
+  &:focus {
+    outline: 0;
   }
 }

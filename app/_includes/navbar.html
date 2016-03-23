@@ -9,8 +9,21 @@
     </h1>
 
     <div class="navbar__menu">
-      <button class="navbar__toggler"><i class="fa fa-fw fa-bars"></i></button>
+      <button class="navbar__button navbar__button--search" type="button">
+        <i class="fa fa-fw fa-search"></i>
+      </button>
+      <button class="navbar__button navbar__toggler" type="button">
+        <i class="fa fa-fw fa-bars"></i>
+      </button>
     </div>
+
+    <form class="navbar__search" role="search">
+      <i class="fa fa-search"></i>
+      <input type="text" class="form__control" placeholder="Search the Help Center"/>
+      <button class="navbar__search__close" type="button">
+        <i class="fa fa-times"></i>
+      </button>
+    </form>
 
     <div class="navbar__content is-closed">
       <button class="navbar__content__close"><i class="fa fa-fw fa-times"></i></button>
@@ -21,13 +34,6 @@
           DIVA
         </a>
       </h1>
-
-      <form class="navbar__form" role="search">
-        <div class="form__group">
-          <input type="text" class="form__control" placeholder="Search"/>
-        </div>
-        <button type="submit" class="btn btn--primary"><i class="fa fa-fw fa-search"></i></button>
-      </form>
 
       <ul class="nav navbar__nav">
         <li class="nav__item"><a class="navbar__editor" href="/v2/editor">Using DIVA</a></li>
