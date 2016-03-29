@@ -21,6 +21,12 @@
     }
   }
 
+  p {
+    span {
+      display: block;
+    }
+  }
+
   .fa-circle {
     padding-left: $padding-small;
     padding-right: $padding-small;
