@@ -24,10 +24,17 @@
   p {
     span {
       display: block;
+
+      @media only screen and (min-width: $screen-md-min) {
+        display: inline;
+      }
     }
   }
 
   .fa-circle {
+    position: relative;
+    top: -.4rem;
+
     padding-left: $padding-small;
     padding-right: $padding-small;
 
