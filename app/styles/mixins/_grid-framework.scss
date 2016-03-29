@@ -28,6 +28,12 @@
       width: percentage(($index / $grid-columns));
     }
   }
+
+	@if ($type == offset) {
+		.col-#{$class}-offset-#{$index} {
+			margin-left: percentage(($index / $grid-columns));
+		}
+	}
 }
 
 
@@ -46,4 +52,5 @@
 
 @mixin make-grid($class) {
 	@include loop-grid-columns($grid-columns, $class, width);
+	@include loop-grid-columns($grid-columns, $class, offset);
 }

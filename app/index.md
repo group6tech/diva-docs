@@ -9,8 +9,10 @@ bodyClass: with-jumbo
     <h1>Hi. How can we help?</h1>
 
     <form class="home__search" role="search">
-      <div class="form__group">
-        <input type="text" class="form__control" placeholder="Search the Help Center"/>
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+          <input type="text" class="form__control" placeholder="Search the Help Center"/>
+        </div>
       </div>
     </form>
 

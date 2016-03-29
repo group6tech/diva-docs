@@ -3,12 +3,12 @@
     <h1 class="navbar__brand">
       <a href="/">
         <img class="navbar__logo" src="/images/diva.svg" alt="DIVA"/>
-        DIVA
-        <span class="hidden-sm-down">| Help Center</span>
+        <span>DIVA</span>
+        <span class="navbar__brand__help-center hidden-sm-down">| Help Center</span>
       </a>
     </h1>
 
-    <div class="navbar__menu">
+    <div class="navbar__menu hidden-md-up">
       <button class="navbar__button navbar__button--search" type="button">
         <i class="fa fa-fw fa-search"></i>
       </button>
@@ -16,6 +16,10 @@
         <i class="fa fa-fw fa-bars"></i>
       </button>
     </div>
+
+    <ul class="nav navbar__nav hidden-sm-down">
+      <li class="nav__item"><a class="navbar__support" href="/support.html">Get Help</a></li>
+    </ul>
 
     <form class="navbar__search" role="search">
       <i class="fa fa-search"></i>

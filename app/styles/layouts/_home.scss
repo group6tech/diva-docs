@@ -5,7 +5,7 @@
 .home__search {
   .form__control {
     width: 100%;
-    padding: $spacer;
+    padding: ($spacer / 2) $spacer;
   }
 }
 

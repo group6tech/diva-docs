@@ -8,4 +8,10 @@
       display: none !important;
     }
   }
+
+  .hidden-#{$bp}-up {
+    @include media-breakpoint-up($bp) {
+      display: none !important;
+    }
+  }
 }

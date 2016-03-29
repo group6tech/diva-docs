@@ -9,14 +9,6 @@
   padding-bottom: $spacer;
 
   color: $white;
-
-  @media only screen and (min-width: $screen-sm-min) {
-    min-height: ($padding-base * 6.5);
-  }
-
-  @media only screen and (min-width: $screen-md-min) {
-    min-height: ($padding-base * 5);
-  }
 }
 
 body:not(.with-jumbo) .navbar {
@@ -49,18 +41,16 @@ body:not(.with-jumbo) .navbar {
   font-weight: $font-weight-light;
   line-height: 1;
 
-  @media only screen and (min-width: $screen-sm-min) {
-    float: left;
-    margin-top: $padding-base;
-  }
-
-  @media only screen and (min-width: $screen-md-min) {
-    margin-top: 0;
-  }
-
   a {
     color: $white;
   }
+}
+
+.navbar__brand__help-center {
+  position: relative;
+  top: -.6rem;
+
+  font-size: $font-size-base;
 }
 
 
@@ -184,13 +174,14 @@ body:not(.with-jumbo) .navbar {
   font-weight: $font-weight-light;
   line-height: 1;
 
-  @media only screen and (min-width: $screen-sm-min) {
-  }
-
   @media only screen and (min-width: $screen-md-min) {
+    clear: none;
     float: right;
+
     margin-top: 0;
     margin-bottom: 0;
+
+    font-size: $font-size-base;
   }
 
   a {
@@ -230,6 +221,24 @@ body.editor .navbar__editor {
   font-weight: $font-weight-normal;
 }
 
+.navbar__nav a.navbar__support {
+  @media only screen and (min-width: $screen-md-min) {
+    padding-left: $spacer;
+    padding-right: $spacer;
+
+    font-weight: $font-weight-semi-bold;
+
+    background-color: $brand-primary;
+    border-radius: $border-radius;
+  }
+}
+
+.navbar.affix .navbar__nav a.navbar__support {
+  @media only screen and (min-width: $screen-md-min) {
+    border: 2px solid $white;
+  }
+}
+
 
 
 // Form
@@ -250,11 +259,6 @@ body.editor .navbar__editor {
     margin-top: 0;
 
     text-align: right;
-  }
-
-  @media only screen and (min-width: $screen-md-min) {
-    float: right;
-    margin-top: $padding-small;
   }
 
   .fa {
@@ -279,15 +283,46 @@ body.editor .navbar__editor {
 
     background-color: transparent;
     border: 0 none;
-
-    @media only screen and (min-width: $screen-md-min) {
-      width: ($padding-base * 6);
-    }
   }
 }
 
 .affix .navbar__search.is-open {
   display: block;
+}
+
+.navbar.affix .navbar__search {
+  @media only screen and (min-width: $screen-lg-min) {
+    float: none;
+    position: relative;
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+
+    display: block;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30rem;
+
+    background: none;
+
+    .form__control {
+      padding: ($spacer / 2) $spacer ($spacer / 2) ($spacer * 2.5);
+
+      font-size: $font-size-base;
+
+      border: 1px solid $white;
+    }
+
+    .fa-search {
+      position: absolute;
+      top: $spacer * .8;
+      left: $spacer;
+
+      font-size: $font-size-base;
+    }
+  }
 }
 
 .navbar__search__close {
@@ -297,6 +332,10 @@ body.editor .navbar__editor {
 
   background: transparent;
   border: 0 none;
+
+  @media only screen and (min-width: $screen-lg-min) {
+    display: none;
+  }
 
   &:active,
   &:focus {
