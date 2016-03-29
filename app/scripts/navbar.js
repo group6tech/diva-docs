@@ -10,6 +10,9 @@ $(function() {
   $('.navbar__toggler').click(function() { navbarContentToggle(); });
   $('.navbar__content__close').click(function() { navbarContentToggle(); });
 
-  $('.navbar__button--search').click(function() { navbarSearchToggle(); });
+  $('.navbar__button--search').click(function() {
+    navbarSearchToggle();
+    $('#navbarSearchField').focus();
+  });
   $('.navbar__search__close').click(function() { navbarSearchToggle(); });
 });

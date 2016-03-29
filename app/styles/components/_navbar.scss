@@ -44,6 +44,7 @@ body:not(.with-jumbo) .navbar {
   float: left;
 
   margin: 0;
+  padding-top: .3rem;
 
   font-weight: $font-weight-light;
   line-height: 1;
@@ -96,12 +97,14 @@ body:not(.with-jumbo) .navbar {
 
   &:active,
   &:focus {
+    background: transparent;
     outline: 0;
   }
 }
 
 .navbar__toggler,
-.navbar__button--search {
+.navbar__button--search,
+.navbar__content__close {
   font-size: $font-size-base * 1.5;
   line-height: 1.4;
 }
@@ -159,8 +162,6 @@ body:not(.with-jumbo) .navbar {
 .navbar__content__close {
   float: right;
 
-  font-size: $font-size-base * 1.5;
-
   background: transparent;
   border: 0 none;
 
@@ -201,7 +202,6 @@ body:not(.with-jumbo) .navbar {
       padding-bottom: $padding-small + $padding-smaller;
     }
 
-    //color: transparentize($white, .2);
     color: $white;
 
     &:hover {
@@ -279,10 +279,6 @@ body.editor .navbar__editor {
 
     background-color: transparent;
     border: 0 none;
-
-    &:focus {
-      //border-color: transparentize($white, .5);
-    }
 
     @media only screen and (min-width: $screen-md-min) {
       width: ($padding-base * 6);
