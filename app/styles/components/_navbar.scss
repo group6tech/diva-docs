@@ -241,7 +241,7 @@ body.editor .navbar__editor {
 
 
 
-// Form
+// Search Form
 // -----------------------------------------------------------------------------
 
 .navbar__search {
@@ -291,7 +291,7 @@ body.editor .navbar__editor {
 }
 
 .navbar.affix .navbar__search {
-  @media only screen and (min-width: $screen-lg-min) {
+  @media only screen and (min-width: $screen-md-min) {
     float: none;
     position: relative;
     left: auto;
@@ -332,10 +332,6 @@ body.editor .navbar__editor {
 
   background: transparent;
   border: 0 none;
-
-  @media only screen and (min-width: $screen-lg-min) {
-    display: none;
-  }
 
   &:active,
   &:focus {
