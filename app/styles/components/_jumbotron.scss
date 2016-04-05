@@ -59,3 +59,30 @@ body.with-jumbo .navbar + .jumbotron {
 	padding-top: $spacer * 8;
 	padding-bottom: $spacer * 5;
 }
+
+
+
+//
+// Inner page header
+// ============================================================================
+
+.jumbotron--inner-header {
+	text-align: left;
+
+	h1 {
+		margin-bottom: 0;
+
+		font-size: 10vw;
+
+		@media only screen and (min-width: $screen-md-min) {
+			font-size: 6rem;
+		}
+	}
+
+	p {
+		margin-top: 0;
+		margin-bottom: 0;
+
+		font-size: 1.8rem;
+	}
+}
