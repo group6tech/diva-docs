@@ -11,23 +11,6 @@
   color: $white;
 }
 
-body:not(.with-jumbo) .navbar {
-  @include g6-grad();
-}
-
-// Affixed
-//
-
-.navbar.affix {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-
-  background-color: $brand-primary;
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
-}
-
 
 // Brand
 // -----------------------------------------------------------------------------
@@ -42,7 +25,7 @@ body:not(.with-jumbo) .navbar {
   line-height: 1;
 
   a {
-    color: $white;
+    color: inherit;
   }
 }
 
@@ -286,10 +269,11 @@ body.editor .navbar__editor {
   }
 }
 
-.affix .navbar__search.is-open {
+.navbar__search.is-open {
   display: block;
 }
 
+body.editor .navbar__search,
 .navbar.affix .navbar__search {
   @media only screen and (min-width: $screen-md-min) {
     float: none;
@@ -336,5 +320,58 @@ body.editor .navbar__editor {
   &:active,
   &:focus {
     outline: 0;
+  }
+}
+
+
+
+//
+// Navbar for home page
+// ============================================================================
+
+body.home {
+  .navbar.affix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    background: $brand-primary;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  }
+}
+
+
+//
+// Navbar for inner pages
+// ============================================================================
+
+body.editor {
+  $nav-height-xs: 4rem + ($spacer * 2);
+
+  .navbar {
+    height: $nav-height-xs;
+
+    color: $brand-primary;
+
+    background-color: $white;
+  }
+
+  .navbar__search {
+    background-color: $white;
+
+    .form__control {
+      @include placeholder-color(transparentize($black, .5));
+
+      color: $black;
+
+      @media only screen and (min-width: $screen-md-min) {
+        border-color: $grey-lightest;
+      }
+    }
+  }
+
+  .navbar__button--search {
+    display: inline-block;
   }
 }

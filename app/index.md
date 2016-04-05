@@ -1,7 +1,7 @@
 ---
 title: Welcome
 layout: structure
-bodyClass: with-jumbo
+bodyClass: home with-jumbo
 ---
 
 <div class="jumbotron">

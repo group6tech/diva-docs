@@ -1,6 +1,6 @@
 ---
 title: Overview
-layout: category
+layout: editor
 topics:
   - setup
   - drives
