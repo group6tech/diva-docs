@@ -28,17 +28,20 @@ bodyClass: with-jumbo
 
 <div class="container">
   <div class="row">
-      <div class="col-xs-12 col-md-4">
-        <h2><a href="/v2/editor">Editors Guide</a></h2>
-        <p>Everything an editor needs to know to get going with DIVA.</p>
-      </div>
-      <div class="col-xs-12 col-md-4">
-        <h2><a href="/v2/admin">Administrators Guide</a></h2>
-        <p>How to manage your system and keep it running smoothly.</p>
-      </div>
-      <div class="col-xs-12 col-md-4">
-        <h2><a href="/support.html">Support</a></h2>
-        <p>Can't find the answer you're after? Contact Group 6 support.</p>
-      </div>
+
+    <div class="col-md-6 card">
+      <a href="/v2/editor"><img src="/images/diva-suite.svg" class="card__image" alt="Using DIVA"/></a>
+      <h2 class="card__title">Using DIVA</h2>
+      <p class="card__description">Everything an editor needs to know to get going with DIVA.</p>
+      <a href="/v2/editor" class="btn btn--primary btn--large">Browse all articles</a>
     </div>
+
+    <div class="col-md-6 card">
+      <a href="/v2/admin"><img src="/images/diva-admin.svg" class="card__image" alt="DIVA Administration"/></a>
+      <h2 class="card__title">DIVA Administration</h2>
+      <p class="card__description">How to manage your system and keep it running smoothly.</p>
+      <a href="/v2/admin" class="btn btn--primary btn--large">Browse all articles</a>
+    </div>
+
+  </div>
 </div>

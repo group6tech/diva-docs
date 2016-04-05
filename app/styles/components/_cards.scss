@@ -1,0 +1,28 @@
+//
+// Components - Cards
+// ============================================================================
+
+.card {
+  padding-top: $spacer * 4;
+  padding-bottom: $spacer * 4;
+
+  text-align: center;
+}
+
+.card__image {
+  height: 12rem;
+}
+
+.card__title {
+  margin-bottom: $spacer / 2;
+
+  font-size: 3rem;
+}
+
+.card__description {
+  margin-top: 0;
+  margin-left: $spacer * 2;
+  margin-right: $spacer * 2;
+
+  font-size: 2rem;
+}
