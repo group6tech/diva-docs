@@ -1,0 +1,49 @@
+//
+// Components - Category Tree
+// ============================================================================
+
+.category-tree {
+
+}
+
+.category-section {
+  padding-top: $spacer * 3;
+  padding-bottom: $spacer * 3;
+
+  border-top: 1px solid $border-color;
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: $spacer;
+
+    font-size: 7vw;
+    font-weight: $font-weight-bold;
+
+    @media only screen and (min-width: $screen-sm-min) {
+      font-size: 3rem;
+    }
+  }
+
+  ul {
+    padding-left: 0;
+    
+    color: $grey-lighter;
+
+    column-count: 1;
+    column-gap: $spacer;
+
+    @media only screen and (min-width: $screen-sm-min) {
+      column-count: 2;
+      -webkit-column-count: 2;
+    }
+
+    li {
+      margin-left: $spacer * 2;
+      padding-bottom: $spacer / 2;
+
+      break-inside: avoid;
+      page-break-inside: avoid;
+      -webkit-column-break-inside: avoid;
+    }
+  }
+}

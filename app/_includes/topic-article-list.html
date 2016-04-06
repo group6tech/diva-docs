@@ -1,11 +1,13 @@
 {% assign sortedPages = site.pages | sort: 'sortOrder' %}
 
-<h3 id="{{ include.topic }}">{{ include.topic | capitalize }}</h3>
+<div class="category-section" id="{{ include.topic }}">
+  <h2>{{ include.topic | capitalize }}</h2>
 
-<ul>
-  {% for p in sortedPages %}
-    {% if p.category == page.category and p.topic == include.topic and p.hide != true %}
-      <li><a href="{{ p.url }}">{{ p.title }}</a></li>
-    {% endif %}
-  {% endfor %}
-</ul>
+  <ul>
+    {% for p in sortedPages %}
+      {% if p.category == page.category and p.topic == include.topic and p.hide != true %}
+        <li><a href="{{ p.url }}">{{ p.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>
