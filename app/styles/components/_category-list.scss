@@ -1,0 +1,105 @@
+//
+// Components - Category List
+// ============================================================================
+
+
+//
+// List
+// ----------------------------------------------------------------------------
+
+.category-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  background-color: $white;
+}
+
+// Affixed
+//
+.category-list.affix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.category-list ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  list-style: none;
+}
+
+
+
+// Item
+// ----------------------------------------------------------------------------
+
+.category-list__item {
+  display: none;
+}
+
+.category-list__item.active {
+  display: block;
+}
+
+
+
+// Link
+// ----------------------------------------------------------------------------
+
+.category-list__link {
+  display: block;
+  padding: $spacer;
+
+  border-bottom: 1px solid $border-color;
+}
+
+
+
+// Open and close links
+// ----------------------------------------------------------------------------
+
+.category-list__open,
+.category-list__close {
+  float: right;
+
+  margin-right: $spacer;
+  margin-top: $spacer * .75;
+}
+
+.category-list__close {
+  display: none;
+}
+
+
+
+// Open List State
+// ----------------------------------------------------------------------------
+
+.category-list.is-open {
+  .category-list__open {
+    display: none;
+  }
+
+  .category-list__close {
+    display: block;
+  }
+
+  .category-list__item {
+    display: block;
+  }
+
+  .category-list__link {
+    color: $grey-dark;
+  }
+
+  .category-list__item.active .category-list__link {
+    background-color: transparentize($brand-primary, .9);
+    color: $brand-primary;
+  }
+}

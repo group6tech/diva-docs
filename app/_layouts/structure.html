@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-  <body class="{{ page.bodyClass}} {{ page.category }} {{ page.topic }}">
+  <body class="{{ page.bodyClass}} {{ page.category }} {{ page.topic }}" data-spy="scroll" data-target="#categoryList">
     {% include navbar.html %}
 
     {% if page.category == 'admin'%}{% include subnav-admin.html %}{% endif %}
@@ -14,7 +14,9 @@
     <script src="/bower_components/velocity/velocity.js"></script>
 
     <script src="/scripts/affix.js"></script>
+    <script src="/scripts/category-list.js"></script>
     <script src="/scripts/navbar.js"></script>
+    <script src="/scripts/scrollspy.js"></script>
     <script src="/scripts/subnav.js"></script>
     <script src="/scripts/faults.js"></script>
     <script src="/scripts/list-images.js"></script>
