@@ -356,12 +356,24 @@ body.home {
 body.editor {
   $nav-height-xs: 4rem + ($spacer * 2);
 
+  @media only screen and (min-width: $screen-md-min) {
+    padding-top: $nav-height-xs
+  }
+
   .navbar {
     height: $nav-height-xs;
 
     color: $brand-primary;
 
     background-color: $white;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+
+    @media only screen and (min-width: $screen-md-min) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
   }
 
   .navbar__search {
