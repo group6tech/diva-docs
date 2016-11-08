@@ -10,8 +10,19 @@
 }
 
 .home__popular {
+  margin-top: $spacer * 1;
+  margin-bottom: 0;
+
+  @media only screen and (min-width: $screen-sm-min) {
+    font-size: 1.6rem !important;
+  }
+
   a {
     color: $white;
     text-decoration: underline;
+  }
+
+  strong {
+    font-weight: $font-weight-semi-bold;
   }
 }

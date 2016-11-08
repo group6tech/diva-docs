@@ -6,7 +6,7 @@ bodyClass: home with-jumbo
 
 <div class="jumbotron">
   <div class="container">
-    <h1>Hi. How can we help?</h1>
+    <h1>Hey, how can we help?</h1>
 
     <form class="home__search" role="search">
       <div class="row">
