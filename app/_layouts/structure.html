@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-  <body class="{{ page.bodyClass}} {{ page.category }} {{ page.topic }}" data-spy="scroll" data-target="#categoryList">
+  <body class="{{ page.bodyClass}} {{ page.category }} {{ page.topic }}" data-spy="scroll" data-target="#categoryList" data-offset="80">
     {% include navbar.html %}
 
     {% if page.category == 'admin'%}{% include subnav-admin.html %}{% endif %}
@@ -22,6 +22,7 @@
     <script src="/scripts/list-images.js"></script>
     <script src="/scripts/notes.js"></script>
     <script src="/scripts/platform-switcher.js"></script>
+    <script src="/scripts/scrollto.js"></script>
 
   </body>
 </html>
