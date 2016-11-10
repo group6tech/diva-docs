@@ -94,6 +94,7 @@ $border-radius:                 .3rem;
 $border-radius-large:           .5rem;
 
 $z-index-navbar:								1000;
+$z-index-category-list:         1010;
 
 
 
@@ -123,3 +124,10 @@ $screen-md-max:									($screen-lg-min - 1);
 
 $grid-columns:									12;
 $grid-gutter-width: 						$padding-base;
+
+
+
+// Navbar
+// -----------------------------------------------------------------------------
+
+$navbar-height-xs:              8rem;

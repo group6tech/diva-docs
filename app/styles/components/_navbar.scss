@@ -3,8 +3,7 @@
 // =============================================================================
 
 .navbar {
-  z-index: $z-index-navbar;
-
+  height: $navbar-height-xs;
   padding-top: $spacer;
   padding-bottom: $spacer;
 
@@ -52,143 +51,30 @@
 
 
 
-// Menu
-// -----------------------------------------------------------------------------
-
-.navbar__menu {
-  float: right;
-}
-
-
-
-// Buttons
-// -----------------------------------------------------------------------------
-
-.navbar__button {
-  background: transparent;
-  border: 0 none;
-
-  &:active,
-  &:focus {
-    background: transparent;
-    outline: 0;
-  }
-}
-
-.navbar__toggler,
-.navbar__button--search,
-.navbar__content__close {
-  font-size: $font-size-base * 1.5;
-  line-height: 1.4;
-}
-
-
-// Search
-// -----------------------------------------------------------------------------
-
-.navbar__button--search {
-  display: none;
-}
-
-.affix .navbar__button--search {
-  display: inline-block;
-}
-
-
-
-
-// Content
-// -----------------------------------------------------------------------------
-
-.navbar__content {
-  display: none;
-
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 2000;
-
-  padding: $spacer;
-
-  background-color: $brand-primary;
-
-  @media only screen and (min-width: $screen-sm-min) {
-    float: right;
-  }
-}
-
-.navbar__content.is-open {
-  display: block;
-}
-
-.navbar__content.is-closed {
-  display: none;
-}
-
-
-
-// Content Close
-// -----------------------------------------------------------------------------
-
-.navbar__content__close {
-  float: right;
-
-  background: transparent;
-  border: 0 none;
-
-  &:active,
-  &:focus {
-    outline: 0;
-  }
-}
-
-
 // Nav
 // -----------------------------------------------------------------------------
 
 .navbar__nav {
-  clear: both;
+  float: right;
 
-  margin-top: $spacer * 5;
+  margin-top: 0;
+  margin-bottom: 0;
 
-  font-size: $font-size-base * 2;
+  font-size: $font-size-base;
   font-weight: $font-weight-light;
   line-height: 1;
-
-  @media only screen and (min-width: $screen-md-min) {
-    clear: none;
-    float: right;
-
-    margin-top: 0;
-    margin-bottom: 0;
-
-    font-size: $font-size-base;
-  }
 
   a {
     padding-left: $padding-small;
     padding-right: $padding-small;
-
-    @media only screen and (min-width: $screen-md-min) {
-      padding-top: $padding-small + $padding-smaller;
-      padding-bottom: $padding-small + $padding-smaller;
-    }
+    padding-top: $padding-small + $padding-smaller;
+    padding-bottom: $padding-small + $padding-smaller;
 
     color: $white;
 
     &:hover {
       color: $white;
     }
-  }
-}
-
-.navbar__nav .nav__item {
-  display: block;
-
-  + .nav__item {
-    margin-top: $spacer * 1.5;
   }
 }
 
@@ -205,192 +91,15 @@ body.editor .navbar__editor {
 }
 
 .navbar__nav a.navbar__support {
-  @media only screen and (min-width: $screen-md-min) {
-    padding-left: $spacer;
-    padding-right: $spacer;
+  padding-left: $spacer;
+  padding-right: $spacer;
 
-    font-weight: $font-weight-semi-bold;
+  font-weight: $font-weight-semi-bold;
 
-    //background-color: $brand-primary;
-    border: 2px solid $white;
-    border-radius: $border-radius-large;
-  }
+  border: 2px solid $white;
+  border-radius: $border-radius-large;
 
   &:hover {
-    @media only screen and (min-width: $screen-md-min) {
-      background-color: transparentize($white, .9);
-    }
-  }
-}
-
-.navbar.affix .navbar__nav a.navbar__support {
-  @media only screen and (min-width: $screen-md-min) {
-    border: 2px solid $white;
-  }
-}
-
-
-
-// Search Form
-// -----------------------------------------------------------------------------
-
-.navbar__search {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-
-  display: none;
-  padding: $spacer ($spacer * 3);
-
-  background-color: $brand-primary;
-
-  @media only screen and (min-width: $screen-sm-min) {
-    margin-top: 0;
-
-    text-align: right;
-  }
-
-  .fa {
-    font-size: $font-size-base * 1.5;
-    line-height: 1;
-  }
-
-  .fa-search {
-    position: absolute;
-    top: $spacer * 1.4;
-    left: $spacer;
-  }
-
-  .form__control {
-    @include placeholder-color(transparentize($white, .5));
-
-    width: 100%;
-    padding: 0;
-
-    color: $white;
-    font-size: $font-size-base * 1.5;
-
-    background-color: transparent;
-    border: 0 none;
-  }
-}
-
-.navbar__search.is-open {
-  display: block;
-}
-
-body.editor .navbar__search,
-.navbar.affix .navbar__search {
-  @media only screen and (min-width: $screen-md-min) {
-    float: none;
-    position: relative;
-    left: auto;
-    right: auto;
-    top: auto;
-    bottom: auto;
-
-    display: block;
-    padding: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30rem;
-
-    background: none;
-
-    .form__control {
-      padding: ($spacer / 2) $spacer ($spacer / 2) ($spacer * 2.5);
-
-      font-size: $font-size-base;
-
-      border: 2px solid $white;
-    }
-
-    .fa-search {
-      position: absolute;
-      top: $spacer * .8;
-      left: $spacer;
-
-      font-size: $font-size-base;
-    }
-  }
-}
-
-.navbar__search__close {
-  position: absolute;
-  right: $spacer;
-  top: $spacer * 1.4;
-
-  background: transparent;
-  border: 0 none;
-
-  &:active,
-  &:focus {
-    outline: 0;
-  }
-}
-
-
-
-//
-// Navbar for home page
-// ============================================================================
-
-body.home {
-  .navbar.affix {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-
-    background: $brand-primary;
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
-  }
-}
-
-
-//
-// Navbar for inner pages
-// ============================================================================
-
-body.editor {
-  $nav-height-xs: 4rem + ($spacer * 2);
-
-  @media only screen and (min-width: $screen-md-min) {
-    padding-top: $nav-height-xs
-  }
-
-  .navbar {
-    height: $nav-height-xs;
-
-    color: $brand-primary;
-
-    background-color: $white;
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
-
-    @media only screen and (min-width: $screen-md-min) {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-    }
-  }
-
-  .navbar__search {
-    background-color: $white;
-
-    .form__control {
-      @include placeholder-color(transparentize($black, .5));
-
-      color: $black;
-
-      @media only screen and (min-width: $screen-md-min) {
-        border-color: $grey-lightest;
-      }
-    }
-  }
-
-  .navbar__button--search {
-    display: inline-block;
+    background-color: transparentize($white, .9);
   }
 }
