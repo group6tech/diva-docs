@@ -3,11 +3,15 @@
 // ============================================================================
 
 .home__popular {
-  margin-top: $spacer * 1;
+  margin-top: $spacer;
   margin-bottom: 0;
 
   @media only screen and (min-width: $screen-sm-min) {
     font-size: 1.6rem !important;
+  }
+
+  @media only screen and (min-width: $screen-md-min) {
+    margin-top: $spacer * 1.5;
   }
 
   a {
@@ -17,5 +21,13 @@
 
   strong {
     font-weight: $font-weight-semi-bold;
+  }
+}
+
+.home__search {
+  .form__control {
+    padding: $spacer;
+
+    width: 100%;
   }
 }
