@@ -8,10 +8,12 @@ bodyClass: home with-jumbo
   <div class="container">
     <h1>Hey, how can we help?</h1>
 
-    <form class="home__search" role="search">
+    <form class="home__search" id="homeSearch" role="search">
       <div class="row">
         <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-          <input type="text" class="form__control" placeholder="Search the Help Center"/>
+          <input class="form__control" id="searchField" type="text" placeholder="Search the Help Center" autocomplete="off"/>
+          <ul class="home__search--results">
+          </ul>
         </div>
       </div>
     </form>

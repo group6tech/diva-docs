@@ -31,3 +31,40 @@
     width: 100%;
   }
 }
+
+.home__search--results {
+  position: absolute;
+  left: $grid-gutter-width / 2;
+  right: $grid-gutter-width / 2;
+  z-index: $z-index-search-results;
+
+  display: none;
+  padding: $spacer / 2;
+  margin-top: $spacer / 4;
+
+  color: $text-color;
+
+  background-color: $white;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  list-style: none;
+
+  li {
+    text-align: left;
+  }
+
+  a {
+    display: block;
+    padding: $spacer / 2;
+
+    color: $text-color;
+
+    border-radius: $border-radius-small;
+
+    &:hover {
+      color: $white;
+
+      background-color: $brand-primary;
+    }
+  }
+}
