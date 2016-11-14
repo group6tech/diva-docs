@@ -84,6 +84,7 @@
 			<li><a href="#addexternal">Adding an External Drive</a></li>
       <li><a href="#access">Modifying Access to a Drive for One or More Users</a> </li>
       <li><a href="#set">Adding a Drive Set</a></li>
+			<li><a href="#separator">Setting the Drive Set Separator</a></li>
       <li><a href="#quota">Setting a Drive Capacity Quota</a></li>
       <li><a href="#delete">Deleting a Drive</a></li>
       <li><a href="#health">Performing a Health Check</a></li>
@@ -196,7 +197,7 @@
 
 			<li>In the Drive Name field, type the name that you want to call this drive.
         <ul>
-          <li>Note: You can use uppercase and lowercase letters, numerals, dashes and underscores. Do not use slashes or any other special characters.</li>
+          <li>Note: You cannot use the characters < > : " / \ | ? *</li>
         </ul>
       </li>
 
@@ -272,7 +273,7 @@
 				<li>
 					In the Drive Name field, type the name that you want to call this drive.
 					<ul>
-						<li>Note: You can use uppercase and lowercase letters, numerals, dashes and underscores. Do not use slashes or any other special characters.</li>
+						<li>Note: You cannot use the characters < > : " / \ | ? *</li>
 					</ul>
 				</li>
 			 	<li>
@@ -456,7 +457,7 @@
       </li>
       <li>In the Base Name field, type the name that you want to see on all three drives.
         <ul>
-          <li>Note: You can use uppercase and lowercase letters, numerals, dashes and underscores. Do not use slashes or any other special characters.</li>
+          <li>Note: You cannot use the characters < > : " / \ | ? *</li>
         </ul>
       </li>
       <li>(Optional) Deselect (untick) the Create Favourite checkbox.
@@ -470,8 +471,9 @@
         </ul>
       </li>
 
-      <li>(Optional) Select other volumes for your drives.
+      <li>Select the volume for each of your drives.
         <ul>
+					<li>Note: If only one volume is available for the type, e.g. Avid Projects, it will be selected by default.</li>
           <li>Note: Your drives don't all have to reside on the same volume. If you think the volume may have insufficient space for all the media files that will be created, select another volume.</li>
         </ul>
       </li>
@@ -513,6 +515,37 @@
 
 
 
+
+
+
+
+<!--    Start Topic    -->
+    <hr />
+    <ul class="jump_up">
+      <li><a name="separator" id="separator"></a><a href="#apex" accesskey="t" >Back to <kbd>t</kbd>op</a></li>
+    </ul>
+
+    <h2>Setting the Drive Set Separator</h2>
+
+		<p>When creating a Drive Set, the separator is the text which is inserted automatically at the start of the suffix for each drive type.</p>
+
+		<p class="note">Note: Before DIVA v2.14.0 this was forced to be "_". Since DIVA v2.14.0 this is now " - " by default as spaces are now allowed in drive names.</p>
+
+		<h3>To set the drive set separator:</h3>
+
+		<ol class="step">
+			<li>On the Fusion menu, click System, then Settings.</li>
+			<li>
+				Under Drives, in the Drive Set Name Separator field, type the new separator.
+				<ul>
+					<li>Note: this cannot use any of the characters < > : " / \ | ? *</li>
+				</ul>
+			</li>
+			<li>Click Save Settings.</li>
+		</ol>
+
+    <h4>What's Next?</h4>
+  	<p>If you <a href="#set">add a drive set</a> the new separator will appear at the start of each suffix.</p>
 
 
 
@@ -699,18 +732,28 @@
       </li>
     </ol>
 
+		<h3>Scheduling a health check:</h3>
+
+		<p>You cannot normally run a health check while users have the drive mounted. There are two methods to schedule a health check for later.</p>
+
+		<p>Click the dropdown arrow next to the Health Check button to access these options.</p>
+
+		<ul class="step">
+			<li>
+				<strong>During maintenance window</strong> will check the drive when the <a href="/fusion/events.htm#maintenance_window">maintenance window</a> starts, no matter what users have the drive mounted.
+				<ul>
+					<li>Note: Any users who have the drive mounted will probably be disconnected when the job runs.</li>
+				</ul>
+			</li>
+			<li>
+				<strong>When all users unmount</strong> will start a health check aproximately one minute after the last connected user unmounts that drive. If no users have the drive mounted the health check will start immediately.
+			</li>
+		</ul>
+
+		<p>As per a normal health check, while the job is running no users will be able to mount the drive.</p>
+
     <h4>What's Next?</h4>
     	<p>When the health check is complete. The drive will be ready for mounting by users.</p>
-
-
-     <h4>What's Next?</h4>
-    	<p>To see if the drive has been deleted, you can</p>
-		<ul>
-			<li>Check the job queue
-			<li class="note">Note: To do this, from DIVA Fusion's Server menu, click Jobs.</li>
-			<li class="note">Note: The job queue shows you the status of all the jobs that were generated on clicking Delete Drive.</li>
-			<li>When the job is complete, the drive will return to online status and can be mounted by users.</li>
-		</ul>
 
 
 

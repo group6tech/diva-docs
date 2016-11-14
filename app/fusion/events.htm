@@ -71,16 +71,17 @@
 <!--    On This Page   -->
     <h4>On this page:</h4>
     <ul id="jump_down">
-	  <li><a href="#jobs">Jobs</a></li>
-	  <li><a href="#purge">Purging Completed and Cancelled Jobs</a></li>
-	  <li><a href="#cancel">Cancelling a Job</a></li>
-	  <li><a href="#queue">Queuing a Failed or Cancelled Job</a></li>
-	  <li><a href="#event">Events &amp; Notifications</a></li>
-	  <li><a href="#levels">Event Levels</a></li>
-      <li><a href="#stop">Stopping Event Notifications</a></li>
-      <li><a href="#your_own">Setting the Notifications You Receive</a></li>
-      <li><a href="#others">Setting the Notifications Someone Else Receives</a></li>
-      <li><a href="#disable_enable">Disabling or Enabling Event Monitoring of a Volume</a></li>
+		  <li><a href="#jobs">Jobs</a></li>
+		  <li><a href="#purge">Purging Completed and Cancelled Jobs</a></li>
+		  <li><a href="#cancel">Cancelling a Job</a></li>
+		  <li><a href="#queue">Queuing a Failed or Cancelled Job</a></li>
+		  <li><a href="#event">Events &amp; Notifications</a></li>
+		  <li><a href="#levels">Event Levels</a></li>
+	    <li><a href="#stop">Stopping Event Notifications</a></li>
+	    <li><a href="#your_own">Setting the Notifications You Receive</a></li>
+	    <li><a href="#others">Setting the Notifications Someone Else Receives</a></li>
+	    <li><a href="#disable_enable">Disabling or Enabling Event Monitoring of a Volume</a></li>
+			<li><a href="#maintenance_window">Changing the Maintenance Window Schedule</a></li>
     </ul>
 
 
@@ -618,6 +619,34 @@
         </ul>
       </li>
     </ol>
+
+		<!-- MAINTENANCE WINDOW -->
+
+		<hr />
+    <ul class="jump_up">
+      <li><a name="maintenance_window" id="maintenance_window"></a><a href="#apex" accesskey="t">Back to <kbd>t</kbd>op</a></li>
+    </ul>
+
+    <h2>Changing the Maintenance Window Schedule</h2>
+
+		<p>Certain jobs can be scheduled to run during a maintenance window. If a job is scheduled to run during the maintenance window, it will run no matter what. E.g. if you schedule a health check for a drive during the maintenance window, and users leave the drive mounted on their suite, the job will still run.</p>
+
+		<h3>To change the time of day the maintenance window starts:</h3>
+		<ol class="step">
+			<li>On the Fusion menu, click System, then Settings.</li>
+			<li>
+				Under Jobs, in the Maintenance Window Start Time field, type a new time of day at which you want the maintnenance window to start.
+				<ul>
+					<li>Note: As you type, the half hour blocks of the day will autocomplete.</li>
+				</ul>
+			</li>
+			<li>
+				Click Save Settings.
+				<ul>
+					<li>Result: The maintenance window will now start at the new time of day.</li>
+				</ul>
+			</li>
+		</ol>
 
 <!--    End All Topics    -->
 
