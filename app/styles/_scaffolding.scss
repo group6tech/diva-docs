@@ -34,6 +34,10 @@ body {
   line-height: $line-height-base;
 
   background-color: $bg-color;
+
+  @media only screen and (min-width: $screen-md-min) {
+    padding-top: $navbar-height-md;
+  }
 }
 
 img {

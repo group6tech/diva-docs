@@ -2,6 +2,40 @@
 // Layouts - Home
 // ============================================================================
 
+
+
+// Navbar
+// ----------------------------------------------------------------------------
+
+body.home {
+  padding-top: 0;
+}
+
+.home {
+  .navbar {
+    position: relative;
+
+    color: $white;
+
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .nav__item--support {
+    background-color: transparent;
+    border-color: $white;
+
+    &:hover {
+      background-color: transparentize($white, .9);
+    }
+  }
+}
+
+
+
+// Popular items
+// ----------------------------------------------------------------------------
+
 .home__popular {
   margin-top: $spacer;
   margin-bottom: 0;
@@ -23,6 +57,11 @@
     font-weight: $font-weight-semi-bold;
   }
 }
+
+
+
+// Search
+// ----------------------------------------------------------------------------
 
 .home__search {
   .form__control {

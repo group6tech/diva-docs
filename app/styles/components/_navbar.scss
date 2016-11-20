@@ -1,18 +1,32 @@
 //
 // Components - Navbar
-// =============================================================================
+// ============================================================================
 
 .navbar {
+  z-index: $z-index-navbar;
+
   height: $navbar-height-xs;
   padding-top: $spacer;
   padding-bottom: $spacer;
 
-  color: $white;
+  color: $text-color;
+
+  background-color: $navbar-bg;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+
+  @media only screen and (min-width: $screen-md-min) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: $navbar-height-md;
+  }
 }
 
 
 // Brand
-// -----------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
 
 .navbar__brand {
   float: left;
@@ -38,7 +52,7 @@
 
 
 // Logo
-// -----------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
 
 .navbar__logo {
   position: relative;
@@ -52,7 +66,7 @@
 
 
 // Nav
-// -----------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
 
 .navbar__nav {
   float: right;
@@ -81,25 +95,19 @@
 
 
 // Items
-// -----------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
 
-body.admin .navbar__admin,
-body.support .navbar__support,
-body.editor .navbar__editor {
-  color: $white;
-  font-weight: $font-weight-normal;
-}
-
-.navbar__nav a.navbar__support {
+.nav__item--support {
   padding-left: $spacer;
   padding-right: $spacer;
 
   font-weight: $font-weight-semi-bold;
 
+  background-color: $brand-primary;
   border: 2px solid $white;
   border-radius: $border-radius-large;
 
   &:hover {
-    background-color: transparentize($white, .9);
+    background-color: darken($brand-primary, 5%);
   }
 }
