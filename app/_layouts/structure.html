@@ -6,7 +6,11 @@
 
     {% if page.category == 'admin'%}{% include subnav-admin.html %}{% endif %}
 
-    {{ content }}
+    <main role="main">
+      {{ content }}
+
+      {% include contact-c2a.html %}
+    </main>
 
     {% include footer.html %}
 
