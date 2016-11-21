@@ -2,7 +2,7 @@
 title: What's on the Dashboard
 category: admin
 topic: fusion
-sortOrder: 2
+sortOrder: 100
 ---
 
 ![DIVA Dashboard](/images/v2/fusion/dashboard.png)

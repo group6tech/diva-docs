@@ -2,7 +2,7 @@
 title: Signing in and out of DIVA Fusion
 category: admin
 topic: fusion
-sortOrder: 1
+sortOrder: 100
 ---
 
 DIVA Fusion is a browser-based administration application. To use DIVA Fusion, you must first be set up as an administrator. You can access DIVA Fusion using any browser on your network, either by using the host name or the DIVA Server IP address.

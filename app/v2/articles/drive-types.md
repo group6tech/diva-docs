@@ -2,7 +2,7 @@
 title: Drive Types
 category: admin
 topic: drives
-sortOrder: 1
+sortOrder: 100
 ---
 
 The drives created for use in DIVA are where you save and work with your files. If mounted on the computer that is being used and your user account has been granted full access to the drive, the drive is available to save and work on your files. If your user account has been granted read-only access to the drive, you can view files and copy files from the read-only drive to another drive.

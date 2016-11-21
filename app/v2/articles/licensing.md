@@ -2,7 +2,7 @@
 title: Licensing
 category: admin
 topic: fusion
-sortOrder: 1
+sortOrder: 100
 ---
 
 Your DIVA license determines how much drive space you can use.
