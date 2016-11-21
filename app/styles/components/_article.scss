@@ -91,3 +91,35 @@
     }
   }
 }
+
+.article__body dl {
+  display: flex;
+  //align-items: stretch;
+  flex-wrap: wrap;
+
+  margin-top: 0;
+  margin-bottom: $spacer;
+
+  dt,
+  dd {
+    display: inline;
+  }
+
+  dt {
+    flex: 0 0 30%;
+
+    padding: $spacer/2;
+  }
+
+  dd {
+    flex: 0 0 70%;
+    -webkit-margin-start: 0;
+
+    padding: $spacer/2;
+  }
+
+  dd:nth-of-type(2n),
+  dt:nth-of-type(2n) {
+    background-color: $grey-lightest;
+  }
+}

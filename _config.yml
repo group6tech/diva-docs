@@ -38,7 +38,7 @@ defaults:
     scope:
       path: "v2/articles"
     values:
-      layout: "article"
+      layout: "article-default"
   - # v2 - Admin
     scope:
       path: "v2/admin"
