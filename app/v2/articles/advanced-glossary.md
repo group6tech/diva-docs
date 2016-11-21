@@ -5,6 +5,7 @@ category: admin
 topic: fusion
 sortOrder: 1
 topics:
+  divaVolume: "DIVA Volume"
   drive: "Drive"
   event: "Event"
   job: "Job"
@@ -19,6 +20,9 @@ topics:
 ---
 
 <dl>
+
+  <dt id="divaVolume">DIVA Volume</dt>
+  <dd>A <a href="#volume">volume</a> which has been assigned to a <a href="#licensePool">license pool</a>.</dd>
 
   <dt id="drive">Drive</dt>
   <dd>The drives created for use in DIVA are where you save and work with your files. Each drive is assigned to a different <a href="#volume">volume</a> on the different <a href="#node">nodes</a>. There are many different <a href="/v2/articles/drive-types.html">drive types</a>.</dd>
