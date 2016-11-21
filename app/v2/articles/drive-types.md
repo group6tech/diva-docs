@@ -1,5 +1,5 @@
 ---
-title: Drive Types
+title: Drive types
 category: admin
 topic: drives
 sortOrder: 100

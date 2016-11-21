@@ -1,11 +1,11 @@
 ---
-title: Register a new Node with DIVA Fusion
+title: Create a node
 category: admin
 topic: nodes
 sortOrder: 30
 ---
 
-Before a Node can connect to DIVA Server it must first be registered with the system.
+Before a node can connect to DIVA Server it must first be added to the system.
 
 ## To register a new Node
 

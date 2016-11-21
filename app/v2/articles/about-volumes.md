@@ -1,5 +1,5 @@
 ---
-title: About Volumes
+title: About volumes
 category: admin
 topic: volumes
 sortOrder: 10

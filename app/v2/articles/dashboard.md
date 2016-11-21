@@ -19,4 +19,4 @@ Additional files which you want to make easily available to all users. These are
 ### Volume Usage
 Any DIVA Volume which is monitored will display it's usage statistics here. This is a quick method to gauge free space across multiple DIVA nodes.
 
-You can change which volumes appear on the dashboard by [changing each volume's monitoring settings](/v2/articles/monitoring-a-volume.html).
+You can change which volumes appear on the dashboard by [changing each volume's monitoring settings](/v2/articles/monitoring-volume.html).

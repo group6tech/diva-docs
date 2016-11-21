@@ -1,5 +1,5 @@
 ---
-title: Configure DIVA Node to connect to DIVA Server
+title: Configure a node
 category: admin
 topic: nodes
 sortOrder: 40
@@ -9,10 +9,10 @@ sortOrder: 40
 
 Before you can connect DIVA Node to DIVA Server, ensure:
 
-- the [Node has been registered](/v2/articles/register-a-new-node.html), and DIVA Node is [installed on the computer](/v2/articles/installing-node.html).
+- the [Node has been registered](/v2/articles/create-node.html), and DIVA Node is [installed on the computer](/v2/articles/install-node.html).
 
 
-## To connect a Node
+## Configure DIVA Node
 
 <ol>
 

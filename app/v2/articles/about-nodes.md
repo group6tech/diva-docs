@@ -1,5 +1,5 @@
 ---
-title: About Nodes
+title: About nodes
 category: admin
 topic: nodes
 sortOrder: 10

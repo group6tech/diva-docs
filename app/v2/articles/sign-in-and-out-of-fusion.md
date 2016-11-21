@@ -1,5 +1,5 @@
 ---
-title: Signing in and out of DIVA Fusion
+title: Sign in and out of DIVA Fusion
 category: admin
 topic: fusion
 sortOrder: 100

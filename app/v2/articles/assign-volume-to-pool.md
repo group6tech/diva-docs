@@ -34,9 +34,9 @@ If a 30 TB volume is assigned to a 40 TB license pool, 30 TBs of license is used
 
 Before assigning a volume to the DIVA License Pool, ensure:
 
-- you've [registered](/v2/articles/register-a-new-node.html) and [connected](/v2/articles/configure-node.html) a Node
+- you've [registered](/v2/articles/create-node.html) and [connected](/v2/articles/configure-node.html) a Node
 
-## To assign a volume to the DIVA License Pool:
+## Assign a volume to the DIVA License Pool:
 
 1. On DIVA Fusion's **Drives** menu, click **Volumes**.
 
@@ -50,4 +50,4 @@ Before assigning a volume to the DIVA License Pool, ensure:
 
 ### What's Next?
 
-The DIVA volume is ready for you to [add drives](/v2/articles/create-a-drive.html).
+The DIVA volume is ready for you to [add drives](/v2/articles/create-drive.html).

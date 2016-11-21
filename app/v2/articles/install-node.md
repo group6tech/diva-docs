@@ -1,5 +1,5 @@
 ---
-title: Installing DIVA Node on a new computer
+title: Install DIVA Node
 category: admin
 topic: nodes
 sortOrder: 20
@@ -15,7 +15,7 @@ The following installation options are available when installing node software o
 - Desktop Icon (Optional - Adds a shortcut to your computer's desktop)
 - Startup Shortcut (Optional - For the current user, DIVA Node will start automatically on logging into Windows)
 
-## To install node software on a new computer:
+## Install DIVA Node software on a new computer:
 
 1. Open an internet browser on the new computer, and browse to the **IP address** of the **DIVA Server**.
 
@@ -31,4 +31,4 @@ The following installation options are available when installing node software o
 
 7. Click **Close**.
 
-<p class="tip tip--result">DIVA Node is now installed on the new computer. You must now <a href="/v2/articles/register-a-new-node.html">register the new Node</a> with DIVA Fusion before it can connect to DIVA Server.</p>
+<p class="tip tip--result">DIVA Node is now installed on the new computer. You must now <a href="/v2/articles/create-node.html">register the new Node</a> with DIVA Fusion before it can connect to DIVA Server.</p>

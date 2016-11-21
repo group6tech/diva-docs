@@ -1,5 +1,5 @@
 ---
-title: License Key
+title: License key
 category: admin
 topic: server
 sortOrder: 1000
