@@ -1,7 +1,7 @@
 ---
 title: Signing in and out of DIVA Fusion
 category: admin
-topic: setup
+topic: fusion
 sortOrder: 1
 ---
 
