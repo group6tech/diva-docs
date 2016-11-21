@@ -34,7 +34,9 @@ Before you can connect DIVA Node to DIVA Server, ensure:
 
 </ol>
 
-<p class="tip tip--result">The new configuration is applied and the node will reconnect to the server, and the DIVA Node window is displayed.</p>
+<p class="tip tip--result">
+  <strong>Result</strong>: The new configuration is applied and the node will reconnect to the server, and the DIVA Node window is displayed.
+</p>
 
 ### What's next?
 

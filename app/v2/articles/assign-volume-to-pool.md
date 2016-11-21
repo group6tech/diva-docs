@@ -5,6 +5,8 @@ topic: volumes
 sortOrder: 20
 ---
 
+Before you can create a drive on a volume, it must be assigned to a license pool.
+
 The diagram below is an example of a typical license. Each license consists of two pools. These pools are:
 
 - an Avid Pool, and
@@ -19,7 +21,9 @@ A volume is essentially a storage device. Examples of volumes are:
 - RAID arrays
 - Solid state disks
 
-<p class="note">Note: Only internal volumes can be configured as DIVA Volumes.</p>
+<p class="tip">
+  <strong>Tip</strong>: Only internal volumes can be configured as DIVA Volumes.
+</p>
 
 ## Example
 
@@ -34,7 +38,7 @@ If a 30 TB volume is assigned to a 40 TB license pool, 30 TBs of license is used
 
 Before assigning a volume to the DIVA License Pool, ensure:
 
-- you've [registered](/v2/articles/create-node.html) and [connected](/v2/articles/configure-node.html) a Node
+- you've [created](/v2/articles/create-node.html) and [configured](/v2/articles/configure-node.html) a Node
 
 ## Assign a volume to the DIVA License Pool:
 
@@ -46,8 +50,10 @@ Before assigning a volume to the DIVA License Pool, ensure:
 
 4. Click **+ Add Volume**.
 
-<p class="tip tip--result">Result: The volume is assigned to the license pool and appears in the list below and the usage graphs are updated. From here on in, it is referred to as a DIVA Volume.</p>
+<p class="tip tip--result">
+  <strong>Result</strong>: The volume is assigned to the license pool and appears in the list below and the usage graphs are updated. From here on in, it is referred to as a DIVA Volume.
+</p>
 
 ### What's Next?
 
-The DIVA volume is ready for you to [add drives](/v2/articles/create-drive.html).
+The DIVA volume is ready for you to [create drives](/v2/articles/create-drive.html).

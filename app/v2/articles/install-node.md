@@ -31,4 +31,6 @@ The following installation options are available when installing node software o
 
 7. Click **Close**.
 
-<p class="tip tip--result">DIVA Node is now installed on the new computer. You must now <a href="/v2/articles/create-node.html">register the new Node</a> with DIVA Fusion before it can connect to DIVA Server.</p>
+<p class="tip tip--result">
+  <strong>Result</strong>: DIVA Node is now installed on the new computer. You must now <a href="/v2/articles/create-node.html">register the new Node</a> with DIVA Fusion before it can connect to DIVA Server.
+</p>
