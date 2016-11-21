@@ -21,6 +21,21 @@
   padding-bottom: $spacer*5;
 }
 
+// Figures
+//
+
+.article__body figure {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50rem;
+
+  text-align: center;
+}
+
+.article__body figcaption {
+  font-style: italic;
+}
+
 // Headings
 //
 

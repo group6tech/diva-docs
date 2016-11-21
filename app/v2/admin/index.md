@@ -3,6 +3,7 @@ title: Overview
 layout: admin
 topics:
   - fusion
+  - nodes
   - drives
   - volumes
 ---
