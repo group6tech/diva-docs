@@ -1,0 +1,93 @@
+//
+// Article
+// ============================================================================
+
+
+
+// Article
+// ----------------------------------------------------------------------------
+
+.article {
+  max-width: 66rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+// Body
+// ----------------------------------------------------------------------------
+
+.article__body {
+  padding-bottom: $spacer*5;
+}
+
+// Headings
+//
+
+.article__body h2 {
+  margin-top: $spacer*4;
+  padding-bottom: $spacer/2;
+
+  border-bottom: 1px solid $border-color;
+}
+
+// Lists
+//
+
+.article__body ol {
+  position: relative;
+
+  padding-left: 0;
+
+  counter-reset: list;
+  list-style-type: none;
+
+  li {
+    position: relative;
+
+    margin-left: 4rem;
+    margin-bottom: $spacer;
+
+    counter-increment: list;
+
+    &:before {
+      position: absolute;
+      left: -3.6rem;
+
+      display: inline-block;
+      height: 2.4rem;
+      width: 2.4rem;
+      margin-right: $spacer;
+
+      color: $white;
+      font-size: 1.4rem;
+      line-height: 2.3rem;
+      text-align: center;
+
+      background-color: $brand-primary;
+      border-radius: 1.2rem;
+      content: counter(list);
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+
+    p + p {
+      margin-top: $spacer;
+    }
+
+    .note {
+      color: $grey-lighter;
+    }
+
+    .result {
+      padding: $spacer/4 $spacer/2;
+      color: $green-500;
+
+      background-color: transparentize($green-500, .9);
+      border: 1px solid transparentize($green-500, .7);
+      border-radius: $border-radius;
+    }
+  }
+}

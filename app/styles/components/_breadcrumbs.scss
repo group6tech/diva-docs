@@ -3,11 +3,29 @@
 // =============================================================================
 
 .breadcrumbs {
-  color: $grey-lighter;
-  font-size: $font-size-smaller;
+  display: inline-block;
+  margin-top: $spacer * 1.5;
 
-  + h1 {
-    padding-top: $padding-base;
-    border-top: 1px solid $border-color;
+  color: $grey-lighter;
+
+  list-style: none;
+
+  li {
+    display: inline-block;
+
+    a {
+      display: inline-block;
+
+      color: $brand-primary;
+    }
+  }
+
+  li + li {
+    &:before {
+      padding: 0 .2rem;
+
+      content: ">";
+      color: $grey-lighter;
+    }
   }
 }

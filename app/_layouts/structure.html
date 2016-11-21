@@ -4,8 +4,6 @@
   <body class="{{ page.bodyClass}} {{ page.category }} {{ page.topic }}" data-spy="scroll" data-target="#categoryList" data-offset="80">
     {% include navbar.html %}
 
-    {% if page.category == 'admin'%}{% include subnav-admin.html %}{% endif %}
-
     <main role="main">
       {{ content }}
 
@@ -22,9 +20,6 @@
     <script src="/scripts/navbar.js"></script>
     <script src="/scripts/scrollspy.js"></script>
     <script src="/scripts/subnav.js"></script>
-    <script src="/scripts/faults.js"></script>
-    <script src="/scripts/list-images.js"></script>
-    <script src="/scripts/notes.js"></script>
     <script src="/scripts/platform-switcher.js"></script>
     <script src="/scripts/scrollto.js"></script>
     <script src="/scripts/search.js"></script>
