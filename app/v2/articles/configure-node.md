@@ -35,3 +35,22 @@ Before you can connect DIVA Node to DIVA Server, ensure:
 </ol>
 
 <p class="tip tip--result">The new configuration is applied and the node will reconnect to the server, and the DIVA Node window is displayed.</p>
+
+### What's next?
+
+On the DIVA Node window check the following:
+
+- The new node's host name and IP address should be displayed next to the Configuration button.
+- The server host name and server status should be displayed at the bottom-left of the window.
+
+Return to DIVA Fusion and using the browser's Refresh button, refresh the node's Properties page. This will populate the following fields:
+
+- Hostname
+- IP Address
+- Processor
+- Physical Memory
+- Enabled
+- Online
+- Last Seen
+
+The Volumes tab displays all the physical drives on the node; not the DIVA drives.
