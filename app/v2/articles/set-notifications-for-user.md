@@ -1,11 +1,11 @@
 ---
-title: Set the notifications you receive
+title: Set the notifications for a user
 category: admin
 topic: fusion
 sortOrder: 1000
 ---
 
-You can decide whether you want to receive:
+You can decide whether another administrator receives:
 
 <ul>
 
@@ -28,21 +28,23 @@ You can decide whether you want to receive:
 
 ### Repeating notifications option
 
-If this option is selected, you will be emailed a notification as soon as the event is detected. Further notifications of active events will be emailed:
+If this option is selected, the user will be emailed a notification as soon as the event is detected. Further notifications of active events will be emailed:
 
 - half an hour after the event started
 - one hour after the event started
 - six hours after the event started, and
 - 24 hours after the event started.
 
-If this option is not selected, you will be emailed a notification as soon as the event is detected. You will not receive further notification of the event.
+If this option is not selected, the user will be emailed a notification as soon as the event is detected. They will not receive further notification of the event.
 
-## Set the notifications you want to receive
+## Set the notifications for a user:
 
-1. On the DIVA Fusion menu click your **username**, then **Settings**.
+1. On the DIVA Fusion menu click **Users**, then **Users**.
 
-2. From the **Notification** drop down menu, select the relevant option.
+2. Click on the **user** you want to set the notifications for.
 
-3. Select or deselect the **Repeating Notifications** option.
+3. From the **Notification** drop down menu, select the relevant option.
 
-4. Click **Save Settings**.
+4. Select or deselect the **Repeating Notifications** option.
+
+5. Click **Save User**.
