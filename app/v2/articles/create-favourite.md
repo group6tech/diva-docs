@@ -40,6 +40,6 @@ Alternatively you can [create a favourite for specific users](/v2/articles/creat
     <p class="note"><strong>Note</strong>: If you assign a preferred letter to the drive, then when users mount the drive, the preferred letter will be mapped to the drive. If the drive letter you selected for this drive is already mapped to a mounted drive, another letter will automatically be mapped to this drive.</p>
   </li>
 
-  <li>Do you want to add another drive to the favourite? If Yes, go to Step 8.</li>
+  <li>Do you want to add another drive to the favourite? If yes, go to Step 8.</li>
 
 </ol>
