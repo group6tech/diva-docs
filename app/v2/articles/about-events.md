@@ -14,6 +14,20 @@ To display the event log, on the Fusion menu, click **System**, then click **Eve
   <figcaption>Recent events that are active</figcaption>
 </figure>
 
+Within five minutes of an event, a notification of the event is emailed to whoever is set up to receive the notification, e.g. any Fusion Administrator.
+
+<figure>
+  <img src="/images/v2/fusion/event-notification-email.png" alt="Event log"/>
+  <figcaption>Event notification email</figcaption>
+</figure>
+
+In addition, further notifications of active events are emailed:
+
+- half an hour after the event started
+- one hour after the event started
+- six hours wafter the event started, and
+- 24 hours after the event started.
+
 ### Active events
 
 Active events are displayed on the Active tab of the event log.
