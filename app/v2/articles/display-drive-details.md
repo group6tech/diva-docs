@@ -2,7 +2,7 @@
 title: Display drive details
 category: editor
 topic: drives
-sortOrder: 1000
+sortOrder: 210
 ---
 
 The following drive information can be displayed:

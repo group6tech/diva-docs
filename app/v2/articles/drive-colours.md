@@ -2,7 +2,7 @@
 title: Drive colours
 category: editor
 topic: drives
-sortOrder: 1000
+sortOrder: 220
 ---
 
 DIVA uses colours to tell you what is taking up space on each drive. Over time, as the drives fill up, the colours will change to inform you of how much space your drives are using. The following picture illustrates what happens when the total space used by the drives on the node is less than 50%, between 50% and 85%, and over 85%.

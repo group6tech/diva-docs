@@ -2,7 +2,7 @@
 title: Unmount a drive
 category: editor
 topic: drives
-sortOrder: 1000
+sortOrder: 110
 ---
 
 Before unmounting a drive, ensure you have closed any files which are on the drive.
