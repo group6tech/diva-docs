@@ -1,8 +1,8 @@
 ---
 title: Set the notifications for a user
 category: admin
-topic: fusion
-sortOrder: 1000
+topic: events
+sortOrder: 1020
 ---
 
 You can decide whether another administrator receives:

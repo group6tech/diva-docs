@@ -1,8 +1,8 @@
 ---
 title: Event levels
 category: admin
-topic: fusion
-sortOrder: 1000
+topic: events
+sortOrder: 20
 ---
 
 Events fall into one of three levels:

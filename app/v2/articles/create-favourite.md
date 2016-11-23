@@ -2,7 +2,7 @@
 title: Create a favourite
 category: admin
 topic: favourites
-sortOrder: 1000
+sortOrder: 100
 ---
 
 Creating a favourite for all DIVA Client users to use is straight forward to do. Once set up, all DIVA Client Users will be able to use it to mount the drives that are assigned to it.

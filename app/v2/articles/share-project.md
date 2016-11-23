@@ -2,7 +2,8 @@
 title: Share a project
 category: admin
 topic: projects
-sortOrder: 1000
+sortOrder: 20
+common: true
 ---
 
 Sharing a user's project with other users requires you to perform a range of tasks across DIVA Fusion (or DIVA Client) and Avid.

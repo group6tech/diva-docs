@@ -2,7 +2,8 @@
 title: Create a drive set
 category: admin
 topic: drives
-sortOrder: 1000
+sortOrder: 120
+common: true
 ---
 
 With DIVA Fusion, you can add a set of new drives consisting of all three DIVA drive types, and you can do this in one go. This means you don't have to add the drives one-by-one. All new drives in the set are automatically suffixed, making them easy to identify. If you want to, you can modify the suffix to suit your drive naming conventions. As part of the same process, you can assign drive access to your users.

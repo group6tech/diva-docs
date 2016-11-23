@@ -2,7 +2,8 @@
 title: Create a user
 category: admin
 topic: users
-sortOrder: 1000
+sortOrder: 100
+common: true
 ---
 
 When adding a DIVA user account, you can grant the user access to one or both of the following:

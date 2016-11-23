@@ -2,7 +2,7 @@
 title: Create a user group
 category: admin
 topic: users
-sortOrder: 1000
+sortOrder: 5010
 ---
 
 If you want to create a favourite for a specific set of DIVA Client users to use, e.g., a project team, first you need to set up a user group and assign individual user accounts to it.

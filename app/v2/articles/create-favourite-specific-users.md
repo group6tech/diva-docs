@@ -2,7 +2,7 @@
 title: Create a favourite for specific users
 category: admin
 topic: favourites
-sortOrder: 1000
+sortOrder: 110
 ---
 
 Sometimes you will want to create a favourite for a small group of users, for example a project team.

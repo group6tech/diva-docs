@@ -2,7 +2,7 @@
 title: About favourites
 category: admin
 topic: favourites
-sortOrder: 1000
+sortOrder: 10
 ---
 
 Favourites provide DIVA Client users with easy access to the drives they use most often. A favourite is a customised collection of DIVA drives that can be mounted in one go by the DIVA Client user. This saves users time because by using favourites, users don't have to locate and mount the drives they require one-by-one.

@@ -2,7 +2,7 @@
 title: Remove a user from a group
 category: admin
 topic: users
-sortOrder: 1000
+sortOrder: 5030
 ---
 
 ## Remove a user account from a user group:

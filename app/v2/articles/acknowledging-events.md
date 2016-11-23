@@ -1,8 +1,8 @@
 ---
 title: Acknowledging events
 category: admin
-topic: fusion
-sortOrder: 1000
+topic: events
+sortOrder: 30
 ---
 
 The event log tracks events that can disrupt users' productivity. Depending on how notifications are set up, an event will trigger a series of emails. For an event, emails will be sent over a 24 hour period unless resolved or acknowledged.

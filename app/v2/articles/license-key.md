@@ -1,7 +1,7 @@
 ---
 title: License key
 category: admin
-topic: server
+topic: fusion
 sortOrder: 1000
 ---
 

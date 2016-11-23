@@ -2,7 +2,7 @@
 title: Delete a favourite
 category: admin
 topic: favourites
-sortOrder: 1000
+sortOrder: 210
 ---
 
 When a favourite is no longer required, you can delete it. Deleting a favourite does not result in any loss of data.

@@ -1,8 +1,8 @@
 ---
 title: About events
 category: admin
-topic: fusion
-sortOrder: 1000
+topic: events
+sortOrder: 10
 ---
 
 Events are displayed in the event log.

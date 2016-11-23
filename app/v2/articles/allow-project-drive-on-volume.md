@@ -2,7 +2,7 @@
 title: Allow Avid Project drives on a volume
 category: admin
 topic: volumes
-sortOrder: 1000
+sortOrder: 30
 ---
 
 Before Avid project drives can be added on a Avid DIVA volume, this process needs to be permitted. You can also prevent the addition of Avid Project Drives on an Avid DIVA volume.

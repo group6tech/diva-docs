@@ -2,7 +2,7 @@
 title: Edit a favourite
 category: admin
 topic: favourites
-sortOrder: 1000
+sortOrder: 200
 ---
 
 When editing a favourite you can:

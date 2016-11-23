@@ -2,7 +2,7 @@
 title: Create an external drive
 category: admin
 topic: drives
-sortOrder: 1000
+sortOrder: 110
 ---
 
 You can add drives which are external to, and not managed by the DIVA system.

@@ -2,7 +2,7 @@
 title: About jobs
 category: admin
 topic: jobs
-sortOrder: 1000
+sortOrder: 10
 ---
 
 To display a list of jobs, on DIVA Fusion's menu, **Server**, then click **Jobs**.

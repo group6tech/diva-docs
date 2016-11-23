@@ -2,7 +2,7 @@
 title: Add a user to a group
 category: admin
 topic: users
-sortOrder: 1000
+sortOrder: 5020
 ---
 
 ## Add a user account to a user group:

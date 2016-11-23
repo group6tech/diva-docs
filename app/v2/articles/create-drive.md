@@ -2,7 +2,8 @@
 title: Create a drive
 category: admin
 topic: drives
-sortOrder: 1000
+sortOrder: 100
+common: true
 ---
 
 The following diagram identifies the DIVA drives that can be added to a particular volume.

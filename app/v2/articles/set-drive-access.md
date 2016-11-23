@@ -3,6 +3,7 @@ title: Set drive access
 category: admin
 topic: drives
 sortOrder: 1000
+common: true
 ---
 
 If you have, for example, added a new drive, you can grant a range of users access to the drive from the same page. This means you don't have to modify user accounts one by one. At any time, you can select a drive, and change everyones access in one go.

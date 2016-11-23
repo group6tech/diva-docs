@@ -2,7 +2,7 @@
 title: About media management
 category: admin
 topic: media
-sortOrder: 1000
+sortOrder: 10
 ---
 
 Avid Media files are stored in folders that are organised by user account. That is, on any Avid Media drive, media files can be spread across one or more users' folders. Sometimes, e.g., at the end of a project, you may want to assign the job of tidying up and archiving these files to one person. To achieve this, all the relevant media files that may currently be spread across other users' folders, can be moved under one user account.

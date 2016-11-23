@@ -1,8 +1,8 @@
 ---
 title: Set the notifications you receive
 category: admin
-topic: fusion
-sortOrder: 1000
+topic: events
+sortOrder: 110
 ---
 
 You can decide whether you want to receive:

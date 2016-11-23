@@ -2,7 +2,7 @@
 title: System user groups
 category: admin
 topic: users
-sortOrder: 1000
+sortOrder: 5000
 ---
 
 System user groups control access to the different areas of DIVA Fusion.

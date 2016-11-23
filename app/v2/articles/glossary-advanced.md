@@ -3,7 +3,7 @@ title: Advanced glossary
 layout: article-sidenav
 category: admin
 topic: fusion
-sortOrder: 100
+sortOrder: 9000
 topics:
   divaDrive: "DIVA drive"
   divaVolume: "DIVA volume"
