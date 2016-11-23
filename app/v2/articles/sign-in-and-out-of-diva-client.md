@@ -10,7 +10,7 @@ common: true
 
 <ol>
 
-  <li>Launch **DIVA Client**.</li>
+  <li>Launch <strong>DIVA Client</strong>.</li>
 
   <li>
     In the <strong>Username</strong> field, type your username.
@@ -40,7 +40,7 @@ You can use a favourite to mount one or more drives in one go. The favourites wi
 
 ## Sign out of DIVA Client
 
-1. From the **username** drop down meny (top-right of the DIVA Client window), click **Sign Out**.
+1. From the **username** drop down menu (top-right of the DIVA Client window), click **Sign Out**.
 
 <figure>
   <img src="/images/v2/client/signout.png" alt="Sign out button"/>
