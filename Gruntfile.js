@@ -15,7 +15,7 @@ module.exports = function(grunt) {
 
   var config = {
     src: 'app',
-    dest: 'dist',
+    dist: 'dist',
     jekyll: '.jekyll',
     temp: '.tmp'
   };
@@ -32,28 +32,39 @@ module.exports = function(grunt) {
     // Clean up old files
     //
     clean: {
-      server: [
-        '<%= config.temp %>'
-      ]
+      server: ['<%= config.temp %>'],
+      dist: ['<%= config.dist %>']
     },
 
     // Run a local server
     //
-    connect: {
-      options: {
-        hostname: 'localhost',
-        port: 9000,
-        livereload: true,
-        open: true,
-      },
-      livereload: {
-        options: {
-          base: [
-            '<%= config.jekyll %>',
-            '<%= config.temp %>',
-            '<%= config.src %>',
-            '.'
+    browserSync: {
+      serve: {
+        bsFiles: {
+          src: [
+            '<%= config.jekyll %>/**/*.html',
+            '<%= config.temp %>/styles/**/*.css',
+            '<%= config.src %>/images/**/*.{jpg,png,svg}',
+            '<%= config.src %>/scripts/**/*.js'
           ]
+        },
+        options: {
+          watchTask: true,
+          server: {
+            baseDir: [
+              '<%= config.jekyll %>',
+              '<%= config.temp %>',
+              '<%= config.src %>'
+            ],
+            routes: {
+              '/bower_components': './bower_components'
+            }
+          }
+        }
+      },
+      dist: {
+        options: {
+          server: '<%= config.dist %>'
         }
       }
     },
@@ -65,30 +76,10 @@ module.exports = function(grunt) {
         files: ['<%= config.src %>/**/*.{html,md}', '<%= config.src %>/*.yml'],
         tasks: ['jekyll:server']
       },
-      js: {
-        options: {
-          livereload: true
-        },
-        files: [
-          'Gruntfile.js',
-          '<%= config.src %>/scripts/{,*/}*.js'
-        ],
-        tasks: ['jshint']
-      },
       sass: {
         files: ['<%= config.src %>/styles/{,*/}*.scss'],
         tasks: ['sass:server']
-      },
-      livereload: {
-        options: {
-          livereload: true
-        },
-        files: [
-          '<%= config.jekyll %>/{,*/}*.html',
-          '<%= config.temp %>/styles/{,*/}*.css',
-          '<%= config.src %>/scripts/{,*/}*.js'
-        ]
-      },
+      }
     },
 
 
@@ -98,6 +89,17 @@ module.exports = function(grunt) {
         files: [
           { expand: true, flatten: true, src: 'bower_components/font-awesome/fonts/*', dest: '<%= config.temp %>/fonts' }
         ]
+      },
+      dist: {
+        files: [{
+          expand: true,
+          cwd: '<%= config.src %>',
+          src: [
+            '*.{ico,json,txt,xml}',
+            'CNAME'
+          ],
+          dest: '<%= config.dist %>'
+        }]
       }
     },
 
@@ -141,6 +143,64 @@ module.exports = function(grunt) {
       ]
     },
 
+    // Prepare the usemin tasks
+    //
+    useminPrepare: {
+      html: '<%= config.jekyll %>/index.html',
+      options: {
+        dest: '<%= config.dist %>',
+        root: './'
+      }
+    },
+
+    // Apply the minified links
+    //
+    usemin: {
+      html: '<%= config.jekyll %>/**/*.html',
+      dest: '<%= config.dist %>'
+    },
+
+    // Minify the HTML
+    //
+    htmlmin: {
+      dist: {
+        options: {
+          collapseWhitespace: true
+        },
+        files: [{
+          expand: true,
+          cwd: '<%= config.jekyll %>',
+          src: '**/*.html',
+          dest: '<%= config.dist %>'
+        }]
+      }
+    },
+
+    // Minify PNGs and JPGs
+    //
+    imagemin: {
+      dist: {
+        files: [{
+          expand: true,
+          cwd: '<%= config.src %>/',
+          src: ['**/*.{png,jpg}'],
+          dest: '<%= config.dist %>/'
+        }]
+      }
+    },
+
+    // Minify SVGs
+    svgmin: {
+      dist: {
+        files: [{
+          expand: true,
+          cwd: '<%= config.src %>/',
+          src: ['**/*.svg'],
+          dest: '<%= config.dist %>/'
+        }]
+      }
+    },
+
     // Tasks which can run at the same time
     //
     concurrent: {
@@ -166,10 +226,35 @@ module.exports = function(grunt) {
 
   // Serve
   //
-  grunt.registerTask('serve', [
+  grunt.registerTask('serve', 'start the server and preview your app', function(target) {
+    if (target === 'dist') {
+      return grunt.task.run(['dist', 'browserSync:dist']);
+    }
+
+    grunt.task.run([
+      'build',
+      'browserSync:serve',
+      'watch'
+    ]);
+  });
+
+  // Dist
+  grunt.registerTask('dist', [
+    'clean:dist',
     'build',
-    'connect:livereload',
-    'watch'
+    'useminPrepare',
+    'concat',
+    'uglify',
+    'cssmin',
+    'usemin',
+    'htmlmin',
+    'imagemin',
+    'svgmin',
+    'copy:dist'
+  ]);
+
+  grunt.registerTask('publish', [
+    'dist'
   ]);
 
   // Default
