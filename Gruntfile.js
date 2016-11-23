@@ -183,6 +183,11 @@ module.exports = function(grunt) {
     uglify: {
       options: {
         mangle: false
+      },
+      dist: {
+        files: {
+          '<%= config.dist %>/js/reamaze.js': '<%= config.src %>/js/reamaze.js'
+        }
       }
     },
 
