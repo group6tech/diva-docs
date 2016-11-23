@@ -99,6 +99,11 @@ module.exports = function(grunt) {
             'CNAME'
           ],
           dest: '<%= config.dist %>'
+        }, {
+          expand: true,
+          cwd: '<%= config.temp %>',
+          src: ['*.{ico,png}',],
+          dest: '<%= config.dist %>'
         }]
       }
     },
@@ -132,6 +137,21 @@ module.exports = function(grunt) {
           dest: '<%= config.temp %>/styles',
           ext: '.css'
         }]
+      }
+    },
+
+    // Generate a favicon
+    //
+    favicons: {
+      options: {
+        trueColor: true,
+        appleTouchBackgroundColor: '#0088cc',
+        tileColor: '#0088cc',
+        html: '<%= config.jekyll %>/index.html'
+      },
+      icons: {
+        src: '<%= config.src %>/favicon.png',
+        dest: '<%= config.temp %>/'
       }
     },
 
@@ -222,6 +242,7 @@ module.exports = function(grunt) {
   grunt.registerTask('build', [
     'clean:server',
     'concurrent:build',
+    'favicons'
   ]);
 
   // Serve
