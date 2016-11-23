@@ -18,13 +18,6 @@ bodyClass: home with-jumbo
       </div>
     </form>
 
-    <p class="home__popular">
-      <strong>Popular help topics:</strong>
-      <a href="/">drives</a>,
-      <a href="/">users</a>,
-      <a href="/">projects</a>
-    </p>
-
   </div>
 </div>
 
