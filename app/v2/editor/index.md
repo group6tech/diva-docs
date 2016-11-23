@@ -3,6 +3,7 @@ title: Overview
 layout: editor
 topics:
   client: "DIVA Client"
+  favourites: "Favourites"
 ---
 
 DIVA is a media server designed and built for editors to streamline, store, share and simplify your Avid Media Composer environment.
