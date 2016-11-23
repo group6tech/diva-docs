@@ -3,6 +3,7 @@ title: Mount a drive
 category: editor
 topic: drives
 sortOrder: 1000
+common: true
 ---
 
 To use a drive, it has to be mounted on the computer you are using. On mounting the drive, it is assigned a drive letter (Windows Only). If you want to, you can select a letter that is not currently mapped to another mounted drive.

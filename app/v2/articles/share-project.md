@@ -8,14 +8,14 @@ common: true
 
 Sharing a user's project with other users requires you to perform a range of tasks across DIVA Fusion (or DIVA Client) and Avid.
 
-### Before You Begin
+### Before you begin
 
 Before sharing a new project, ensure:
 
   - a user has created a project in Avid Media Composer on the correct drive, and
   - the user has closed the project in Avid Media Composer.
 
-## Share a project:
+## Share a project
 
 <ol>
 
