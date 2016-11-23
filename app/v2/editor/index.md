@@ -3,6 +3,7 @@ title: Overview
 layout: editor
 topics:
   client: "DIVA Client"
+  drives: "Drives"
   favourites: "Favourites"
 ---
 
