@@ -4,6 +4,7 @@ layout: editor
 topics:
   client: "DIVA Client"
   drives: "Drives"
+  projects: "Projects"
   favourites: "Favourites"
 ---
 
