@@ -2,12 +2,7 @@
 layout: structure
 ---
 
-<div class="jumbotron jumbotron--inner-header">
-  <div class="container">
-    <h1>Using DIVA</h1>
-    <p>Everything an editor needs to know to get going with DIVA.</p>
-  </div>
-</div>
+{% include editor-jumbo.html %}
 
 <div class="category-page">
   <div class="container">
@@ -15,7 +10,7 @@ layout: structure
     	{{ content }}
       {% include category-index.html %}
     </div>
-    
-    {% include subnav-editor.html %}
+
+    {% include editor-subnav.html %}
   </div>
 </div>

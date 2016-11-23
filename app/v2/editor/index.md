@@ -2,11 +2,6 @@
 title: Overview
 layout: editor
 topics:
-  - setup
-  - drives
-  - favourites
-  - projects
-  - misc
 ---
 
 DIVA is a media server designed and built for editors to streamline, store, share and simplify your Avid Media Composer environment.

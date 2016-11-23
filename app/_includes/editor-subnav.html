@@ -15,22 +15,12 @@
 
   <ul>
     <li class="category-list__item active">
-      <a href="#common" class="category-list__link">Common Issues</a>
+      <a href="#common" class="category-list__link">Popular articles</a>
     </li>
+    {% for topic in page.topics %}
     <li class="category-list__item">
-      <a href="#setup" class="category-list__link">Setup</a>
+      <a href="#{{topic[0]}}" class="category-list__link">{{topic[1]}}</a>
     </li>
-    <li class="category-list__item">
-      <a href="#drives" class="category-list__link">Drives</a>
-    </li>
-    <li class="category-list__item">
-      <a href="#favourites" class="category-list__link">Favourites</a>
-    </li>
-    <li class="category-list__item">
-      <a href="#projects" class="category-list__link">Projects</a>
-    </li>
-    <li class="category-list__item">
-      <a href="#misc" class="category-list__link">Misc</a>
-    </li>
+    {% endfor %}
   </ul>
 </div>
