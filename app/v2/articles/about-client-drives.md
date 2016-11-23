@@ -3,7 +3,6 @@ title: About drives
 category: editor
 topic: drives
 sortOrder: 10
-common: true
 ---
 
 DIVA's Drives pane provides you with access to all the drives that have been assigned to your user account.
