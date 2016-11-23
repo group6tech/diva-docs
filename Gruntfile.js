@@ -82,8 +82,8 @@ module.exports = function(grunt) {
       }
     },
 
-
     // Copy assets around that aren't normally moved
+    //
     copy: {
       build: {
         files: [
@@ -104,6 +104,11 @@ module.exports = function(grunt) {
           cwd: '<%= config.temp %>',
           src: ['*.{ico,png}',],
           dest: '<%= config.dist %>'
+        }, {
+          expand: true,
+          cwd: 'bower_components/font-awesome/fonts/',
+          src: '*.*',
+          dest: '<%= config.dist %>/fonts/'
         }]
       }
     },
