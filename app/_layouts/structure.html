@@ -12,17 +12,18 @@
 
     {% include footer.html %}
 
-    <!-- build:js js/app.js -->
+    <!-- build:js(.) /js/vendor.js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/velocity/velocity.js"></script>
+    <!-- endbuild -->
 
-    <script src="/scripts/affix.js"></script>
-    <script src="/scripts/category-list.js"></script>
-    <script src="/scripts/navbar.js"></script>
-    <script src="/scripts/scrollspy.js"></script>
-    <script src="/scripts/subnav.js"></script>
-    <script src="/scripts/scrollto.js"></script>
-    <script src="/scripts/search.js"></script>
+    <!-- build:js(app) /js/app.js -->
+    <script src="/js/affix.js"></script>
+    <script src="/js/category-list.js"></script>
+    <script src="/js/navbar.js"></script>
+    <script src="/js/scrollspy.js"></script>
+    <script src="/js/subnav.js"></script>
+    <script src="/js/scrollto.js"></script>
+    <script src="/js/search.js"></script>
     <!-- endbuild -->
 
     {% for script in page.scripts %}

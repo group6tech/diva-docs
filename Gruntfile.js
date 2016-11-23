@@ -173,8 +173,16 @@ module.exports = function(grunt) {
     useminPrepare: {
       html: '<%= config.jekyll %>/index.html',
       options: {
-        dest: '<%= config.dist %>',
-        root: './'
+        root: '../',
+        dest: '<%= config.dist %>'
+      }
+    },
+
+    // Uglify JS files
+    //
+    uglify: {
+      options: {
+        mangle: false
       }
     },
 
@@ -215,6 +223,7 @@ module.exports = function(grunt) {
     },
 
     // Minify SVGs
+    //
     svgmin: {
       dist: {
         files: [{
