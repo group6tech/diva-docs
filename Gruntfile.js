@@ -240,6 +240,19 @@ module.exports = function(grunt) {
       }
     },
 
+    // Deploy to github
+    //
+    'gh-pages': {
+      options: {
+        base: '<%= config.dist %>',
+        clone: '.gh-pages',
+        //repo: 'git@github.com:group6tech/diva-help.git',
+        repo: 'https://github.com/group6tech/diva-help.git',
+        branch: 'gh-pages'
+      },
+      src: ['**']
+    },
+
     // Tasks which can run at the same time
     //
     concurrent: {
@@ -294,7 +307,8 @@ module.exports = function(grunt) {
   ]);
 
   grunt.registerTask('publish', [
-    'dist'
+    'dist',
+    'gh-pages'
   ]);
 
   // Default
