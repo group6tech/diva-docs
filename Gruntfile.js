@@ -15,7 +15,7 @@ module.exports = function(grunt) {
 
   var config = {
     src: 'app',
-    dest: 'dist',
+    dist: 'dist',
     jekyll: '.jekyll',
     temp: '.tmp'
   };
@@ -32,28 +32,39 @@ module.exports = function(grunt) {
     // Clean up old files
     //
     clean: {
-      server: [
-        '<%= config.temp %>'
-      ]
+      server: ['<%= config.temp %>'],
+      dist: ['<%= config.dist %>']
     },
 
     // Run a local server
     //
-    connect: {
-      options: {
-        hostname: 'localhost',
-        port: 9000,
-        livereload: true,
-        open: true,
-      },
-      livereload: {
-        options: {
-          base: [
-            '<%= config.jekyll %>',
-            '<%= config.temp %>',
-            '<%= config.src %>',
-            '.'
+    browserSync: {
+      serve: {
+        bsFiles: {
+          src: [
+            '<%= config.jekyll %>/**/*.html',
+            '<%= config.temp %>/styles/**/*.css',
+            '<%= config.src %>/images/**/*.{jpg,png,svg}',
+            '<%= config.src %>/scripts/**/*.js'
           ]
+        },
+        options: {
+          watchTask: true,
+          server: {
+            baseDir: [
+              '<%= config.jekyll %>',
+              '<%= config.temp %>',
+              '<%= config.src %>'
+            ],
+            routes: {
+              '/bower_components': './bower_components'
+            }
+          }
+        }
+      },
+      dist: {
+        options: {
+          server: '<%= config.dist %>'
         }
       }
     },
@@ -65,39 +76,40 @@ module.exports = function(grunt) {
         files: ['<%= config.src %>/**/*.{html,md}', '<%= config.src %>/*.yml'],
         tasks: ['jekyll:server']
       },
-      js: {
-        options: {
-          livereload: true
-        },
-        files: [
-          'Gruntfile.js',
-          '<%= config.src %>/scripts/{,*/}*.js'
-        ],
-        tasks: ['jshint']
-      },
       sass: {
         files: ['<%= config.src %>/styles/{,*/}*.scss'],
         tasks: ['sass:server']
-      },
-      livereload: {
-        options: {
-          livereload: true
-        },
-        files: [
-          '<%= config.jekyll %>/{,*/}*.html',
-          '<%= config.temp %>/styles/{,*/}*.css',
-          '<%= config.src %>/scripts/{,*/}*.js'
-        ]
-      },
+      }
     },
 
-
     // Copy assets around that aren't normally moved
+    //
     copy: {
       build: {
         files: [
           { expand: true, flatten: true, src: 'bower_components/font-awesome/fonts/*', dest: '<%= config.temp %>/fonts' }
         ]
+      },
+      dist: {
+        files: [{
+          expand: true,
+          cwd: '<%= config.src %>',
+          src: [
+            '*.{ico,json,txt,xml}',
+            'CNAME'
+          ],
+          dest: '<%= config.dist %>'
+        }, {
+          expand: true,
+          cwd: '<%= config.temp %>',
+          src: ['*.{ico,png}',],
+          dest: '<%= config.dist %>'
+        }, {
+          expand: true,
+          cwd: 'bower_components/font-awesome/fonts/',
+          src: '*.*',
+          dest: '<%= config.dist %>/fonts/'
+        }]
       }
     },
 
@@ -133,12 +145,112 @@ module.exports = function(grunt) {
       }
     },
 
+    // Generate a favicon
+    //
+    favicons: {
+      options: {
+        trueColor: true,
+        appleTouchBackgroundColor: '#0088cc',
+        tileColor: '#0088cc',
+        html: '<%= config.jekyll %>/index.html'
+      },
+      icons: {
+        src: '<%= config.src %>/favicon.png',
+        dest: '<%= config.temp %>/'
+      }
+    },
+
     // Check js files for issues
     jshint: {
       all: [
         'Gruntfile.js',
         '<%= config.src %>/scripts'
       ]
+    },
+
+    // Prepare the usemin tasks
+    //
+    useminPrepare: {
+      html: '<%= config.jekyll %>/index.html',
+      options: {
+        root: '../',
+        dest: '<%= config.dist %>'
+      }
+    },
+
+    // Uglify JS files
+    //
+    uglify: {
+      options: {
+        mangle: false
+      },
+      dist: {
+        files: {
+          '<%= config.dist %>/js/reamaze.js': '<%= config.src %>/js/reamaze.js'
+        }
+      }
+    },
+
+    // Apply the minified links
+    //
+    usemin: {
+      html: '<%= config.jekyll %>/**/*.html',
+      dest: '<%= config.dist %>'
+    },
+
+    // Minify the HTML
+    //
+    htmlmin: {
+      dist: {
+        options: {
+          collapseWhitespace: true
+        },
+        files: [{
+          expand: true,
+          cwd: '<%= config.jekyll %>',
+          src: '**/*.html',
+          dest: '<%= config.dist %>'
+        }]
+      }
+    },
+
+    // Minify PNGs and JPGs
+    //
+    imagemin: {
+      dist: {
+        files: [{
+          expand: true,
+          cwd: '<%= config.src %>/',
+          src: ['**/*.{png,jpg}'],
+          dest: '<%= config.dist %>/'
+        }]
+      }
+    },
+
+    // Minify SVGs
+    //
+    svgmin: {
+      dist: {
+        files: [{
+          expand: true,
+          cwd: '<%= config.src %>/',
+          src: ['**/*.svg'],
+          dest: '<%= config.dist %>/'
+        }]
+      }
+    },
+
+    // Deploy to github
+    //
+    'gh-pages': {
+      options: {
+        base: '<%= config.dist %>',
+        clone: '.gh-pages',
+        //repo: 'git@github.com:group6tech/diva-help.git',
+        repo: 'https://github.com/group6tech/diva-help.git',
+        branch: 'gh-pages'
+      },
+      src: ['**']
     },
 
     // Tasks which can run at the same time
@@ -162,14 +274,41 @@ module.exports = function(grunt) {
   grunt.registerTask('build', [
     'clean:server',
     'concurrent:build',
+    'favicons'
   ]);
 
   // Serve
   //
-  grunt.registerTask('serve', [
+  grunt.registerTask('serve', 'start the server and preview your app', function(target) {
+    if (target === 'dist') {
+      return grunt.task.run(['dist', 'browserSync:dist']);
+    }
+
+    grunt.task.run([
+      'build',
+      'browserSync:serve',
+      'watch'
+    ]);
+  });
+
+  // Dist
+  grunt.registerTask('dist', [
+    'clean:dist',
     'build',
-    'connect:livereload',
-    'watch'
+    'useminPrepare',
+    'concat',
+    'uglify',
+    'cssmin',
+    'usemin',
+    'htmlmin',
+    'imagemin',
+    'svgmin',
+    'copy:dist'
+  ]);
+
+  grunt.registerTask('publish', [
+    'dist',
+    'gh-pages'
   ]);
 
   // Default

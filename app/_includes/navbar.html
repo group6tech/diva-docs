@@ -1,25 +1,15 @@
 <nav class="navbar">
-  <div class="container">
+  <div class="container-fluid">
     <h1 class="navbar__brand">
       <a href="/">
         <img class="navbar__logo" src="/images/diva.svg" alt="DIVA"/>
-        DIVA Help
+        <span>DIVA</span>
+        <span class="navbar__brand__help-center hidden-xs-down">| Help Center</span>
       </a>
     </h1>
 
-    <div class="navbar__content">
-      <form class="navbar__form" role="search">
-        <div class="form__group">
-          <input type="text" class="form__control" placeholder="Search"/>
-        </div>
-        <button type="submit" class="btn btn--primary"><i class="fa fa-search"></i></button>
-      </form>
-
-      <ul class="nav navbar__nav">
-        <li><a class="navbar__editor" href="/v2/editor">Editors</a></li>
-        <li><a class="navbar__admin" href="/v2/admin">Admins</a></li>
-        <li><a class="navbar__support" href="/support.html">Support</a></li>
-      </ul>
-    </div>
+    <ul class="nav navbar__nav hidden-xs-down">
+      <li class="nav__item"><a class="nav__item--support" href="/support.html">Contact Us</a></li>
+    </ul>
   </div>
 </nav>

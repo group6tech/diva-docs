@@ -12,28 +12,28 @@
 	font-weight: $font-weight-light;
 	text-align: center;
 
-	@media only screen and (min-width: $screen-md-min) {
-		text-align: left;
-	}
-
 	h1 {
+		clear: both;
+
 		margin-top: 0;
 
-		@media only screen and (min-width: $screen-sm-min) {
+		line-height: 1.2;
+
+		@media only screen and (min-width: $screen-md-min) {
 			font-size: 4.2rem;
 		}
 
-		@media only screen and (min-width: $screen-sm-min) {
+		@media only screen and (min-width: $screen-lg-min) {
 			font-size: 5.6rem;
 		}
 	}
 
 	p {
 		@media only screen and (min-width: $screen-sm-min) {
-			font-size: 1.8rem;
+			font-size: 2rem;
 		}
 
-		@media only screen and (min-width: $screen-sm-min) {
+		@media only screen and (min-width: $screen-lg-min) {
 			font-size: 2.4rem;
 		}
 	}
@@ -52,8 +52,35 @@
 	}
 }
 
-body.with-jumbo .navbar + .jumbotron {
-	$multiplier: 11;
-	margin-top: -($padding-base * $multiplier);
-	padding-top: ($padding-base * (2 + $multiplier));
+body.with-jumbo .navbar + main > .jumbotron {
+	margin-top: -$navbar-height-xs;
+	padding-top: $spacer * 8;
+	padding-bottom: $spacer * 6;
+}
+
+
+
+//
+// Inner page header
+// ============================================================================
+
+.jumbotron--inner-header {
+	text-align: left;
+
+	h1 {
+		margin-bottom: 0;
+
+		font-size: 10vw;
+
+		@media only screen and (min-width: $screen-md-min) {
+			font-size: 6rem;
+		}
+	}
+
+	p {
+		margin-top: 0;
+		margin-bottom: 0;
+
+		font-size: 1.8rem;
+	}
 }

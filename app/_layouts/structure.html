@@ -1,24 +1,37 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-  <body class="{{ page.bodyClass}} {{ page.category }} {{ page.topic }}">
+  <body class="{{ page.bodyClass}} {{ page.category }} {{ page.topic }}" data-spy="scroll" data-target="#categoryList" data-offset="80">
     {% include navbar.html %}
 
-    {% if page.category == 'admin'%}{% include subnav-admin.html %}{% endif %}
-    {% if page.category == 'editor'%}{% include subnav-editor.html %}{% endif %}
+    <main role="main">
+      {{ content }}
 
-    {{ content }}
+      {% include contact-c2a.html %}
+    </main>
 
     {% include footer.html %}
 
+    <!-- build:js(.) /js/vendor.js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/velocity/velocity.js"></script>
+    <!-- endbuild -->
 
-    <script src="/scripts/subnav.js"></script>
-    <script src="/scripts/faults.js"></script>
-    <script src="/scripts/list-images.js"></script>
-    <script src="/scripts/notes.js"></script>
-    <script src="/scripts/platform-switcher.js"></script>
+    <!-- build:js(app) /js/app.js -->
+    <script src="/js/affix.js"></script>
+    <script src="/js/category-list.js"></script>
+    <script src="/js/navbar.js"></script>
+    <script src="/js/scrollspy.js"></script>
+    <script src="/js/subnav.js"></script>
+    <script src="/js/scrollto.js"></script>
+    <script src="/js/search.js"></script>
+    <script src="/js/swifttype.js"></script>
+    <!-- endbuild -->
+
+    {% for script in page.scripts %}
+    <script src="{{script}}"></script>
+    {% endfor %}
+
+    {% include ga.html %}
 
   </body>
 </html>

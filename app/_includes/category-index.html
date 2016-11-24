@@ -1,0 +1,16 @@
+<div class="category-tree">
+  <div class="category-section" id="common">
+    <h2>Popular articles</h2>
+    <ul>
+      {% for p in site.pages %}
+        {% if p.common and p.category == page.category %}
+          <li><a href="{{ p.url }}">{{ p.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+
+  {% for topic in page.topics %}
+    {% include topic-article-list.html topic = topic %}
+  {% endfor %}
+</div>

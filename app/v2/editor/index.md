@@ -1,12 +1,11 @@
 ---
 title: Overview
-layout: category
+layout: editor
 topics:
-  - setup
-  - drives
-  - favourites
-  - projects
-  - misc
+  client: "DIVA Client"
+  drives: "Drives"
+  projects: "Projects"
+  favourites: "Favourites"
 ---
 
 DIVA is a media server designed and built for editors to streamline, store, share and simplify your Avid Media Composer environment.

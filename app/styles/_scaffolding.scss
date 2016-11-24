@@ -33,11 +33,23 @@ body {
   font-weight: $font-weight-normal;
   line-height: $line-height-base;
 
-  background-color: $bg-color;
+  background-color: $footer-bg;
+
+  @media only screen and (min-width: $screen-md-min) {
+    padding-top: $navbar-height-md;
+  }
 }
 
 img {
   max-width: 100%;
+}
+
+main {
+  background-color: $bg-color;
+}
+
+p {
+  margin-top: 0;
 }
 
 

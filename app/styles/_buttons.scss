@@ -16,6 +16,7 @@
   text-align: center;
   white-space: nowrap;
 
+  background: transparent;
   border: 1px solid $border-color;
   border-radius: $border-radius;
 
@@ -24,6 +25,11 @@
 
   transition: background-color ease-in-out .15s,
               border-color ease-in-out .15s;
+
+  &:active,
+  &:focus {
+    outline: 0;
+  }
 }
 
 

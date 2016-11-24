@@ -14,7 +14,7 @@ exclude: ['images', 'scripts']
 # Site
 # ------------------------------------------------------------------------------
 
-name: Help documentation for the DIVA Media System
+name: DIVA Help Center
 description: Help documentation and guides for DIVA Fusion, DIVA Server, DIVA Node, and DIVA Client on Mac and Windows
 
 
@@ -38,7 +38,7 @@ defaults:
     scope:
       path: "v2/articles"
     values:
-      layout: "article"
+      layout: "article-default"
   - # v2 - Admin
     scope:
       path: "v2/admin"

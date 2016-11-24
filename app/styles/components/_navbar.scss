@@ -1,102 +1,90 @@
 //
 // Components - Navbar
-// =============================================================================
+// ============================================================================
 
 .navbar {
   z-index: $z-index-navbar;
 
-  padding-top: $padding-base;
-  padding-bottom: $padding-base;
+  height: $navbar-height-xs;
+  padding-top: $spacer;
+  padding-bottom: $spacer;
 
-  color: $white;
-  text-align: center;
+  color: $text-color;
 
-  @media only screen and (min-width: $screen-sm-min) {
-    min-height: ($padding-base * 6.5);
-
-    text-align: left;
-  }
+  background-color: $navbar-bg;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
 
   @media only screen and (min-width: $screen-md-min) {
-    min-height: ($padding-base * 5);
-  }
-}
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 
-body:not(.with-jumbo) .navbar {
-  @include g6-grad();
+    height: $navbar-height-md;
+  }
 }
 
 
 // Brand
-// -----------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
 
 .navbar__brand {
+  float: left;
+
   margin: 0;
+  padding-top: .3rem;
 
   font-weight: $font-weight-light;
-
-  @media only screen and (min-width: $screen-sm-min) {
-    float: left;
-    margin-top: $padding-base;
-  }
-
-  @media only screen and (min-width: $screen-md-min) {
-    margin-top: 0;
-  }
+  line-height: 1;
 
   a {
-    color: $white;
+    color: inherit;
   }
+}
+
+.navbar__brand__help-center {
+  position: relative;
+  top: -.6rem;
+
+  font-size: $font-size-base;
 }
 
 
 
 // Logo
-// -----------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
 
 .navbar__logo {
-  width: ($padding-base * 3);
+  position: relative;
+  top: -2px;
+
+  width: ($padding-base * 2.5);
 
   vertical-align: middle;
 }
 
 
 
-// Content
-// -----------------------------------------------------------------------------
-
-.navbar__content {
-  @media only screen and (min-width: $screen-sm-min) {
-    float: right;
-  }
-}
-
-
 // Nav
-// -----------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
 
 .navbar__nav {
+  float: right;
+
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-size: $font-size-base;
   font-weight: $font-weight-light;
-
-  @media only screen and (min-width: $screen-sm-min) {
-  }
-
-  @media only screen and (min-width: $screen-md-min) {
-    float: right;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
+  line-height: 1;
 
   a {
     padding-left: $padding-small;
     padding-right: $padding-small;
+    padding-top: $padding-small + $padding-smaller;
+    padding-bottom: $padding-small + $padding-smaller;
 
-    @media only screen and (min-width: $screen-md-min) {
-      padding-top: $padding-small + $padding-smaller;
-      padding-bottom: $padding-small + $padding-smaller;
-    }
-
-    color: transparentize($white, .2);
+    color: $white;
 
     &:hover {
       color: $white;
@@ -107,57 +95,19 @@ body:not(.with-jumbo) .navbar {
 
 
 // Items
-// -----------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
 
-body.admin .navbar__admin,
-body.support .navbar__support,
-body.editor .navbar__editor {
-  color: $white;
-  font-weight: $font-weight-normal;
-}
+.nav__item--support {
+  padding-left: $spacer;
+  padding-right: $spacer;
 
+  font-weight: $font-weight-semi-bold;
 
+  background-color: $brand-primary;
+  border: 2px solid $white;
+  border-radius: $border-radius-large;
 
-// Form
-// -----------------------------------------------------------------------------
-
-.navbar__form {
-  margin-top: $padding-base;
-
-  @media only screen and (min-width: $screen-sm-min) {
-    margin-top: 0;
-
-    text-align: right;
-  }
-
-  @media only screen and (min-width: $screen-md-min) {
-    float: right;
-    margin-top: $padding-small;
-  }
-
-  .form__group {
-    display: inline-block;
-  }
-
-  .form__control {
-    @include placeholder-color(transparentize($white, .5));
-
-    display: inline-block;
-    width: ($padding-base * 9);
-
-    color: $white;
-
-    background-color: transparent;
-    border-color: transparentize($white, .7);
-
-    vertical-align: middle;
-
-    &:focus {
-      border-color: transparentize($white, .5);
-    }
-
-    @media only screen and (min-width: $screen-md-min) {
-      width: ($padding-base * 6);
-    }
+  &:hover {
+    background-color: darken($brand-primary, 5%);
   }
 }

@@ -33,13 +33,31 @@
 // Components
 // -----------------------------------------------------------------------------
 
+@import 'components/article';
 @import 'components/breadcrumbs';
-@import 'components/faults';
-@import 'components/figures';
+@import 'components/cards';
+@import 'components/category-list';
+@import 'components/category-page';
+@import 'components/category-tree';
+@import 'components/contact-c2a';
 @import 'components/footer';
 @import 'components/jumbotron';
 @import 'components/navs';
 @import 'components/navbar';
-@import 'components/notes';
 @import 'components/platform-switcher';
 @import 'components/subnav';
+@import 'components/tips';
+
+
+
+// Utilities
+// -----------------------------------------------------------------------------
+
+@import 'utilities/visibility';
+
+
+
+// Layouts
+// -----------------------------------------------------------------------------
+
+@import 'layouts/home';

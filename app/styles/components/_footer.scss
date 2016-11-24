@@ -3,7 +3,6 @@
 // =============================================================================
 
 .footer {
-  margin-top: ($padding-base * 2);
   padding-top: ($padding-base * 2);
   padding-bottom: ($padding-base * 2);
 
@@ -11,7 +10,7 @@
   font-size: 1.4rem;
   text-align: center;
 
-  background-color: $grey-lightest;
+  background-color: $footer-bg;
 
   a {
     color: $grey-lighter;
@@ -21,7 +20,20 @@
     }
   }
 
+  p {
+    span {
+      display: block;
+
+      @media only screen and (min-width: $screen-md-min) {
+        display: inline;
+      }
+    }
+  }
+
   .fa-circle {
+    position: relative;
+    top: -.4rem;
+
     padding-left: $padding-small;
     padding-right: $padding-small;
 

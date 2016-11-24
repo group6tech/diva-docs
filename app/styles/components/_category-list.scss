@@ -1,0 +1,152 @@
+//
+// Components - Category List
+// ============================================================================
+
+
+//
+// List
+// ----------------------------------------------------------------------------
+
+.category-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  background-color: $white;
+
+  @media only screen and (min-width: $screen-md-min) {
+    position: static;
+
+    display: table-cell;
+    width: 25rem;
+    padding: $spacer / 2;
+  }
+}
+
+// Affixed
+//
+.category-list.affix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: $z-index-category-list;
+
+  width: 100%;
+
+  @media only screen and (min-width: $screen-md-min) {
+    position: static;
+    width: 25rem;
+
+    ul {
+      position: fixed;
+      top: 12rem;
+      min-width: 25rem - $spacer;
+    }
+  }
+}
+
+.category-list ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  list-style: none;
+}
+
+
+
+// Item
+// ----------------------------------------------------------------------------
+
+.category-list__item {
+  display: none;
+
+  @media only screen and (min-width: $screen-md-min) {
+    display: block;
+  }
+}
+
+.category-list__item.active {
+  display: block;
+}
+
+
+
+// Link
+// ----------------------------------------------------------------------------
+
+.category-list__link {
+  display: block;
+  padding: $spacer;
+
+  border-bottom: 1px solid $border-color;
+
+  @media only screen and (min-width: $screen-md-min) {
+    padding-top: $spacer / 3;
+    padding-bottom: $spacer / 3;
+
+    color: $grey-dark;
+
+    border-bottom: 0 none;
+  }
+}
+
+.category-list__item.active .category-list__link {
+  @media only screen and (min-width: $screen-md-min) {
+    color: $white;
+
+    background-color: $brand-primary;
+    border-radius: $border-radius;
+  }
+}
+
+
+
+// Open and close links
+// ----------------------------------------------------------------------------
+
+.category-list__open,
+.category-list__close {
+  float: right;
+
+  margin-right: $spacer * 2;
+  margin-top: $spacer * .75;
+
+  @media only screen and (min-width: $screen-md-min) {
+    display: none !important;
+  }
+}
+
+.category-list__close {
+  display: none;
+}
+
+
+
+// Open List State
+// ----------------------------------------------------------------------------
+
+.category-list.is-open {
+  .category-list__open {
+    display: none;
+  }
+
+  .category-list__close {
+    display: block;
+  }
+
+  .category-list__item {
+    display: block;
+  }
+
+  .category-list__link {
+    color: $grey-dark;
+  }
+
+  .category-list__item.active .category-list__link {
+    background-color: transparentize($brand-primary, .9);
+    color: $brand-primary;
+  }
+}

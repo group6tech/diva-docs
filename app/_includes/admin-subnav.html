@@ -1,0 +1,27 @@
+<div class="category-list" id="categoryList" data-spy="affix" data-offset-top="196">
+  <a href="" class="category-list__open">
+    <span class="fa-stack">
+      <i class="fa fa-circle-thin fa-stack-2x"></i>
+      <i class="fa fa-plus fa-stack-1x"></i>
+    </span>
+  </a>
+
+  <a href="" class="category-list__close">
+    <span class="fa-stack">
+      <i class="fa fa-circle-thin fa-stack-2x"></i>
+      <i class="fa fa-times fa-stack-1x"></i>
+    </span>
+  </a>
+
+  <ul>
+    <li class="category-list__item active">
+      <a href="#common" class="category-list__link">Popular articles</a>
+    </li>
+
+    {% for topic in page.topics %}
+    <li class="category-list__item">
+      <a href="#{{topic[0]}}" class="category-list__link">{{topic[1]}}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
