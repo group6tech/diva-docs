@@ -72,6 +72,9 @@ module.exports = function(grunt) {
     // Watch file for changes
     //
     watch: {
+      options: {
+        spawn: false
+      },
       jekyll: {
         files: ['<%= config.src %>/**/*.{html,md}', '<%= config.src %>/*.yml'],
         tasks: ['jekyll:server']
