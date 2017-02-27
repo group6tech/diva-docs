@@ -16,7 +16,7 @@ Both shared and private projects can be archived.
 
 There are a number of methods of archiving a project:
 
-- [Archive a single project](/v2/articles/archive-project.html)
+- [Archive a project](/v2/articles/archive-project.html)
 - [Archive many projects](/v2/articles/archive-many-projects.html)
 - [Archive all projects on a drive](/v2/articles/archive-drive-projects.html)
 

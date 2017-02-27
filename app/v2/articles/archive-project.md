@@ -1,7 +1,6 @@
 ---
-title: Archive a single project
+title: Archive a project
 category: admin
 topic: projects
 sortOrder: 2010
 ---
-
