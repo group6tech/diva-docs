@@ -5,11 +5,11 @@ topic: projects
 sortOrder: 1000
 ---
 
-When deleting a shared project, the project files are deleted. The project's media is not deleted.
+When deleting a project, the project files are deleted. The project's media is not deleted.
 
 ### Before You Begin
 
-Before deleting a shared project, ensure:
+Before deleting a project, ensure:
 
   - no users have the project open in Avid Media Composer, and
   - you've archived the project files.
@@ -24,7 +24,7 @@ Before deleting a shared project, ensure:
 
 1. On the DIVA Fusion menu, click **Projects**.
 
-2. Click the relevant shared project's <i class="fa fa-trash"></i> icon.
+2. Click the relevant project's <i class="fa fa-trash"></i> icon.
 
 3. You will be asked if you want to confirm the delete the project. Click **Delete**.
 
