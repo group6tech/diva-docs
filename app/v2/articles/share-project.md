@@ -27,7 +27,7 @@ Before sharing a new project, ensure:
 
   <li>
     After a few moments the blue <i class="fa fa-share-square-o"></i> button should disappear next the project you just shared, and you should see a notification message such as:
-    <p><img src="/images/v2/fusion/projects-list-fusion-share-03.png" alt="Project after sharing"/></p>
+    <p><img src="/images/v2/fusion/project-list-shared.png" alt="Project after sharing"/></p>
     <p>If it does not display within a minute or two, check to see if the relevant job has been run on the server.</p>
 </ol>
 

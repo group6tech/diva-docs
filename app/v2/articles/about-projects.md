@@ -13,6 +13,6 @@ With DIVA shared projects, a user can drag and drop bins within Avid Media Compo
   - using the unprotected folder, transfer bins to other users.
 
 <figure>
-  <img src="/images/v2/fusion/projects-list-fusion-00.png" alt="Projects in DIVA Fusion"/>
+  <img src="/images/v2/fusion/project-list.png" alt="Projects in DIVA Fusion"/>
   <figcaption>Projects in DIVA Fusion</figcaption>
 </figure>
