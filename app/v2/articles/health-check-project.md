@@ -20,3 +20,9 @@ If users are having problems opening other users' bins, you can repair a project
   <strong>Result</strong>:
   A job that repairs the project is created, queued and run in the background. Depending on the size of the project, this may take anything from a few seconds to 1 minute.
 </p>
+
+<p class="tip">
+  <strong>Tip</strong>:
+  You can health check multiple projects at once by using the checkboxes to select the projects,
+  then click the <i class="fa fa-wrench"></i> <strong>Repair</strong> button below the project list.
+</p>
