@@ -14,6 +14,12 @@ Before deleting a shared project, ensure:
   - no users have the project open in Avid Media Composer, and
   - you've archived the project files.
 
+<p class="tip tip--warning">
+  <strong>Warning</strong>:
+  When deleting a project, the media is not deleted.
+  You should either delete the media using the Avid Media Composer media management tools, or delete the DIVA drive which contains the media (if it only contains media for this project).
+</p>
+
 ## Delete a project:
 
 1. On the DIVA Fusion menu, click **Projects**.
@@ -29,6 +35,6 @@ Before deleting a shared project, ensure:
 
 <p class="tip">
   <strong>Tip</strong>:
-  When deleting a project, the media is not deleted.
-  You should either delete the media using the Avid Media Composer media management tools, or delete the DIVA drive which contains the media (if it only contains media for this project).
+  You can delete multiple projects at once by using the checkboxes to select the projects,
+  then click the <i class="fa fa-trash"></i> <strong>Delete</strong> button below the project list.
 </p>
