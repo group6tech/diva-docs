@@ -12,6 +12,8 @@ User's shared and private bins are included in the project archive.
 
 Both shared and private projects can be archived.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4APPJvlk21U" frameborder="0" allowfullscreen></iframe>
+
 ## Create a project archive
 
 There are a number of methods of archiving a project:
