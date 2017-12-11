@@ -1,5 +1,11 @@
 $(function() {
-  $('#searchField').on('keyup paste', function() {
+  $('#homeSearch').keypress(function(e) {
+    if (e.which === 13) {
+      return false;
+    }
+  });
+
+  $('#searchField').on('keyup paste', function(e) {
     var query = $('#searchField').val();
 
     var $results = $('.home__search--results');

@@ -248,10 +248,10 @@ module.exports = function(grunt) {
     'gh-pages': {
       options: {
         base: '<%= config.dist %>',
-        clone: '.gh-pages',
+        clone: '.azure',
         //repo: 'git@github.com:group6tech/diva-help.git',
         repo: 'https://github.com/group6tech/diva-help.git',
-        branch: 'gh-pages'
+        branch: 'azure'
       },
       src: ['**']
     },
