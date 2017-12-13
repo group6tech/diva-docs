@@ -26,7 +26,8 @@ There are also two types of external drives:
 - [FTP Drive](#ftp)
 - [Network Drive](#network)
 
-### <a name="basic"></a> Basic Drives
+<a name="basic" class="anchor"></a>
+### Basic Drives
 
 If a user has full access to a Basic drive, the user can add files of any type.
 
@@ -34,13 +35,15 @@ If a user has full access to a Basic drive, the user can add files of any type.
   <strong>Tip</strong>: Avid Media Composer cannot create Avid MXF files on a Basic drive.
 </p>
 
-### <a name="media"></a> Avid Media Drives
+<a name="media" class="anchor"></a>
+### Avid Media Drives
 
 Media drives are optimised exclusively for Avid MFX files. To share Avid MXF media files, the media has to be created on a Media drive.
 
 Users can only save and work with Avid MXF files on this drive.
 
-### <a name="project"></a> Avid Project Drives
+<a name="project" class="anchor"></a>
+### Avid Project Drives
 
 Projects drives are optimised exclusively for Avid Media Composer projects and bins. To share an Avid project, it has to be created on a Projects drive.
 
@@ -48,7 +51,8 @@ Projects drives are optimised exclusively for Avid Media Composer projects and b
   <strong>Tip</strong>: Avid Media Composer cannot create Avid MXF files on a Avid Project drive.
 </p>
 
-### <a name="ftp"></a> FTP Drives
+<a name="ftp" class="anchor"></a>
+### FTP Drives
 
 FTP drives allow DIVA users to connect to FTP servers through DIVA Client. FTP drives do not mount as normal drives on the edit suite, and may require third-party software to work correctly.
 
@@ -56,7 +60,8 @@ FTP drives allow DIVA users to connect to FTP servers through DIVA Client. FTP d
   <strong>Warning</strong>: Passwords stored for FTP drives may be seen in clear text by users.
 </p>
 
-### <a name="network"></a> Network Drives
+<a name="network" class="anchor"></a>
+### Network Drives
 
 Network drives are shares which exist within your LAN, and you want DIVA users to be able to easily mount on their suites.
 

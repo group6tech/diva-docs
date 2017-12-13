@@ -67,3 +67,13 @@ a {
     transition: color .15s;
   }
 }
+
+.anchor {
+  display: block;
+  position: relative;
+  visibility: hidden;
+
+  @media only screen and (min-width: $screen-md-min) {
+    top: -75px;
+  }
+}

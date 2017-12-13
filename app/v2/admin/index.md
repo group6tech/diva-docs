@@ -11,6 +11,8 @@ topics:
   projects: "Projects"
   media: "Media management"
   jobs: "Jobs"
+  backup: "Backup"
+  restore: "Restore"
   events: "Events"
 ---
 

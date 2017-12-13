@@ -44,12 +44,12 @@ You can:
 
 5. Click **Save Permissions**.
 
+<p class="tip">
+  <strong>Tip</strong>:
+  If making changes to an <strong>Avid Media</strong> drive, you might be prompted to <a href="/v2/articles/move-media-while-removing-users-access.html">move the user's media</a>.
+</p>
+
 <p class="tip tip--result">
   <strong>Result</strong>:
   The changes you made are saved and the user will have access to the drives as set.
-</p>
-
-<p class="tip">
-  <strong>Tip</strong>:
-  If making changes to an <strong>Avid Media</strong> drive, you might be required to <a href="/v2/articles/move-media-while-removing-users-access.html">move the user's media</a>.
 </p>

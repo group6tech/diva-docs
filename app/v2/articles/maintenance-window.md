@@ -20,7 +20,7 @@ Certain jobs can be scheduled to run during a maintenance window. If a job is sc
 
   <li>Click <strong>Save Settings</strong>.</li>
 
-</ul>
+</ol>
 
 <p class="tip tip--result">
   <strong>Result</strong>:
