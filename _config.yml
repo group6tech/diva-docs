@@ -8,6 +8,8 @@
 # ------------------------------------------------------------------------------
 
 exclude: ['images', 'scripts']
+plugins:
+  - jekyll-sitemap
 
 
 
@@ -16,6 +18,7 @@ exclude: ['images', 'scripts']
 
 name: DIVA Help Center
 description: Help documentation and guides for DIVA Fusion, DIVA Server, DIVA Node, and DIVA Client on Mac and Windows
+url: "https://help.group6.co.nz"
 
 
 

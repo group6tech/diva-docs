@@ -96,10 +96,16 @@ module.exports = function(grunt) {
       dist: {
         files: [{
           expand: true,
+          cwd: '<%= config.jekyll %>',
+          src: [
+            'sitemap.xml',
+          ],
+          dest: '<%= config.dist %>'
+        }, {
+          expand: true,
           cwd: '<%= config.src %>',
           src: [
             '*.{ico,json,txt,xml}',
-            'CNAME'
           ],
           dest: '<%= config.dist %>'
         }, {
