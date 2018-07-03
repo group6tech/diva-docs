@@ -20,7 +20,7 @@ Also see the [glossary of advanced terms](/v2/articles/glossary-advanced.html) i
 <dl>
 
   <dt id="client">DIVA Client</dt>
-  <dd>The application which you run on your edit suite to mount the drives
+  <dd>The application which you run on your edit suite to mount the drives</dd>
 
   <dt id="drive">Drive</dt>
   <dd>The drives created for use in DIVA are where you save and work with your files. You mount drives in DIVA Client to save and work on files from your edit suite.</dd>

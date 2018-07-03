@@ -1,9 +1,11 @@
+{% assign sortedPages = site.pages | sort: 'sortOrder' %}
+
 <div class="category-tree">
   <div class="category-section" id="common">
     <h2>Popular articles</h2>
     <ul>
       {% for p in site.pages %}
-        {% if p.common and p.category == page.category %}
+        {% if p.common and p.category == page.category and p.tags contains page.versionTag %}
           <li><a href="{{ p.url }}">{{ p.title }}</a></li>
         {% endif %}
       {% endfor %}
@@ -11,6 +13,16 @@
   </div>
 
   {% for topic in page.topics %}
-    {% include topic-article-list.html topic = topic %}
+  <div class="category-section" id="{{ topic[0] }}">
+    <h2>{{ topic[1] }}</h2>
+  
+    <ul>
+      {% for p in sortedPages %}
+        {% if p.category == page.category and p.topic == topic[0] and p.tags contains page.versionTag and p.hide != true %}
+          <li><a href="{{ p.url }}">{{ p.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
   {% endfor %}
 </div>

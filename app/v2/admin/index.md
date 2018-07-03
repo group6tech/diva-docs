@@ -1,6 +1,9 @@
 ---
 title: Overview
-layout: admin
+layout: category
+hide: true
+category: "admin"
+versionTag: v2
 topics:
   fusion: "Fusion"
   nodes: "Nodes"

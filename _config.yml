@@ -32,25 +32,15 @@ defaults:
     values:
       layout: "default"
       sortOrder: 1000
-  - # v2
-    scope:
-      path: "v2"
-    values:
-      version: "v2"
   - # v2 - Articles
     scope:
       path: "v2/articles"
     values:
       layout: "article-default"
-  - # v2 - Admin
+      tags: v2
+  - # v3 - Articles
     scope:
-      path: "v2/admin"
+      path: "v3/articles"
     values:
-      category: "admin"
-      hide: true
-  - # v2 - Editors
-    scope:
-      path: "v2/editor"
-    values:
-      category: "editor"
-      hide: true
+      layout: "article-default"
+      tags: v3

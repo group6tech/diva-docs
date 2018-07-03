@@ -1,6 +1,9 @@
 ---
 title: Overview
-layout: editor
+layout: category
+hide: true
+versionTag: v2
+category: "editor"
 topics:
   client: "DIVA Client"
   drives: "Drives"
