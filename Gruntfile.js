@@ -57,7 +57,7 @@ module.exports = function(grunt) {
               '<%= config.src %>'
             ],
             routes: {
-              '/yarn': './node_modules'
+              '/node_modules': './node_modules'
             }
           }
         }
