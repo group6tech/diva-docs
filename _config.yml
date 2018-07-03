@@ -37,10 +37,12 @@ defaults:
       path: "v2/articles"
     values:
       layout: "article-default"
-      tags: v2
+      tags:
+        - v2
   - # v3 - Articles
     scope:
       path: "v3/articles"
     values:
       layout: "article-default"
-      tags: v3
+      tags:
+        - v3
