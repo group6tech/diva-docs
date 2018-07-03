@@ -20,7 +20,7 @@
   },
   "homepage": "http://help.group6.co.nz",
   "devDependencies": {
-    "bower": "^1.8.2",
+    "font-awesome": "^4.7.0",
     "grunt": "^0.4.5",
     "grunt-browser-sync": "^2.2.0",
     "grunt-cli": "^1.2.0",
@@ -41,7 +41,9 @@
     "grunt-newer": "^1.1.2",
     "grunt-svgmin": "^4.0.0",
     "grunt-usemin": "^3.1.1",
+    "jquery": "^3.3.1",
     "load-grunt-tasks": "^3.4.1",
+    "normalize-scss": "^7.0.1",
     "time-grunt": "^1.3.0"
   }
 }

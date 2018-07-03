@@ -3,11 +3,9 @@ DIVA Help Documentation
 
 ## Build Steps
 
-- Install NPM packages `npm install`
+- Ensure Yarn is installed `npm i -g yarn`
 
-- Ensure Bower is installed `npm i -g bower`
-
-- Install Bower packages `bower install`
+- Install Bower packages `yarn install`
 
 - Ensure Ruby is installed.
 

@@ -57,7 +57,7 @@ module.exports = function(grunt) {
               '<%= config.src %>'
             ],
             routes: {
-              '/bower_components': './bower_components'
+              '/yarn': './node_modules'
             }
           }
         }
@@ -90,7 +90,7 @@ module.exports = function(grunt) {
     copy: {
       build: {
         files: [
-          { expand: true, flatten: true, src: 'bower_components/font-awesome/fonts/*', dest: '<%= config.temp %>/fonts' }
+          { expand: true, flatten: true, src: 'node_modules/font-awesome/fonts/*', dest: '<%= config.temp %>/fonts' }
         ]
       },
       dist: {
@@ -115,7 +115,7 @@ module.exports = function(grunt) {
           dest: '<%= config.dist %>'
         }, {
           expand: true,
-          cwd: 'bower_components/font-awesome/fonts/',
+          cwd: 'node_modules/font-awesome/fonts/',
           src: '*.*',
           dest: '<%= config.dist %>/fonts/'
         }]
@@ -141,7 +141,7 @@ module.exports = function(grunt) {
     //
     sass: {
       options: {
-        loadPath: ['bower_components']
+        loadPath: ['node_modules']
       },
       server: {
         files: [{
