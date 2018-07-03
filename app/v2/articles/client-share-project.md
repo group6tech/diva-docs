@@ -30,7 +30,7 @@ Before sharing a new project, ensure:
   <li>Click <strong>New Project</strong>.</li>
 
   <li>
-    Complete the new project's settings.</li>
+    Complete the new project's settings.
     <p class="note"><strong>Note</strong>: You can provide the project with a meaningful name and adjust a range of settings, e.g., format, raster dimension and colour space.</p>
   </li>
 

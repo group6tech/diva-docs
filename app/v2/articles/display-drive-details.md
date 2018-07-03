@@ -14,7 +14,7 @@ The following drive information can be displayed:
     <p class="note">
       If the status is 'Online', the node is online and the drive is enabled. If not already mounted, the drive can be mounted.<br/>
       If the status is 'Offline', this means the node is offline, so the drive cannot be mounted.<br/>
-      If the status is 'Missing', this means that the node is online, but the drive is missing.</br>
+      If the status is 'Missing', this means that the node is online, but the drive is missing.<br/>
       If the status is 'Maintenance', this means that a health check is being performed on the drive, and it cannot be mounted until the health check is completed.<br/>
     </p>
   </li>
@@ -28,8 +28,8 @@ The following drive information can be displayed:
     Drive Type
     <p class="note">
       On a Basic drive, you can add files of any type.<br/>
-      On an Avid Media drive, you can only save and work with Avid MXF files.</br>
-      On an Avid Projects drive, you can only save and work with Avid Media Composer projects and bins.</br>
+      On an Avid Media drive, you can only save and work with Avid MXF files.<br/>
+      On an Avid Projects drive, you can only save and work with Avid Media Composer projects and bins.<br/>
     </p>
   </li>
 
