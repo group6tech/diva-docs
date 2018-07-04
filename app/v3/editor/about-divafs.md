@@ -2,7 +2,8 @@
 title: About DIVAFS
 category: editor
 topic: drives
-sortOrder: 10
+sortOrder: 15
+common: true
 ---
 
 DIVAFS provides emulation of the Avid NEXIS filesystem.
