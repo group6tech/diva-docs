@@ -39,9 +39,9 @@ defaults:
       layout: "article-default"
       tags:
         - v2
-  - # v3 - Articles
+  - # v3
     scope:
-      path: "v3/articles"
+      path: "v3"
     values:
       layout: "article-default"
       tags:
