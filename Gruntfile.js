@@ -154,21 +154,6 @@ module.exports = function(grunt) {
       }
     },
 
-    // Generate a favicon
-    //
-    favicons: {
-      options: {
-        trueColor: true,
-        appleTouchBackgroundColor: '#0088cc',
-        tileColor: '#0088cc',
-        html: '<%= config.jekyll %>/index.html'
-      },
-      icons: {
-        src: '<%= config.src %>/favicon.png',
-        dest: '<%= config.temp %>/'
-      }
-    },
-
     // Check js files for issues
     jshint: {
       all: [
@@ -282,8 +267,7 @@ module.exports = function(grunt) {
   //
   grunt.registerTask('build', [
     'clean:server',
-    'concurrent:build',
-    'favicons'
+    'concurrent:build'
   ]);
 
   // Serve
