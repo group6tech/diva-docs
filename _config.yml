@@ -46,3 +46,10 @@ defaults:
       layout: "article-default"
       tags:
         - v3
+  - # v4
+    scope:
+      path: "v4"
+    values:
+      layout: "article-default"
+      tags:
+        - v4
