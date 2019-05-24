@@ -22,23 +22,23 @@ Before mounting a drive, ensure the Drives pane is displayed. To do this, on the
   </li>
 
   <li>
-    (Optional) From the drop down menu to the right of the window, select the relevant <strong>drive letter</strong>.
+    (Optional) From the drop down menu to the right of the window, select the relevant <strong>letter</strong>.
     <figure>
-      <img src="/images/v2/client/select-drive-letter-01.png" alt="Drive letter"/>
-      <figcaption>Drive letter E being selected.</figcaption>
+      <img src="/images/v4/client/select-drive-letter-01.png" alt="Drive letter"/>
+      <figcaption>Drive letter I being selected.</figcaption>
     </figure>
-    <p class="note"><strong>Note</strong>: If you are using a Mac, skip this step. Drive letters are not used OS X.</p>
+    <p class="note"><strong>Note</strong>: If you are using a Mac, skip this step. Drive letters are not used macOS.</p>
     <p class="note"><strong>Note</strong>: If you don't want to select a drive letter, the last letter on the drop-list will be mapped to the drive.</p>
   </li>
 
   <li>
-    Click the drive's <i class="fa fa-plus-circle"></i> <strong>Mount</strong> button.
-    <p><img src="/images/v2/client/mount-button.png" alt="Mount button"/></p>
+    Click the drive's <i class="fa fa-plus"></i> <strong>Mount</strong> button.
+    <p><img src="/images/v4/client/mount-button.png" alt="Mount button"/></p>
   </li>
 
 </ul>
 
 <p class="tip tip--result">
   <strong>Result</strong>:
-  The green Mount button is replaced with the red <i class="fa fa-minus-circle"></i> <strong>Unmount</strong> button, and the drive is mounted, automatically assigned a drive letter, and is ready to use.
+  The green Mount button is replaced with the red <i class="fa fa-minus"></i> <strong>Unmount</strong> button, and the drive is mounted, automatically assigned a drive letter, and is ready to use.
 </p>
