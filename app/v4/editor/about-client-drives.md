@@ -8,7 +8,7 @@ sortOrder: 10
 DIVA's Drives pane provides you with access to all the drives that have been assigned to your user account.
 
 <figure>
-  <img src="/images/v2/client/drive-description-00.png" alt="DIVA Client drives"/>
+  <img src="/images/v4/client/drive-description-00.png" alt="DIVA Client drives"/>
   <figcaption>Drives in DIVA Client.</figcaption>
 </figure>
 
