@@ -10,11 +10,16 @@ common: true
 
 Before mounting a set of drives with a favourite, ensure you are signed into DIVA Client.
 
+<p class="tip">
+  <strong>Note</strong>:
+  Loading a favourite might not actually mount any drives. You have to have access to each drive within a favourite for it to be mounted.
+</p>
+
 ## Load a favourite
 
 1. On the DIVA Client menu, click **Favourites**.
 
-2. Click the relevant favourite's green <i class="fa fa-plus-circle"></i> button.
+2. Click the relevant favourite's green <i class="fa fa-plus"></i> button.
 
 <p class="tip tip--result">
   <strong>Result</strong>:
