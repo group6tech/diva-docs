@@ -43,6 +43,6 @@ You can use a favourite to mount one or more drives in one go. The favourites wi
 1. From the **username** drop down menu (top-right of the DIVA Client window), click **Sign Out**.
 
 <figure>
-  <img src="/images/v2/client/signout.png" alt="Sign out button"/>
+  <img src="/images/v4/client/signout.png" alt="Sign out button"/>
   <figcaption>Sign out of DIVA Client</figcaption>
 </figure>
