@@ -78,7 +78,7 @@
   counter-reset: list;
   list-style-type: none;
 
-  li {
+  > li {
     position: relative;
 
     margin-left: 4rem;
