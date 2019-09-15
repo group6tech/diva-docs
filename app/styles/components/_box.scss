@@ -1,0 +1,37 @@
+.box {
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+
+  > ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+
+  + .box {
+    margin-top: $spacer * 2;
+  }
+}
+
+.box-header {
+  padding: ($spacer / 2) $spacer;
+
+  background-color: $grey-lightest;
+  border-bottom: 1px solid $border-color;
+}
+
+.box-title {
+  font-weight: $font-weight-semi-bold;
+}
+
+.box-row {
+  margin-top: -1px;
+  padding: ($spacer / 2) $spacer;
+
+  border-top: 1px solid $border-color;
+  list-style-type: none;
+
+  &:first-of-type {
+    border-top-color: transparent;
+  }
+}

@@ -24,7 +24,7 @@ h4, .h4 {
 
 
 
-// Horizontal rule
+// Misc
 // -----------------------------------------------------------------------------
 
 hr {
@@ -33,6 +33,20 @@ hr {
 
   border: 0;
   border-top: 1px solid $border-color;
+}
+
+kbd {
+  display: inline-block;
+  padding: ($spacer / 4) ($spacer / 2);
+
+  background-color: $grey-lightest;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  vertical-align: middle;
+
+  color: $grey;
+  font-size: $font-size-small;
+  line-height: 1;
 }
 
 
@@ -48,6 +62,10 @@ hr {
 
 // Modifiers
 // -----------------------------------------------------------------------------
+
+.no-wrap {
+  white-space: nowrap;
+}
 
 .text-muted {
   color: $grey-lighter;

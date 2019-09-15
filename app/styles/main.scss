@@ -34,6 +34,7 @@
 // -----------------------------------------------------------------------------
 
 @import 'components/article';
+@import 'components/box';
 @import 'components/breadcrumbs';
 @import 'components/cards';
 @import 'components/category-list';
@@ -53,6 +54,8 @@
 // Utilities
 // -----------------------------------------------------------------------------
 
+@import 'utilities/flex';
+@import 'utilities/spacing';
 @import 'utilities/visibility';
 
 
