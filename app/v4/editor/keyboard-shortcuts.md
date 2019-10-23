@@ -83,6 +83,20 @@ common: true
         </div>
       </li>
       <li class="box-row d-flex flex-row">
+        <div class="flex-auto">Select all</div>
+        <div class="m-l-1 no-wrap">
+          <kbd>Ctrl</kbd>
+          <kbd>A</kbd>
+        </div>
+      </li>
+      <li class="box-row d-flex flex-row">
+        <div class="flex-auto">Select none</div>
+        <div class="m-l-1 no-wrap">
+          <kbd>Ctrl</kbd>
+          <kbd>D</kbd>
+        </div>
+      </li>
+      <li class="box-row d-flex flex-row">
         <div class="flex-auto">Select next</div>
         <div class="m-l-1 no-wrap">
           <kbd>↓</kbd>
@@ -226,6 +240,20 @@ common: true
         <div class="m-l-1 no-wrap">
           <kbd>⌘</kbd>
           <kbd>T</kbd>
+        </div>
+      </li>
+      <li class="box-row d-flex flex-row">
+        <div class="flex-auto">Select all</div>
+        <div class="m-l-1 no-wrap">
+          <kbd>⌘</kbd>
+          <kbd>A</kbd>
+        </div>
+      </li>
+      <li class="box-row d-flex flex-row">
+        <div class="flex-auto">Select none</div>
+        <div class="m-l-1 no-wrap">
+          <kbd>⌘</kbd>
+          <kbd>D</kbd>
         </div>
       </li>
       <li class="box-row d-flex flex-row">
