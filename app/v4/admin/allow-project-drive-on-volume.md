@@ -15,7 +15,7 @@ By allowing Avid project drives on a volume, you will not be able to create Avid
 
 <ol>
 
-  <li>On the Fusion menu, click <strong>Drives</strong>, then click <strong>Volumes</strong>.</li>
+  <li>On the Fusion menu, click <strong>System</strong>, then click <strong>Volumes</strong>.</li>
 
   <li>
     Under the <strong>Projects</strong> column, click the relevant volume's <i class="fa fa-times"></i> or <i class="fa fa-check"></i>.
