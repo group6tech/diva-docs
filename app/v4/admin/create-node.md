@@ -13,7 +13,7 @@ Before a node can connect to DIVA Server it must first be added to the system.
 
   <li>Sign in to <strong>DIVA Fusion</strong>.</li>
 
-  <li>From the <strong>Server</strong> menu, click <strong>Nodes</strong>.</li>
+  <li>From the <strong>System</strong> menu, click <strong>Nodes</strong>.</li>
 
   <li>Click the <strong>New Server Node</strong> button.</li>
 
