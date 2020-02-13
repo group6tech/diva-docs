@@ -42,7 +42,7 @@ Before assigning a volume to the DIVA License Pool, ensure:
 
 ## Assign a volume to the DIVA License Pool:
 
-1. On DIVA Fusion's **Drives** menu, click **Volumes**.
+1. On DIVA Fusion's **System** menu, click **Volumes**.
 
 2. From the first drop down menu, select the volume you want to add.
 
