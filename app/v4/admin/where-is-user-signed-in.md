@@ -13,8 +13,6 @@ You can easily view what edit suite a DIVA user is signed into.
 
   <li>Click on a user which is currently marked as being online.</li>
 
-  <li>Click the <strong>Membership</strong> tab.</li>
-
   <li>See the name of the edit suite where they are signed in next to <strong>Signed into</strong>.</li>
 
 </ol>

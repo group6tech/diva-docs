@@ -7,14 +7,12 @@ sortOrder: 1000
 
 ## Change a user's password:
 
-1. From DIVA Fusion's **Users**.
+1. From DIVA Fusion's menu, click **Users**.
 
-2. From the list, click the relevant **user account**.
+1. From the list, click the relevant **user account**.
 
-3. Click the **Membership** tab.
+1. Click **Change Password**.
 
-4. Click **Change Password**.
+1. In the **New Password** and **Confirm Password** fields, type the new password.
 
-5. In the **New Password** and **Confirm Password** fields, type the new password.
-
-6. Click **Change Password**.
+1. Click **Change Password**.

@@ -28,13 +28,9 @@ Before adding a user account, ensure:
   <li>Click <strong>New User</strong>.</li>
 
   <li>
-    Complete all relevant user <strong>Information</strong> and <strong>Member</strong> fields and options.
+    Complete all relevant user fields and options.
     <p class="note"><strong>Note</strong>: The fields marked with a red asterisk are mandatory.</p>
   </li>
-
-  <li>With the <strong>Create Member</strong> option checked, the user will be able to sign into DIVA Fusion.</li>
-
-  <li>With the <strong>DIVA User</strong> option checked, the user will be able to sign into DIVA Client and access the drives. You can restrict access to drives later on.</li>
 
   <li>Click <strong>Save User</strong>.</li>
 
