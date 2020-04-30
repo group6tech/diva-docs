@@ -88,11 +88,6 @@ module.exports = function(grunt) {
     // Copy assets around that aren't normally moved
     //
     copy: {
-      build: {
-        files: [
-          { expand: true, flatten: true, src: 'node_modules/font-awesome/fonts/*', dest: '<%= config.temp %>/fonts' }
-        ]
-      },
       dist: {
         files: [{
           expand: true,
@@ -116,11 +111,6 @@ module.exports = function(grunt) {
           cwd: '<%= config.temp %>',
           src: ['*.{ico,png}',],
           dest: '<%= config.dist %>'
-        }, {
-          expand: true,
-          cwd: 'node_modules/font-awesome/fonts/',
-          src: '*.*',
-          dest: '<%= config.dist %>/fonts/'
         }]
       }
     },
@@ -242,8 +232,7 @@ module.exports = function(grunt) {
     concurrent: {
       build: [
         'jekyll:server',
-        'sass:server',
-        'copy:build'
+        'sass:server'
       ]
     }
   });

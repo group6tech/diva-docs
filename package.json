@@ -20,7 +20,6 @@
   },
   "homepage": "http://help.group6.co.nz",
   "devDependencies": {
-    "font-awesome": "^4.7.0",
     "grunt": "^1.0.0",
     "grunt-browser-sync": "^2.0.0",
     "grunt-cli": "^1.0.0",
