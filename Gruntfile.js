@@ -104,9 +104,12 @@ module.exports = function(grunt) {
         }, {
           expand: true,
           cwd: '<%= config.src %>',
-          src: [
-            '*.{ico,json,txt,xml}',
-          ],
+          src: ['*.{ico,json,txt,xml}'],
+          dest: '<%= config.dist %>'
+        }, {
+          expand: true,
+          cwd: '<%= config.src %>',
+          src: ['**/*.gif'],
           dest: '<%= config.dist %>'
         }, {
           expand: true,
