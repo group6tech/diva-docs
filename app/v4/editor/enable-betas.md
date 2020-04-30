@@ -21,5 +21,5 @@ We don't recommend using this without contacting us first.
 <p class="tip tip--result">
   <strong>Result</strong>:
   Betas are now enabled. If there is one avaliable, it will automatically download and install next time you restart DIVA Client. 
-  Alternatively you can force the install by clicking on the the parachute icon in the top right corner and follow the on screen instructions.
+  Alternatively you can force the install by clicking on the parachute icon in the top right corner and follow the on screen instructions.
 </p>
