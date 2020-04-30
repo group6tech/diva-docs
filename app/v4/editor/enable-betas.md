@@ -8,6 +8,11 @@ sortOrder: 1000
 We may occasionally ask you to enable betas on a specific computer. 
 We don't recommend using this without contacting us first.
 
+<figure>
+  <img src="/images/v4/client/enable-betas.gif" alt="Enable beta"/>
+  <figcaption>Enable beta via user preferences</figcaption>
+</figure>
+
 ## Enable DIVA Client beta:
 
 1. Sign into DIVA Client.
