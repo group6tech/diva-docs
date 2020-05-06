@@ -20,9 +20,9 @@ If you find that you are using one or more favourites frequently, you can **pin*
 
 1. Find the favourite you want to pin in the favourites list. 
 
-1. As you hover your cursor over the favourite you want to select, the <i class="fal fa-thumbtack"></i> button will appear.
+1. As you hover your cursor over the favourite you want to pin, the <i class="fal fa-thumbtack"></i> button will appear.
 
-1. Click the relevant favourite's <i class="fal fa-thumbtack"></i> button. Once pinned the icon will become solid <i class="fas fa-thumbtack"></i>.
+1. Click the relevant favourite's <i class="fal fa-thumbtack"></i> button. Once pinned the icon will become a solid <i class="fas fa-thumbtack"></i>, and move to the top of the list.
 
 <p class="tip tip--result">
   <strong>Result</strong>:
