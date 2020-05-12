@@ -5,20 +5,46 @@ topic: client
 sortOrder: 1000
 ---
 
+{% include platform-switcher.html mac=true win=true %}
+
 You can customise your DIVA Client by selecting your preferences.
 
 ## DIVA Client preferences
 
-<figure>
-  <img src="/images/v4/client/preferences-win.png" alt="preferences"/>
-  <figcaption>Select preferences from file menu</figcaption>
-</figure>
+<div class="platform-mac">
+  <ol>
+    <li>
+      In the menu bar, click <strong>DIVA Client</strong>.
+    </li>
+    <li>
+      Click <strong>Preferences</strong>.
+      <figure>
+        <img src="/images/v4/client/preferences-mac.png" alt="preferences"/>
+        <figcaption>Select Preferences from DIVA Client menu.</figcaption>
+      </figure>
+    </li>
+  </ol>
+</div>
 
-To open the preferences page follow these steps:
+<div class="platform-win">
+  <ol>
+    <li>
+      In the menu bar, click <strong>File</strong>.
+    </li>
+    <li>
+      Click <strong>Preferences</strong>.
+      <figure>
+        <img src="/images/v4/client/preferences-win.png" alt="preferences"/>
+        <figcaption>Select Preferences from File menu.</figcaption>
+      </figure>
+    </li>
+  </ol>
+</div>
 
-1. Click **File** on the main window menu.
-
-2. Click **Preferences**.
+<p class="tip tip--result">
+  <strong>Result</strong>:
+  The preferences page will open and you can now customise your DIVA Client preferences.
+</p>
 
 <figure>
   <img src="/images/v4/client/preferences-page.png" alt="preferences"/>
@@ -49,6 +75,7 @@ When the toggle is green **remount drives** is turned on.
 
 <figure>
   <img src="/images/v4/client/remount-drives.png" alt="remount drives"/>
+  <figcaption>Use toggle to turn Remount Drives on or off</figcaption>
 </figure>
 
 ## Notifications
@@ -59,6 +86,7 @@ When the toggle is green **notifications** are turned on.
 
 <figure>
   <img src="/images/v4/client/notifications.png" alt="notifications"/>
+  <figcaption>Use toggle to turn Notifications on or off</figcaption>
   </figure>
 
 ## Application
@@ -71,5 +99,5 @@ This area contains functions that should not be changed unless you are instructe
 
 
 <p class="tip tip--warning">
-  <strong>Warning</strong> Do not change settings in the application section unless you are asked to do so by Group 6 Support.
+  <strong>Warning</strong> Do not change settings in the Application section unless you are asked to do so by Group 6 Support.
 </p>
