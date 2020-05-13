@@ -7,7 +7,7 @@ sortOrder: 1000
 
 {% include platform-switcher.html mac=true win=true %}
 
-Occasionally Group6 Support may ask you to send the log files from DIVA Client to help identify an issue. 
+Occasionally Group 6 Support may ask you to send the log files from DIVA Client to help identify an issue. 
 
 ## Send log files
 
@@ -43,5 +43,5 @@ Occasionally Group6 Support may ask you to send the log files from DIVA Client t
 
 <p class="tip tip--result">
   <strong>Result</strong>:
-  The log files will automatically send to Group6 Support. A notification will pop up to tell you this has been successful. 
+  The log files will automatically send to Group 6 Support. A notification will pop up to tell you this has been successful. 
 </p>
