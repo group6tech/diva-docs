@@ -68,9 +68,9 @@ Using the drop down menu you can select either the **Drives** or **Favourites** 
 
 ### Remounting drives
 
-When **remount drives** is turned on, the drives you were last using will automatically mount when you next open DIVA Client.
+When **remount drives** is turned on, the drives you were last using will automatically mount when you next sign into DIVA Client, even on a different computer.
 
-To turn **remount drives** on or off click on the toggle switch.
+To turn **remount drives** on or off click the toggle switch.
 When the toggle is green **remount drives** is turned on.
 
 <figure>
@@ -81,7 +81,8 @@ When the toggle is green **remount drives** is turned on.
 ## Notifications
 
 You can choose whether or not you want to recieve notifications about the latest features in DIVA Client.
-To turn **notifications** on or off click on the toggle switch.
+
+To turn **notifications** on or off, click the toggle switch.
 When the toggle is green **notifications** are turned on.
 
 <figure>
