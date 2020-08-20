@@ -51,7 +51,6 @@ Before installing DIVA Client you'll need to know the **IP address** or **hostna
 
 <div class="platform-win">
   <ol>
-
     <li>
       Open a browser and navigate to the <strong>IP address</strong> or <strong>hostname</strong> of your DIVA Server.
       <figure>
@@ -61,13 +60,12 @@ Before installing DIVA Client you'll need to know the **IP address** or **hostna
     </li>
 
     <li>
-      In the <strong>Installers</strong> panel, click the <strong>DIVA Client .exe</strong> installer.
+      In the <strong>Installers</strong> panel, click the <strong>DIVA Client.exe</strong> installer.
     </li>
 
     <li>
       Once downloaded, run the installer. When the installation has completed DIVA Client will automatically open.
     </li>
-
   </ol>
 </div>
 
@@ -75,3 +73,9 @@ Before installing DIVA Client you'll need to know the **IP address** or **hostna
   <strong>Result</strong>:
   You can now continue to <a href="/v4/editor/setup-client.html">setup DIVA Client</a>.
 </p>
+
+<div class="platform-win">
+  <p>By default DIVA Client is installed once per-user to their AppData directory.</p>
+  <p>You can perform a machine wide installation by running the downloaded installer from the command line with the /D switch, for example:</p>
+  <code>DIVA Client.exe /D=C:\Program Files\DIVA Client</code>
+</div>
