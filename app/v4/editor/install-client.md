@@ -77,5 +77,5 @@ Before installing DIVA Client you'll need to know the **IP address** or **hostna
 <div class="platform-win">
   <p>By default DIVA Client is installed once per-user to their AppData directory.</p>
   <p>You can perform a machine wide installation by running the downloaded installer from the command line with the /D switch, for example:</p>
-  <code>DIVA Client.exe /D=C:\Program Files\DIVA Client</code>
+  <code>"DIVA Client.exe" /D="C:\Program Files\DIVA Client"</code>
 </div>
