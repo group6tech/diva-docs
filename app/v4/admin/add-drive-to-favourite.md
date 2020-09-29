@@ -5,7 +5,7 @@ topic: favourites
 sortOrder: 1000
 ---
 
-You can add additional drives to an exsisting favourite. 
+You can add additional drives to an existing favourite.
 
 <p class="tip tip--warning">
   <strong>Warning</strong>:
@@ -25,7 +25,7 @@ You can add additional drives to an exsisting favourite.
 1. Select the drive you want to add to the favourite from the **dropdown**.
 
 1. Click <i class="far fa-plus"></i> **Add Drive**
-  
+
 <p class="tip tip--result">
   <strong>Result</strong>:
  The selected drive is now part of the favourite and will be included when the favourite is mounted.
