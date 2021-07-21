@@ -2,6 +2,7 @@
 
 .azure/
 .gh-pages/
+.grunt/
 .jekyll/
 .sass-cache/
 .tmp/

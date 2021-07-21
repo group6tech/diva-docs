@@ -99,7 +99,10 @@ module.exports = function(grunt) {
         }, {
           expand: true,
           cwd: '<%= config.src %>',
-          src: ['*.{ico,json,txt,xml}'],
+          src: [
+            '*.{ico,json,txt,xml}',
+            'CNAME'
+          ],
           dest: '<%= config.dist %>'
         }, {
           expand: true,
@@ -234,6 +237,15 @@ module.exports = function(grunt) {
         'jekyll:server',
         'sass:server'
       ]
+    },
+
+    // Github pages
+    //
+    'gh-pages': {
+      options: {
+        base: 'dist'
+      },
+      src: ['**']
     }
   });
 
@@ -276,6 +288,12 @@ module.exports = function(grunt) {
     'imagemin',
     'svgmin',
     'copy:dist'
+  ]);
+
+  // Deploy
+  grunt.registerTask('deploy', [
+    'dist',
+    'gh-pages'
   ]);
 
   // Default
