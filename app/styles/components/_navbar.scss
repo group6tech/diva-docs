@@ -44,7 +44,7 @@
 
 .navbar__brand__help-center {
   position: relative;
-  top: -.6rem;
+  top: -.3rem;
 
   font-size: $font-size-base;
 }
@@ -92,12 +92,7 @@
   }
 }
 
-
-
-// Items
-// ----------------------------------------------------------------------------
-
-.nav__item--support {
+.nav__link {
   padding-left: $spacer;
   padding-right: $spacer;
 
