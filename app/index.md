@@ -6,8 +6,10 @@ bodyClass: home with-jumbo
 
 <div class="jumbotron">
   <div class="container">
-    <p>As of 1st October 2021, DIVA is no longer being supported.</p>
-    <p>For further information, <a href="https://www.group6.co.nz">please read here</a>.</p>
+    <div class="tip tip--danger">
+      <p>DIVA is no longer being supported.</p>
+      <p>For further information, <a href="https://www.group6.co.nz">please read here</a>.</p>
+    </div>
 
     <h1>Hey, how can we help?</h1>
 

@@ -47,3 +47,26 @@
     content: "\f071";
   }
 }
+
+.tip--danger {
+  color: $white;
+
+  background-color: transparentize($red-500, .2);
+  border-color: transparentize($red-500, .7);
+
+  &:before {
+    content: "\f071";
+  }
+
+  a {
+    color: $white;
+  }
+
+  p {
+    margin-bottom: $spacer / 2;
+  }
+
+  p + p {
+    margin-bottom: 0;
+  }
+}
