@@ -44,6 +44,4 @@ bodyClass: home with-jumbo
     </div>
 
   </div>
-
-  <p class="text-center">Not using DIVA version 4? Get help for <a href="/v2">v2</a> or <a href="/v3">v3</a>.</p>
 </div>
