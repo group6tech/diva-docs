@@ -33,10 +33,6 @@ The folder name must be capitalised, and it is recommended to follow a consisten
 
 ## Moving media
 
-If you need to re-scan media for any reason, you can [move it all to one computer](/v3/admin/move-media-computer.html).
+If you need to re-scan media for any reason, you can [move it all to one computer](/v4/admin/move-media-computer.html).
 
 You do not need to worry about media belonging to users any more while removing a users access from a drive.
-
-## Legacy drives
-
-If you need to manage media on an **Avid Media (Legacy)** v2 drive, please see the [version 2 documentation](/v2/articles/about-media-management.html) for assistance.

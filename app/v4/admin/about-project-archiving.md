@@ -18,13 +18,13 @@ Both shared and private projects can be archived.
 
 There are a number of methods of archiving a project:
 
-- [Archive a project](/v3/admin/archive-project.html)
-- [Archive many projects](/v3/admin/archive-many-projects.html)
-- [Archive all projects on a drive](/v3/admin/archive-drive-projects.html)
+- [Archive a project](/v4/admin/archive-project.html)
+- [Archive many projects](/v4/admin/archive-many-projects.html)
+- [Archive all projects on a drive](/v4/admin/archive-drive-projects.html)
 
 ## Find a project archive
 
-1. [Mount the project drive](/v3/editor/mount-drive.html) on which the project exists.
+1. [Mount the project drive](/v4/editor/mount-drive.html) on which the project exists.
 2. Browse to the mounted drive on your computer.
 3. Open the **Project Archive** folder on the drive.
 4. Open the folder representing the date the archive was created. This is in the format `year-month-day`, so as to always be sorted chronologically.

@@ -7,7 +7,7 @@ sortOrder: 110
 
 Sometimes you will want to create a favourite for a small group of users, for example a project team.
 
-You can also [create a favourite for all users](/v3/admin/create-favourite.html).
+You can also [create a favourite for all users](/v4/admin/create-favourite.html).
 
 ## Create a favourite for specific user groups
 

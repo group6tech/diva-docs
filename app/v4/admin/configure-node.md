@@ -9,7 +9,7 @@ sortOrder: 40
 
 Before you can connect DIVA Node to DIVA Server, ensure:
 
-- the [Node has been registered](/v3/admin/create-node.html), and DIVA Node is [installed on the computer](/v3/admin/install-node.html).
+- the [Node has been registered](/v4/admin/create-node.html), and DIVA Node is [installed on the computer](/v4/admin/install-node.html).
 
 
 ## Configure DIVA Node

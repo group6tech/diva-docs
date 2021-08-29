@@ -46,5 +46,5 @@ You will also need the details of the external server, such as hostname, usernam
 
 ### What's next?
 
-- [Set drive access](/v3/admin/set-drive-access.html)
-- [Set user's drive access](/v3/admin/set-user-drive-access.html)
+- [Set drive access](/v4/admin/set-drive-access.html)
+- [Set user's drive access](/v4/admin/set-user-drive-access.html)

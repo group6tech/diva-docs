@@ -6,14 +6,14 @@ sortOrder: 1100
 ---
 
 Multiple versions of each file are backed up as changes are made over time.
-Version snapshots can be [restored](/v3/admin/restoring-projects-bins.html) to revert a file back to a previous moment in time.
+Version snapshots can be [restored](/v4/admin/restoring-projects-bins.html) to revert a file back to a previous moment in time.
 
 You can change the version settings to keep more of the recent versions of your backed up files and less of the older ones. Or you can choose to keep more versions of everything, it just takes up more space in the cloud.
 
-During the [maintenance window](/v3/admin/maintenance-window.html), older backup versions are pruned. This decreases the amount of backup data which is kept in the cloud.
+During the [maintenance window](/v4/admin/maintenance-window.html), older backup versions are pruned. This decreases the amount of backup data which is kept in the cloud.
 Six months from now you may not need to restore a backup from 11am when a version from the end of the day, or even the week, will do.
 
-The most recent version of each file is always kept - unless that file has been deleted, and you've configured DIVA to [remove backups of deleted files after a certain period of time](/v3/admin/backup-deleted-file-settings.html).
+The most recent version of each file is always kept - unless that file has been deleted, and you've configured DIVA to [remove backups of deleted files after a certain period of time](/v4/admin/backup-deleted-file-settings.html).
 DIVA *never* removes deleted files by default.
 
 ## Specifiy versions to retain

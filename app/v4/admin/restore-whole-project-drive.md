@@ -31,5 +31,5 @@ This option is only available when the drive status is **Drive Missing**. It sho
 
 <p class="tip tip--result">
   <strong>Result</strong>:
-  A jop is created to restore the drive. You can view the status via the <a href="v3/admin/about-jobs.html">job queue</a>.
+  A jop is created to restore the drive. You can view the status via the <a href="/v4/admin/about-jobs.html">job queue</a>.
 </p>

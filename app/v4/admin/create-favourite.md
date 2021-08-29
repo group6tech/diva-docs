@@ -7,7 +7,7 @@ sortOrder: 100
 
 Creating a favourite for all DIVA Client users to use is straight forward to do. Once set up, all DIVA Client Users will be able to use it to mount the drives that are assigned to it.
 
-Alternatively you can [create a favourite for specific users](/v3/admin/create-favourite-specific-users.html).
+Alternatively you can [create a favourite for specific users](/v4/admin/create-favourite-specific-users.html).
 
 ## Create a favourite for all users
 

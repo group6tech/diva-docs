@@ -5,7 +5,7 @@ topic: projects
 sortOrder: 1000
 ---
 
-A project on a [DIVFS](/v3/editor/about-divafs.html) enabled Avid Project drive allows for native Avid Media Composer bin locking.
+A project on a [DIVFS](/v4/editor/about-divafs.html) enabled Avid Project drive allows for native Avid Media Composer bin locking.
 
 Any user with write access to the drive can make changes to any bin on the drive.
 

@@ -22,5 +22,5 @@ A drive cannot be renamed while it is in use. Ensure all users have unmounted th
 1. Click the **Save Drive** button.
 
 <p class="tip tip--result">
-  <strong>Result</strong>: A job is created to rename the drive. Check the <a href="/v3/admin/about-jobs.html">job queue</a> to ensure it completes successfully.
+  <strong>Result</strong>: A job is created to rename the drive. Check the <a href="/v4/admin/about-jobs.html">job queue</a> to ensure it completes successfully.
 </p>

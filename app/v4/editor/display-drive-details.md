@@ -62,7 +62,7 @@ Before displaying a drive's information, ensure the Drives pane is displayed. To
 
 <p class="tip">
   <strong>Tip</strong>:
-  If you have a long list of drives, see <a href="/v3/editor/search-drive.html">search for a drive</a> for information on how to find the drive.
+  If you have a long list of drives, see <a href="/v4/editor/search-drive.html">search for a drive</a> for information on how to find the drive.
 </p>
 
 ## Display a drive's information
@@ -78,6 +78,6 @@ Before displaying a drive's information, ensure the Drives pane is displayed. To
 
 If required, you can:
 
-- [mount a drive](/v3/editor/mount-drive.html),
-- [unmount a drive](/v3/editor/unmount-drive.html), and
-- [browse a mounted drive in Windows Explorer](/v3/editor/browse-drive.html).
+- [mount a drive](/v4/editor/mount-drive.html),
+- [unmount a drive](/v4/editor/unmount-drive.html), and
+- [browse a mounted drive in Windows Explorer](/v4/editor/browse-drive.html).

@@ -10,13 +10,13 @@ You can also control how many versions of each modified file are kept, and to pe
 
 There are three backup frequency options:
 
-- **Never**: Projects will not be automatically backed up. Instead you can [manually backup a project](/v3/admin/manually-backup-project.html).
+- **Never**: Projects will not be automatically backed up. Instead you can [manually backup a project](/v4/admin/manually-backup-project.html).
 
 - **Hourly**: Projects are scanned for changes and backed up on the hour every hour.
 
-- **Daily**: Projects are scanned for changes and backed up once per day, during the [maintenance window](/v3/admin/maintenance-window.html).
+- **Daily**: Projects are scanned for changes and backed up once per day, during the [maintenance window](/v4/admin/maintenance-window.html).
 
-You can also set [how many backup versions are kept](/v3/admin/backup-version-settings.html) and when to [remove backups of deleted files](/v3/admin/backup-deleted-file-settings.html).
+You can also set [how many backup versions are kept](/v4/admin/backup-version-settings.html) and when to [remove backups of deleted files](/v4/admin/backup-deleted-file-settings.html).
 
 ## Set the backup frequency
 

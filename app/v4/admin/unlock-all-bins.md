@@ -5,7 +5,7 @@ topic: projects
 sortOrder: 1000
 ---
 
-When using [bin locking](/v3/editor/locking-and-unlocking-bins.html) on a DIVAFS enabled Avid Projects drive, there are situations where bins may remain locked, perhaps due to a Media Composer crash for example.
+When using [bin locking](/v4/editor/locking-and-unlocking-bins.html) on a DIVAFS enabled Avid Projects drive, there are situations where bins may remain locked, perhaps due to a Media Composer crash for example.
 
 You can quickly unlock all bins in a project if required.
 
@@ -23,7 +23,7 @@ You can quickly unlock all bins in a project if required.
 
 1. Click **Unlock Bins**.
 
-A [job](/v3/admin/about-jobs.html) will be created to unlock the bins in the project.
+A [job](/v4/admin/about-jobs.html) will be created to unlock the bins in the project.
 
 <p class="tip ">
   <strong>Tip</strong> You can use the checkboxes to select multiple projects then click the <strong>Unlock Bins</strong> button below the project list to unlock the bins on all the selected projects.

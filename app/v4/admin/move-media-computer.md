@@ -6,7 +6,7 @@ sortOrder: 100
 ---
 
 Avid Media Composer keeps all media in folders associated with the computer which created it.
-See [about media management](/v3/admin/about-media-management.html) for further information.
+See [about media management](/v4/admin/about-media-management.html) for further information.
 
 It is possible to move all the media on a DIVAFS media type drive to one of the known computers running DIVA Client on your system.
 

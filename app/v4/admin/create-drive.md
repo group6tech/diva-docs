@@ -19,7 +19,7 @@ If the volume is assigned to an Avid Pool, DIVA drives of any type (Basic, Media
 
 <p class="note"><strong>Note</strong>: On Basic drives and projects drives, using Avid, you cannot create Avid MXF files.</p>
 
-<p class="note"><strong>Note</strong>: You can only add a Project drive to a media or projects volume if it is permitted for that volume. To permit or prevent project drives from being added to a volume, see <a href="/v3/admin/allow-project-drive-on-volume.html">Allow Avid Project drives on a volume</a>.</p>
+<p class="note"><strong>Note</strong>: You can only add a Project drive to a media or projects volume if it is permitted for that volume. To permit or prevent project drives from being added to a volume, see <a href="/v4/admin/allow-project-drive-on-volume.html">Allow Avid Project drives on a volume</a>.</p>
 
 ## Create a DIVA drive
 
@@ -52,5 +52,5 @@ If the volume is assigned to an Avid Pool, DIVA drives of any type (Basic, Media
 
 ### What's next?
 
-- [Set drive access](/v3/admin/set-drive-access.html)
-- [Set user's drive access](/v3/admin/set-user-drive-access.html)
+- [Set drive access](/v4/admin/set-drive-access.html)
+- [Set user's drive access](/v4/admin/set-user-drive-access.html)

@@ -34,5 +34,5 @@ Before a node can connect to DIVA Server it must first be added to the system.
 </ol>
 
 <p class="tip tip--result">
-  <strong>Result</strong>: The node is created and the browser displays the node's properties. Much of the information on this page is missing because the node is not yet connected. You can now <a href="/v3/admin/configure-node.html">connect the new Node</a>.
+  <strong>Result</strong>: The node is created and the browser displays the node's properties. Much of the information on this page is missing because the node is not yet connected. You can now <a href="/v4/admin/configure-node.html">connect the new Node</a>.
 </p>

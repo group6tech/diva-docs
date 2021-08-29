@@ -6,7 +6,7 @@ sortOrder: 2010
 ---
 
 Archiving a project creates a Zip file of all the Avid MediaComposer project files.
-See more [about project archiving](/v3/admin/about-project-archiving.html).
+See more [about project archiving](/v4/admin/about-project-archiving.html).
 
 ## Archive a project
 

@@ -5,10 +5,10 @@ topic: restore
 sortOrder: 1100
 ---
 
-This will restore an entire project as a new one. Alternatively you can [restore one or more bins](/v3/admin/restore-project-bins.html) to a current project.
+This will restore an entire project as a new one. Alternatively you can [restore one or more bins](/v4/admin/restore-project-bins.html) to a current project.
 
-If the project has been deleted, see [restore a deleted project](/v3/admin/restore-deleted-project.html).
-Or if the drive the project was on has been deleted, see [restore a project from a deleted drive](/v3/admin/restore-project-from-deleted-drive.html).
+If the project has been deleted, see [restore a deleted project](/v4/admin/restore-deleted-project.html).
+Or if the drive the project was on has been deleted, see [restore a project from a deleted drive](/v4/admin/restore-project-from-deleted-drive.html).
 
 As you complete each step you will see a summary of the decisions you have made.
 You can click **Cancel** at most steps to go back and adjust your decisions.

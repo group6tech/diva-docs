@@ -43,4 +43,4 @@ Before adding a user account, ensure:
 
 ### What next?
 
-[Set the users access to drives](/v3/admin/set-user-drive-access.html).
+[Set the users access to drives](/v4/admin/set-user-drive-access.html).

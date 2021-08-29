@@ -23,7 +23,7 @@ Here you can see:
 
 <p class="tip">
   <strong>Tip</strong>
-  You never really know if a backup is working until you've tested you can <a href="/v3/admin/restoring-projects-bins.html">restore it</a>!
+  You never really know if a backup is working until you've tested you can <a href="/v4/admin/restoring-projects-bins.html">restore it</a>!
 </p>
 
 
@@ -47,7 +47,7 @@ Here you can see the total amount of data and files for all time which have been
 
 <p class="tip">
   <strong>Tip</strong>
-  "Pruned" indicates versions of files which have been removed, as per the <a href="/v3/admin/backup-version-settings.html">backup version settings</a>.
+  "Pruned" indicates versions of files which have been removed, as per the <a href="/v4/admin/backup-version-settings.html">backup version settings</a>.
 </p>
 
 There are also graphs which track these activities over the last 24 hours, and the last month.

@@ -38,7 +38,7 @@ If a 30 TB volume is assigned to a 40 TB license pool, 30 TBs of license is used
 
 Before assigning a volume to the DIVA License Pool, ensure:
 
-- you've [created](/v3/admin/create-node.html) and [configured](/v3/admin/configure-node.html) a Node
+- you've [created](/v4/admin/create-node.html) and [configured](/v4/admin/configure-node.html) a Node
 
 ## Assign a volume to the DIVA License Pool:
 
@@ -56,4 +56,4 @@ Before assigning a volume to the DIVA License Pool, ensure:
 
 ### What's Next?
 
-The DIVA volume is ready for you to [create drives](/v3/admin/create-drive.html).
+The DIVA volume is ready for you to [create drives](/v4/admin/create-drive.html).

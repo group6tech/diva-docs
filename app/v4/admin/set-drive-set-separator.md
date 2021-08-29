@@ -26,4 +26,4 @@ When creating a Drive Set, the separator is the text which is inserted automatic
 
 </ol>
 
-If you [create a drive set](/v3/admin/create-drive-set.html) the new separator will appear at the start of each suffix.
+If you [create a drive set](/v4/admin/create-drive-set.html) the new separator will appear at the start of each suffix.

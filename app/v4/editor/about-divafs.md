@@ -18,4 +18,4 @@ It is automatically shared with all DIVA users who have access to this drive.
 
 The concept of user and the Unprotected folder inside a project no longer exists.
 Instead Avid Media Composer automatically handles the locking of bins to prevent other users from overwriting changes while one user has them open.
-For further information please see [locking and unlocking bins in Avid Media Composer](/v3/editor/locking-and-unlocking-bins.html).
+For further information please see [locking and unlocking bins in Avid Media Composer](/v4/editor/locking-and-unlocking-bins.html).

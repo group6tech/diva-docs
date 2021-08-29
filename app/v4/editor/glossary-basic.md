@@ -16,7 +16,7 @@ topics:
   username: "Username"
 ---
 
-Also see the [glossary of advanced terms](/v3/admin/glossary-advanced.html) if you want to nerd out a bit more.
+Also see the [glossary of advanced terms](/v4/admin/glossary-advanced.html) if you want to nerd out a bit more.
 
 <dl>
 
